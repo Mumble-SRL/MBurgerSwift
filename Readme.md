@@ -8,7 +8,7 @@
 
 # MBurgerSwift
 
-MBurgerSwift is a client libary, written in Swift, that can be used to interact with the [MBurger](https://mburger.cloud/login) API. The minimum deplaoyment target for the library is iOS 10.0.
+MBurgerSwift is a client libary, written in Swift, that can be used to interact with the [MBurger](https://mburger.cloud/login) API. The minimum deployment target for the library is iOS 10.0.
 
 # Installation
 
@@ -26,7 +26,7 @@ To integrate the MBurgerSwift into your Xcode project using CocoaPods, specify i
 platform :ios, '10.0'
 
 target 'TargetName' do
-    pod 'MBurgerSwift', git: 'https://github.com/Mumble-SRL/MBurger-iOS'
+    pod 'MBurgerSwift', git: 'https://github.com/Mumble-SRL/MBurgerSwift-iOS'
 end
 ```
 
@@ -55,10 +55,8 @@ To initialize the SDK you have to create a token through the [dashboard](https:/
 
 Then in your `AppDelegate` `application:didFinishLaunchingWithOptions:` initialize the `MBManager` of the SDK setting a token like this:
 
-**Swift**:
-
 ```swift
-import MBurger
+import MBurgerSwift
 
 ...
 
@@ -72,13 +70,11 @@ You will not be able to interact with the SDK if you don't initialize it with a 
 
 # Usage
 
-Use the `MBClient` class to make all the request to the api to retrieve data from MBurger. All the api calls have a plurar version and its singular counterpart. For example you can retrieve the list of blocks of the project or you can retrieve a single block giving its id.
+Use the `MBClient` class to make all the request to the api to retrieve data from MBurger. All the api calls have a plural version and its singular counterpart. For example you can retrieve the list of blocks of the project or you can retrieve a single block giving its id.
 
 # Project
 
 You can retrieve the informations of the project like this:
-
-**Swift**:
 
 ```swift
 MBClient.getProject(success: { project in
@@ -88,12 +84,9 @@ MBClient.getProject(success: { project in
 })
 ```
 
-
 # Blocks
 
 You can retrieve the blocks of the project with the function `getBlocks(withParameters:Success:Failure` like this:
-
-**Swift**:
 
 ```swift
 
@@ -230,7 +223,7 @@ You can find a complete example in the Example project.
 
 # Serialization
 
-All the model objects implement the `NSCoding` and `NSSecureCoding` protocol so you can serialize and deserialize them without having to implement it. Below the list of objects that implement those protocols
+All the object models implement the `Codable` protocol so you can serialize and deserialize them without having to implement it. Below the list of objects that implement those protocols
 
 * `MBProject`
 * `MBBlock`
