@@ -1,0 +1,6 @@
+framework module Pods_MBurgerSwift {
+  umbrella header "Pods-MBurgerSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
