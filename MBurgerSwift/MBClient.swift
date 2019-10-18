@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// The main client of the SDK, this is your entry point for all the calls you do with MBurger.
 /// All the api calls have two blocks as parameters called when the api completes, one (Success) for the succes case and one for the failure (Failure). These blocks are pushed in the main thread by the SDK.

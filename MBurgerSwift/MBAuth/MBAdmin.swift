@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// Manages the calls to the MBurger admin APIs.
 public struct MBAdmin {

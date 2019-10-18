@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// A parameter that can be passed to the APIs that indicates if a legal contract has been accepted or not
 public class MBAuthContractAcceptanceParameter: MBParameter {

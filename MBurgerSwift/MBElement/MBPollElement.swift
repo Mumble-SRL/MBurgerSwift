@@ -77,6 +77,10 @@ public class MBPollElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
+    override public func value() -> Any? {
+        return answers
+    }
+    
     // MARK: - Codable
     enum CodingKeysElement: String, CodingKey {
         case answers

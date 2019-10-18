@@ -47,6 +47,15 @@ public class MBDropdownElement: MBElement {
         
     }
     
+    override public func value() -> Any? {
+        var dict: [String: Any] = ["options": options]
+        if let selectedOption = selectedOption {
+            dict["selectedOption"] = selectedOption
+        }
+        return dict
+    }
+    
+    // MARK: - Codable protocol
     enum CodingKeysElement: String, CodingKey {
         case options
         case selectedOption

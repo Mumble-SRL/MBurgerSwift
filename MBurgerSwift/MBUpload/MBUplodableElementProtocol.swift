@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// A protocol to which all MBUploadableElement needs to be conform, it has all the basic data that a MBUplodableElement needs
 public protocol MBUplodableElementProtocol {

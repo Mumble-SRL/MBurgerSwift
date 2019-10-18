@@ -32,6 +32,10 @@ public class MBCheckboxElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
+    override public func value() -> Any? {
+        return checked
+    }
+    
     enum CodingKeysElement: String, CodingKey {
         case checked
     }

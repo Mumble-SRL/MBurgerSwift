@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// An uploadable element representing the text.
 public struct MBUploadableTextElement: MBUplodableElementProtocol {

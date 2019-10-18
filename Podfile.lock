@@ -1,28 +1,20 @@
 PODS:
-  - MBNetworking (1.0.0)
+  - MBNetworkingSwift (1.0.5)
   - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
-  - MBNetworking (from `https://gitlab.mumbleserver.it/iOS/mb-networking`)
+  - MBNetworkingSwift
   - SAMKeychain
 
 SPEC REPOS:
   trunk:
+    - MBNetworkingSwift
     - SAMKeychain
 
-EXTERNAL SOURCES:
-  MBNetworking:
-    :git: https://gitlab.mumbleserver.it/iOS/mb-networking
-
-CHECKOUT OPTIONS:
-  MBNetworking:
-    :commit: 1b1dbadb034d51b478c12fb995bb90184b8f3f26
-    :git: https://gitlab.mumbleserver.it/iOS/mb-networking
-
 SPEC CHECKSUMS:
-  MBNetworking: 5b094449a22d76d8dcf33c2c956dc130f49c15bf
+  MBNetworkingSwift: 98597079391834bbe57394eb94e7206707bdaa44
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 4812aee4184ba51020a59930fd2ae94575ad842b
+PODFILE CHECKSUM: 1b76a2552c0ba3dd1c86bd45fd473e277dfbac56
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// This class is responsible to make all the networking requests to the MBurger Api, MBManager, MBClient and MBAdmin are built above this class.
 public final class MBApiManager {

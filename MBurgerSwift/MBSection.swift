@@ -100,4 +100,16 @@ public class MBSection: Codable, Equatable {
         try container.encodeIfPresent(elements, forKey: .elements)
         try container.encode(inEvidence, forKey: .inEvidence)
     }
+    
+    public func mapElements(toObject object: NSObject, mapping: [String: String]) -> NSObject {
+        mapping.forEach { mapElement in
+            let selfKeyPath = mapElement.key
+            let objectKeyPath = mapElement.value
+            if let currentElement = self.elements?[selfKeyPath] {
+                let value = currentElement.value() ?? currentElement
+                object.setValue(value, forKeyPath: objectKeyPath)
+            }
+        }
+        return object
+    }
 }

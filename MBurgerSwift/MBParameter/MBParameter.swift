@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// This protocol represent a parameter passed to the MBurger api.
 public protocol MBParameter {

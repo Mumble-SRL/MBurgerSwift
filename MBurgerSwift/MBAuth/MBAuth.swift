@@ -8,7 +8,7 @@
 
 import Foundation
 import SAMKeychain
-import MBNetworking
+import MBNetworkingSwift
 
 /// The type of social tokens supported by MBurger
 public enum MBAuthSocialTokenType: Int {

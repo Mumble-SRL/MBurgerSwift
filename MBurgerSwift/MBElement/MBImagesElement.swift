@@ -45,6 +45,10 @@ public class MBImagesElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
+    override public func value() -> Any? {
+        return images
+    }
+    
     enum CodingKeysElement: String, CodingKey {
         case images
     }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// An uploadable element representing some images.
 public struct MBUploadableImagesElement: MBUplodableElementProtocol {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5194DE48477A426FB53AC76C /* Pods_MBurgerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F5C6B207EDA01F8EFCFED6 /* Pods_MBurgerSwift.framework */; };
+		283E7F41713B42786A3BCB8D /* Pods_MBurgerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916961B7414FD99ED57A63B6 /* Pods_MBurgerSwift.framework */; };
 		D20EFEE92344A1340057A1B0 /* MBUplodableElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEE82344A1340057A1B0 /* MBUplodableElementProtocol.swift */; };
 		D20EFEEB2344A17A0057A1B0 /* MBUploadableTextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEEA2344A17A0057A1B0 /* MBUploadableTextElement.swift */; };
 		D20EFEED2344A5E90057A1B0 /* MBUploadableImagesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEEC2344A5E90057A1B0 /* MBUploadableImagesElement.swift */; };
@@ -54,8 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC2C4ADA0732B327F8035AA9 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		D1F5C6B207EDA01F8EFCFED6 /* Pods_MBurgerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBurgerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916961B7414FD99ED57A63B6 /* Pods_MBurgerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBurgerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6541B0AECCC724CEEE7CC90 /* Pods-MBurgerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.release.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.release.xcconfig"; sourceTree = "<group>"; };
 		D20EFEE82344A1340057A1B0 /* MBUplodableElementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUplodableElementProtocol.swift; sourceTree = "<group>"; };
 		D20EFEEA2344A17A0057A1B0 /* MBUploadableTextElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableTextElement.swift; sourceTree = "<group>"; };
 		D20EFEEC2344A5E90057A1B0 /* MBUploadableImagesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableImagesElement.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -101,7 +101,7 @@
 		D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUserContractStatus.swift; sourceTree = "<group>"; };
 		D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUserPublishedSection.swift; sourceTree = "<group>"; };
 		D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginProtocol.swift; sourceTree = "<group>"; };
-		EC06F84B8449B1E55949AF40 /* Pods-MBurgerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.release.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.release.xcconfig"; sourceTree = "<group>"; };
+		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,18 +109,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5194DE48477A426FB53AC76C /* Pods_MBurgerSwift.framework in Frameworks */,
+				283E7F41713B42786A3BCB8D /* Pods_MBurgerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84768839D118CF0241E05AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				916961B7414FD99ED57A63B6 /* Pods_MBurgerSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FD2C803492419A3B810D295 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CC2C4ADA0732B327F8035AA9 /* Pods-MBurgerSwift.debug.xcconfig */,
-				EC06F84B8449B1E55949AF40 /* Pods-MBurgerSwift.release.xcconfig */,
+				EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */,
+				A6541B0AECCC724CEEE7CC90 /* Pods-MBurgerSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -131,7 +139,7 @@
 				D251EAE4233CA8A7002CD197 /* MBurgerSwift */,
 				D251EAE3233CA8A7002CD197 /* Products */,
 				9FD2C803492419A3B810D295 /* Pods */,
-				DA5531C38175A771FBD17338 /* Frameworks */,
+				84768839D118CF0241E05AC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,14 +258,6 @@
 			path = MBPlugin;
 			sourceTree = "<group>";
 		};
-		DA5531C38175A771FBD17338 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D1F5C6B207EDA01F8EFCFED6 /* Pods_MBurgerSwift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -276,7 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D251EAEA233CA8A7002CD197 /* Build configuration list for PBXNativeTarget "MBurgerSwift" */;
 			buildPhases = (
-				C561BE317DA4B596EFF4F0FC /* [CP] Check Pods Manifest.lock */,
+				6CF5B103661DBADB898D9DAC /* [CP] Check Pods Manifest.lock */,
 				D251EADD233CA8A7002CD197 /* Headers */,
 				D251EADE233CA8A7002CD197 /* Sources */,
 				D251EADF233CA8A7002CD197 /* Frameworks */,
@@ -335,7 +335,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C561BE317DA4B596EFF4F0FC /* [CP] Check Pods Manifest.lock */ = {
+		6CF5B103661DBADB898D9DAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,7 +536,7 @@
 		};
 		D251EAEB233CA8A7002CD197 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC2C4ADA0732B327F8035AA9 /* Pods-MBurgerSwift.debug.xcconfig */;
+			baseConfigurationReference = EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -565,7 +565,7 @@
 		};
 		D251EAEC233CA8A7002CD197 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC06F84B8449B1E55949AF40 /* Pods-MBurgerSwift.release.xcconfig */;
+			baseConfigurationReference = A6541B0AECCC724CEEE7CC90 /* Pods-MBurgerSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

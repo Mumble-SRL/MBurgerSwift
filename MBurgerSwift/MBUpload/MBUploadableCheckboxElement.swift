@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MBNetworking
+import MBNetworkingSwift
 
 /// An uploadable element representing a checkbox.
 public struct MBUploadableCheckboxElement: MBUplodableElementProtocol {

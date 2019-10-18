@@ -104,7 +104,7 @@ public struct MBUser: Codable, Equatable {
         case data
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         userId = try container.decode(Int.self, forKey: .userId)
@@ -120,7 +120,7 @@ public struct MBUser: Codable, Equatable {
         }
     }
     
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(userId, forKey: .userId)
