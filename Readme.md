@@ -26,7 +26,7 @@ To integrate the MBurgerSwift into your Xcode project using CocoaPods, specify i
 platform :ios, '10.0'
 
 target 'TargetName' do
-    pod 'MBurgerSwift', git: 'https://github.com/Mumble-SRL/MBurgerSwift-iOS'
+    pod 'MBurgerSwift'
 end
 ```
 
@@ -45,7 +45,7 @@ CocoaPods is the preferred methot to install the library.
 
 To install the library manually drag and drop the folder `MBurgerSwift` to your project structure in XCode. 
 
-Note that `MBurgerSwift` has `MBNetworking (1.0)` and `SAMKeychain (1.5)` as dependencies, so you have to install also this libraries.
+Note that `MBurgerSwift` has `MBNetworking (1.0.4)` and `SAMKeychain (1.5)` as dependencies, so you have to install also this libraries.
 
 # Initialization
 
@@ -229,23 +229,23 @@ All the object models implement the `Codable` protocol so you can serialize and 
 * `MBBlock`
 * `MBSection`
 * `MBElement`
-* `MBTextElement`
-* `MBImagesElement`
-* `MBImage`
-* `MBMediaElement`
 * `MBFile`
-* `MBCheckboxElement`
-* `MBWysiwygElement`
-* `MBDateElement`
 * `MBAddressElement`
+* `MBCheckboxElement`
+* `MBDateElement`
 * `MBDropdownElement`
-* `MBPollElement`
 * `MBGeneralElement`
+* `MBImagesElement`
+* `MBMarkdownElement`
+* `MBMediaElement`
+* `MBRelationElement`
+* `MBPollElement`
+* `MBTextElement`
 * `MBUser`
 
 # Equality
 
-All the model objects implement the `isEqual:` function based on the corresponding id. So for example an MBSection will result equal to another MBSection object if they have the same `sectionId`.
+All the model objects are conform to the `Equatable` protcol based on the corresponding id. So, for example an MBSection will result equal to another MBSection object if they have the same `sectionId`.
 
 # Admin
 
@@ -260,7 +260,7 @@ Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBur
 Read the full push notifications documentation apis [here](https://github.com/Mumble-SRL/MBurger-iOS/tree/master/MBurger/MBPush).
 
 # Plugins
-You can add more to MBurger with plugins, classes that conforms to the `MPPlugin` protocol that can extend the functionalities of MBurger. An example of a plugin is [MPPayments](https://github.com/Mumble-SRL/MBPayments-iOS.git) a plugin that you to charge the users with single payments or sbscription.
+You can add more to MBurger with plugins, classes that conforms to the `MBPluginProtocol` that can extend the functionalities of MBurger. An example of a plugin is [MPPayments](https://github.com/Mumble-SRL/MBPayments-iOS.git) a plugin that you to charge the users with single payments or sbscription.
 
 # Documentation
 

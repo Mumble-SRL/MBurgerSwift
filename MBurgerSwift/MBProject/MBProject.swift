@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents a MBurger project.
-public struct MBProject: Codable {
+public struct MBProject: Codable, Equatable {
     
     /// The id of the project.
     let projectId: Int
@@ -44,6 +44,11 @@ public struct MBProject: Codable {
         } else {
             contracts = nil
         }
+    }
+    
+    // MARK: - Equatable Protocol
+    public static func == (lhs: MBProject, rhs: MBProject) -> Bool {
+        return lhs.projectId == rhs.projectId
     }
     
     enum CodingKeys: String, CodingKey {

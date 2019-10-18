@@ -9,7 +9,7 @@
 import Foundation
 
 /// An object representing the user informations.
-public struct MBUser {
+public struct MBUser: Codable, Equatable {
     ///The id of the user.
     public let userId: Int
     
@@ -85,6 +85,11 @@ public struct MBUser {
         }
         
         data = dictionary["data"] as? [String: Any]
+    }
+    
+    // MARK: - Equatable protocol
+    public static func == (lhs: MBUser, rhs: MBUser) -> Bool {
+        return lhs.userId == rhs.userId
     }
     
     enum CodingKeys: String, CodingKey {

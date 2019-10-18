@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents a Legal contract in MBurger.
-public struct MBLegalContract: Codable {
+public struct MBLegalContract: Codable, Equatable {
     /// The id of the contract
     let contractId: Int
 
@@ -71,5 +71,9 @@ public struct MBLegalContract: Codable {
                   active: active,
                   creationDate: creationDate,
                   updateDate: updateDate)
+    }
+    
+    public static func == (lhs: MBLegalContract, rhs: MBLegalContract) -> Bool {
+        return lhs.contractId == rhs.contractId
     }
 }

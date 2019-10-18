@@ -9,7 +9,7 @@
 import Foundation
 
 /// A protocol to which all MBElements needs to be conform, it has all the basic data that a MBElement needs.
-public protocol MBElementProtocol: Codable {
+public protocol MBElementProtocol: Codable, Equatable {
     var order: Int { get }
     var id: Int { get }
     var type: MBElementType { get }

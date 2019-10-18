@@ -9,7 +9,7 @@
 import Foundation
 
 /// This class represents a file.
-public class MBFile: Codable {
+public class MBFile: Codable, Equatable {
     /// The id of the file.
     public let fileId: Int
     
@@ -46,6 +46,10 @@ public class MBFile: Codable {
         let url = URL(string: imageUrlString)!
         
         self.init(fileId: fileId, url: url, mimeType: mimeType, size: size)
+    }
+    
+    public static func == (lhs: MBFile, rhs: MBFile) -> Bool {
+        return lhs.fileId == rhs.fileId
     }
     
     enum CodingKeys: String, CodingKey {

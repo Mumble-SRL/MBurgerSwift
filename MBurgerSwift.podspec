@@ -15,11 +15,11 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "MBurgerSwift2"
+  spec.name         = "MBurgerSwift"
   spec.version      = "1.0.1"
   spec.summary      = "A Swift version of MBurger SDK"
   spec.description  = "MBurger is a client libary, written in Swift, that can be used to interact with the MBurger API."
-  spec.homepage     = "https://github.com/Mumble-SRL/MBurger-iOS"
+  spec.homepage     = "https://github.com/Mumble-SRL/MBurgerSwift"
 
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
+  spec.license      = { :type => "Apache", :file => "LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://gitlab.mumbleserver.it/iOS/mburgerswift2" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,7 +116,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency 'SAMKeychain'
-  spec.dependency 'MBNetworking'
+  spec.dependency 'MBNetworkingSwift'
 
   spec.swift_version = "5"
 
