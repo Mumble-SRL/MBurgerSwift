@@ -38,10 +38,6 @@ public class MBGeneralElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
-    override public func value() -> Any? {
-        return generalValue
-    }
-    
     enum CodingKeysElement: String, CodingKey {
         case generalValue
         case type

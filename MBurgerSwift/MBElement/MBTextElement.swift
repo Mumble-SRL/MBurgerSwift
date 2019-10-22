@@ -33,10 +33,6 @@ public class MBTextElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
-    override public func value() -> Any? {
-        return text
-    }
-    
     enum CodingKeysElement: String, CodingKey {
         case text
     }

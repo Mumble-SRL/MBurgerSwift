@@ -101,15 +101,7 @@ public class MBSection: Codable, Equatable {
         try container.encode(inEvidence, forKey: .inEvidence)
     }
     
-    public func mapElements(toObject object: NSObject, mapping: [String: String]) -> NSObject {
-        mapping.forEach { mapElement in
-            let selfKeyPath = mapElement.key
-            let objectKeyPath = mapElement.value
-            if let currentElement = self.elements?[selfKeyPath] {
-                let value = currentElement.value() ?? currentElement
-                object.setValue(value, forKeyPath: objectKeyPath)
-            }
-        }
-        return object
+    func mapElements<T: Decodable>(toObject object: T.Type, withMapping: [String: String]) throws -> T {
+        return try JSONDecoder().decode(object, from: Data())
     }
 }

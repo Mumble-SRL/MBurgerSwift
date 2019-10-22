@@ -15,10 +15,6 @@ public protocol MBElementProtocol: Codable, Equatable {
     var type: MBElementType { get }
     var name: String { get set }
     
-    /// The value of the element.
-    /// - Returns: The value of the element, the class of the value depends on the type of element we are calling this function.
-    func value() -> Any?
-    
     init(dictionary: [String: Any])
 }
 

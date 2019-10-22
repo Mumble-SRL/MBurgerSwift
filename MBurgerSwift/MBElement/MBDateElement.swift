@@ -36,10 +36,6 @@ public class MBDateElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
-    override public func value() -> Any? {
-        return date
-    }
-    
     enum CodingKeysElement: String, CodingKey {
         case date
     }

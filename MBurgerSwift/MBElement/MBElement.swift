@@ -22,10 +22,6 @@ public class MBElement: MBElementProtocol {
     /// The name of the element.
     public var name: String
     
-    public func value() -> Any? {
-        return nil
-    }
-    
     /// Initializes an element with an element id, name, type and order.
     /// - Parameters:
     ///   - elementId: The `id` of the element.

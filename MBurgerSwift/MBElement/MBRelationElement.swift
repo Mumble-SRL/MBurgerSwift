@@ -45,10 +45,6 @@ public class MBRelationElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
-    override public func value() -> Any? {
-        return ["blockId": blockId, "sectionId": sectionId]
-    }
-    
     enum CodingKeysElement: String, CodingKey {
         case blockId
         case sectionId

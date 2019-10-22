@@ -68,10 +68,6 @@ public class MBMediaElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
-    override public func value() -> Any? {
-        return medias
-    }
-    
     enum CodingKeysElement: String, CodingKey {
         case mediaType
         case medias

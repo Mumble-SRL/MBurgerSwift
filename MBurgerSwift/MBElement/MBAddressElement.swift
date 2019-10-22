@@ -68,12 +68,6 @@ public class MBAddressElement: MBElement {
         super.init(dictionary: dictionary)
     }
     
-    override public func value() -> Any? {
-        return ["latitude": latitude,
-        "longitude": longitude,
-        "address": address]
-    }
-    
     enum CodingKeysElement: String, CodingKey {
         case address
         case latitude

@@ -51,6 +51,8 @@
 		D2F24C86233E3F94000F1274 /* MBUserContractStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */; };
 		D2F24C88233E3FFD000F1274 /* MBUserPublishedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */; };
 		D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */; };
+		D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE361235F417F005A9BB8 /* MBDecoder.swift */; };
+		D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,8 @@
 		D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUserContractStatus.swift; sourceTree = "<group>"; };
 		D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUserPublishedSection.swift; sourceTree = "<group>"; };
 		D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginProtocol.swift; sourceTree = "<group>"; };
+		D2FEE361235F417F005A9BB8 /* MBDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDecoder.swift; sourceTree = "<group>"; };
+		D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDecodable.swift; sourceTree = "<group>"; };
 		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 				D251EAF2233CAF7A002CD197 /* MBApiManager.swift */,
 				D251EAFA233CC071002CD197 /* MBManager.swift */,
 				D259E49B2344982E00337A56 /* MBUpload */,
+				D2FEE360235F415B005A9BB8 /* MBDecodable */,
 				D2C70666233CEA69002A70F4 /* MBElement */,
 				D2C70654233CE604002A70F4 /* MBParameter */,
 				D2C7064D233CCE20002A70F4 /* MBPagination */,
@@ -256,6 +261,15 @@
 				D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */,
 			);
 			path = MBPlugin;
+			sourceTree = "<group>";
+		};
+		D2FEE360235F415B005A9BB8 /* MBDecodable */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEE361235F417F005A9BB8 /* MBDecoder.swift */,
+				D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */,
+			);
+			path = MBDecodable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +381,7 @@
 				D2C7067C233CFC96002A70F4 /* MBFile.swift in Sources */,
 				D2C7065A233CE67A002A70F4 /* MBPaginationParameter.swift in Sources */,
 				D2C70656233CE617002A70F4 /* MBParameter.swift in Sources */,
+				D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */,
 				D20EFEEB2344A17A0057A1B0 /* MBUploadableTextElement.swift in Sources */,
 				D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */,
 				D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */,
@@ -381,6 +396,7 @@
 				D251EAF5233CBF6E002CD197 /* MBProject.swift in Sources */,
 				D2C70660233CE761002A70F4 /* MBGeofenceParameter.swift in Sources */,
 				D2C7067A233CFC57002A70F4 /* MBImagesElement.swift in Sources */,
+				D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */,
 				D20EFEF12344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift in Sources */,
 				D2F24C82233E34D2000F1274 /* MBAuthContractAcceptanceParameter.swift in Sources */,
 				D2C70670233CF1E1002A70F4 /* MBPollElement.swift in Sources */,
