@@ -73,28 +73,6 @@ extension MBDecoder: Decoder {
         func superDecoder(forKey key: Key) throws -> Decoder {
             return decoder
         }
-        
-//        func decode(_ type: MBTextElement.Type, forKey key: Key) throws -> MBTextElement {
-//            guard let element = decoder.elements[key.stringValue] else {
-//                throw MBDecodingErrors.keyNotFoundInElements
-//            }
-//            
-//            guard let textElement = element as? MBTextElement else {
-//                throw MBDecodingErrors.wrongType(expecting: type, reality: element)
-//            }
-//            return textElement
-//        }
-//        
-//        func decode(_ type: MBMarkdownElement.Type, forKey key: Key) throws -> MBMarkdownElement {
-//            guard let element = decoder.elements[key.stringValue] else {
-//                throw MBDecodingErrors.keyNotFoundInElements
-//            }
-//            
-//            guard let markdownElement = element as? MBMarkdownElement else {
-//                throw MBDecodingErrors.wrongType(expecting: type, reality: element)
-//            }
-//            return markdownElement
-//        }
     }
     
     public func unkeyedContainer() throws -> UnkeyedDecodingContainer {
