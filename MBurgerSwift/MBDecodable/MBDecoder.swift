@@ -249,23 +249,6 @@ public extension MBDecoder {
         /// Attempted to decode a type which is not `Decodable`.
         case typeNotConformingToDecodable(Any.Type)
         
-        /// Attempted to decode an `Int` which can't be represented. This happens in 32-bit
-        /// code when the stored `Int` doesn't fit into 32 bits.
-        case intOutOfRange(Int64)
-        
-        /// Attempted to decode a `UInt` which can't be represented. This happens in 32-bit
-        /// code when the stored `UInt` doesn't fit into 32 bits.
-        case uintOutOfRange(UInt64)
-        
-        /// Attempted to decode a `Bool` where the byte representing it was not a `1` or a
-        /// `0`.
-        case boolOutOfRange(UInt8)
-        
-        /// Attempted to decode a `String` but the encoded `String` data was not valid
-        /// UTF-8.
-        case invalidUTF8([UInt8])
-        
-        
         // MARK: - real mumble errors for the SDK
         case keyNotFoundInElements
         
