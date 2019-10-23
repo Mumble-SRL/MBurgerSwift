@@ -51,6 +51,16 @@ extension MBDecoder: Decoder {
             guard let entry = decoder.elements[key.stringValue] else {
                 throw MBDecodingErrors.keyNotFoundInElements
             }
+            guard let element = try decoder.find(entry, as: type) else {
+                throw MBDecodingErrors.entryNotConformingToDecodable(entry)
+            }
+            return element
+        }
+        
+        func decodeIfPresent<T>(_ type: T.Type, forKey key: Key) throws -> T? where T : Decodable {
+            guard let entry = decoder.elements[key.stringValue] else {
+                throw MBDecodingErrors.keyNotFoundInElements
+            }
             return try decoder.find(entry, as: type)
         }
         
@@ -113,7 +123,6 @@ extension MBDecoder: Decoder {
         if let mediaElement = value as? MBMediaElement {
             return mediaElement.firstMedia
         }
-        
         throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
     }
     
@@ -152,21 +161,18 @@ extension MBDecoder: Decoder {
         return relation
     }
     
-    func find<T : Decodable>(_ value: [String: MBElement], as type: T.Type) throws -> T {
+    func find<T : Decodable>(_ value: [String: MBElement], as type: T.Type) throws -> T? {
         var result = [String: Any]()
         
         for (dictKey, dictValue) in value {
             let key = dictKey
             result[key] = try find_(dictValue, as: type)
         }
-        return result as! T
+        return result as? T
     }
     
-    func find<T : Decodable>(_ value: MBElement, as type: T.Type) throws -> T {
-        guard let elementFound = try find_(value, as: type) as? T else {
-            throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
-        }
-        return elementFound
+    func find<T : Decodable>(_ value: MBElement, as type: T.Type) throws -> T? {
+        return try find_(value, as: type) as? T
     }
     
     func find_(_ value: MBElement, as type: Decodable.Type) throws -> Any {
@@ -188,7 +194,7 @@ extension MBDecoder: Decoder {
         case is MBFile.Type:
             return try self.decode(value: value, ofType: MBFile.self) as Any
         default:
-            throw MBDecodingErrors.typeNotConformingToBinaryDecodable(type)
+            throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
         }
     }
     
@@ -196,7 +202,7 @@ extension MBDecoder: Decoder {
         if let decodableType = type as? MBDecodable.Type {
             return try decodableType.init(fromBinary: self) as! T
         }
-        throw MBDecodingErrors.typeNotConformingToBinaryDecodable(type)
+        throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
     }
     
     // MARK: - UnkeyedContainer
@@ -235,19 +241,14 @@ extension MBDecoder: Decoder {
 
 /// The error type.
 public extension MBDecoder {
-    /// All errors which `BinaryDecoder` itself can throw.
+    /// All errors which `MBDecoder` itself can throw.
     enum MBDecodingErrors: Swift.Error {
         /// The decoder hit the end of the data while the values it was decoding expected
         /// more.
         case prematureEndOfData
         
-        /// Attempted to decode a type which is `Decodable`, but not `BinaryDecodable`. (We
-        /// require `BinaryDecodable` because `BinaryDecoder` doesn't support full keyed
-        /// coding functionality.)
-        case typeNotConformingToBinaryDecodable(Decodable.Type)
-        
         /// Attempted to decode a type which is not `Decodable`.
-        case typeNotConformingToDecodable(Any.Type)
+        case entryNotConformingToDecodable(MBElement)
         
         // MARK: - real mumble errors for the SDK
         case keyNotFoundInElements
