@@ -243,14 +243,9 @@ extension MBDecoder: Decoder {
 public extension MBDecoder {
     /// All errors which `MBDecoder` itself can throw.
     enum MBDecodingErrors: Swift.Error {
-        /// The decoder hit the end of the data while the values it was decoding expected
-        /// more.
-        case prematureEndOfData
-        
         /// Attempted to decode a type which is not `Decodable`.
         case entryNotConformingToDecodable(MBElement)
-        
-        // MARK: - real mumble errors for the SDK
+    
         case keyNotFoundInElements
         
         case wrongedType(expecting: Decodable.Type, reality: MBElement)
