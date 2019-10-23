@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		283E7F41713B42786A3BCB8D /* Pods_MBurgerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916961B7414FD99ED57A63B6 /* Pods_MBurgerSwift.framework */; };
-		D20EFEE92344A1340057A1B0 /* MBUplodableElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEE82344A1340057A1B0 /* MBUplodableElementProtocol.swift */; };
-		D20EFEEB2344A17A0057A1B0 /* MBUploadableTextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEEA2344A17A0057A1B0 /* MBUploadableTextElement.swift */; };
-		D20EFEED2344A5E90057A1B0 /* MBUploadableImagesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEEC2344A5E90057A1B0 /* MBUploadableImagesElement.swift */; };
-		D20EFEEF2344B6810057A1B0 /* MBUploadableFilesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEEE2344B6810057A1B0 /* MBUploadableFilesElement.swift */; };
-		D20EFEF12344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEF02344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift */; };
-		D20EFEF32344D80B0057A1B0 /* MBAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EFEF22344D80B0057A1B0 /* MBAdmin.swift */; };
 		D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228B4A4234B8FD200C7D877 /* MBRelationElement.swift */; };
 		D22E4A59233E22BF0041A351 /* MBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E4A58233E22BF0041A351 /* MBAuth.swift */; };
 		D251EAE7233CA8A7002CD197 /* MBurgerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = D251EAE5233CA8A7002CD197 /* MBurgerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,7 +17,6 @@
 		D251EAF5233CBF6E002CD197 /* MBProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D251EAF4233CBF6E002CD197 /* MBProject.swift */; };
 		D251EAF7233CBF8E002CD197 /* MBLegalContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D251EAF6233CBF8E002CD197 /* MBLegalContract.swift */; };
 		D251EAFB233CC071002CD197 /* MBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D251EAFA233CC071002CD197 /* MBManager.swift */; };
-		D259E49F23449A9300337A56 /* MBUploadableElementsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259E49E23449A9300337A56 /* MBUploadableElementsFactory.swift */; };
 		D2C7064F233CCE38002A70F4 /* MBPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C7064E233CCE38002A70F4 /* MBPaginationInfo.swift */; };
 		D2C70651233CCEA2002A70F4 /* MBSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70650233CCEA2002A70F4 /* MBSection.swift */; };
 		D2C70653233CCEAB002A70F4 /* MBBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70652233CCEAB002A70F4 /* MBBlock.swift */; };
@@ -58,12 +51,6 @@
 /* Begin PBXFileReference section */
 		916961B7414FD99ED57A63B6 /* Pods_MBurgerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBurgerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6541B0AECCC724CEEE7CC90 /* Pods-MBurgerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.release.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.release.xcconfig"; sourceTree = "<group>"; };
-		D20EFEE82344A1340057A1B0 /* MBUplodableElementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUplodableElementProtocol.swift; sourceTree = "<group>"; };
-		D20EFEEA2344A17A0057A1B0 /* MBUploadableTextElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableTextElement.swift; sourceTree = "<group>"; };
-		D20EFEEC2344A5E90057A1B0 /* MBUploadableImagesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableImagesElement.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		D20EFEEE2344B6810057A1B0 /* MBUploadableFilesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableFilesElement.swift; sourceTree = "<group>"; };
-		D20EFEF02344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableCheckboxElement.swift; sourceTree = "<group>"; };
-		D20EFEF22344D80B0057A1B0 /* MBAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAdmin.swift; sourceTree = "<group>"; };
 		D228B4A4234B8FD200C7D877 /* MBRelationElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRelationElement.swift; sourceTree = "<group>"; };
 		D22E4A58233E22BF0041A351 /* MBAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAuth.swift; sourceTree = "<group>"; };
 		D251EAE2233CA8A7002CD197 /* MBurgerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBurgerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +62,6 @@
 		D251EAF4233CBF6E002CD197 /* MBProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProject.swift; sourceTree = "<group>"; };
 		D251EAF6233CBF8E002CD197 /* MBLegalContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLegalContract.swift; sourceTree = "<group>"; };
 		D251EAFA233CC071002CD197 /* MBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBManager.swift; sourceTree = "<group>"; };
-		D259E49E23449A9300337A56 /* MBUploadableElementsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUploadableElementsFactory.swift; sourceTree = "<group>"; };
 		D2C7064E233CCE38002A70F4 /* MBPaginationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPaginationInfo.swift; sourceTree = "<group>"; };
 		D2C70650233CCEA2002A70F4 /* MBSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSection.swift; sourceTree = "<group>"; };
 		D2C70652233CCEAB002A70F4 /* MBBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBlock.swift; sourceTree = "<group>"; };
@@ -179,7 +165,6 @@
 				D251EAF0233CAF48002CD197 /* MBClient.swift */,
 				D251EAF2233CAF7A002CD197 /* MBApiManager.swift */,
 				D251EAFA233CC071002CD197 /* MBManager.swift */,
-				D259E49B2344982E00337A56 /* MBAdmin */,
 				D2C70684233D02AA002A70F4 /* MBAuth */,
 				D24E2E752360971A00DB56A1 /* MBBlock */,
 				D2FEE360235F415B005A9BB8 /* MBDecodable */,
@@ -200,20 +185,6 @@
 				D251EAF6233CBF8E002CD197 /* MBLegalContract.swift */,
 			);
 			path = MBProject;
-			sourceTree = "<group>";
-		};
-		D259E49B2344982E00337A56 /* MBAdmin */ = {
-			isa = PBXGroup;
-			children = (
-				D20EFEF22344D80B0057A1B0 /* MBAdmin.swift */,
-				D259E49E23449A9300337A56 /* MBUploadableElementsFactory.swift */,
-				D20EFEE82344A1340057A1B0 /* MBUplodableElementProtocol.swift */,
-				D20EFEEA2344A17A0057A1B0 /* MBUploadableTextElement.swift */,
-				D20EFEEC2344A5E90057A1B0 /* MBUploadableImagesElement.swift */,
-				D20EFEEE2344B6810057A1B0 /* MBUploadableFilesElement.swift */,
-				D20EFEF02344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift */,
-			);
-			path = MBAdmin;
 			sourceTree = "<group>";
 		};
 		D2C7064D233CCE20002A70F4 /* MBPagination */ = {
@@ -398,14 +369,10 @@
 				D2C7065A233CE67A002A70F4 /* MBPaginationParameter.swift in Sources */,
 				D2C70656233CE617002A70F4 /* MBParameter.swift in Sources */,
 				D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */,
-				D20EFEEB2344A17A0057A1B0 /* MBUploadableTextElement.swift in Sources */,
 				D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */,
 				D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */,
-				D20EFEE92344A1340057A1B0 /* MBUplodableElementProtocol.swift in Sources */,
-				D20EFEED2344A5E90057A1B0 /* MBUploadableImagesElement.swift in Sources */,
 				D2C70674233CF7D6002A70F4 /* MBGeneralElement.swift in Sources */,
 				D2C70668233CEADB002A70F4 /* MBElementFactory.swift in Sources */,
-				D20EFEF32344D80B0057A1B0 /* MBAdmin.swift in Sources */,
 				D2F24C86233E3F94000F1274 /* MBUserContractStatus.swift in Sources */,
 				D2C70658233CE631002A70F4 /* MBSortParameter.swift in Sources */,
 				D2F24C88233E3FFD000F1274 /* MBUserPublishedSection.swift in Sources */,
@@ -413,14 +380,12 @@
 				D2C70660233CE761002A70F4 /* MBGeofenceParameter.swift in Sources */,
 				D2C7067A233CFC57002A70F4 /* MBImagesElement.swift in Sources */,
 				D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */,
-				D20EFEF12344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift in Sources */,
 				D2F24C82233E34D2000F1274 /* MBAuthContractAcceptanceParameter.swift in Sources */,
 				D2C70670233CF1E1002A70F4 /* MBPollElement.swift in Sources */,
 				D22E4A59233E22BF0041A351 /* MBAuth.swift in Sources */,
 				D2C70676233CF88E002A70F4 /* MBAddressElement.swift in Sources */,
 				D2C7066C233CEF15002A70F4 /* MBTextElement.swift in Sources */,
 				D251EAEE233CA8E0002CD197 /* MBElementProtocol.swift in Sources */,
-				D259E49F23449A9300337A56 /* MBUploadableElementsFactory.swift in Sources */,
 				D2C70653233CCEAB002A70F4 /* MBBlock.swift in Sources */,
 				D2C7067E233CFCD4002A70F4 /* MBMediaElement.swift in Sources */,
 				D251EAF1233CAF48002CD197 /* MBClient.swift in Sources */,
@@ -437,7 +402,6 @@
 				D2C70678233CFB7F002A70F4 /* MBDateElement.swift in Sources */,
 				D2C70662233CE951002A70F4 /* MBGeneralParameter.swift in Sources */,
 				D2C7065E233CE742002A70F4 /* MBFilterParameter.swift in Sources */,
-				D20EFEEF2344B6810057A1B0 /* MBUploadableFilesElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -240,10 +240,6 @@ All the object models implement the `Codable` protocol so you can serialize and 
 
 All the model objects are conform to the `Equatable` protcol based on the corresponding id (e.g. an MBSection will result equal to another MBSection object if they have the same `sectionId`)
 
-# Admin
-
-Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurger/MBAdmin).
-
 # Authentication
 
 Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth).
