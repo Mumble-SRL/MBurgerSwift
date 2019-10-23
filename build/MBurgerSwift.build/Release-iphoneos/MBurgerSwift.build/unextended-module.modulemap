@@ -1,0 +1,10 @@
+framework module MBurgerSwift {
+  umbrella header "MBurgerSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module MBurgerSwift.__Swift {
+    exclude header "MBurgerSwift-Swift.h"
+}

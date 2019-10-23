@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MBApiManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MBApiManager" class="dashAnchor"></a>
+    <a title="MBApiManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MBurgerSwift Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MBurgerSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MBApiManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MBAddressElement.html">MBAddressElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBApiManager.html">MBApiManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBAuthContractAcceptanceParameter.html">MBAuthContractAcceptanceParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBBlock.html">MBBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBCheckboxElement.html">MBCheckboxElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBClient.html">MBClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDateElement.html">MBDateElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDecoder.html">MBDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDecoder/MBDecodingErrors.html">– MBDecodingErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDropdownElement.html">MBDropdownElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBElement.html">MBElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBFile.html">MBFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBGeneralElement.html">MBGeneralElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBImagesElement.html">MBImagesElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBManager.html">MBManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBMarkdownElement.html">MBMarkdownElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBMediaElement.html">MBMediaElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBPollElement.html">MBPollElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBRelationElement.html">MBRelationElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBSection.html">MBSection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBTextElement.html">MBTextElement</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MBAuthSocialTokenType.html">MBAuthSocialTokenType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MBElementType.html">MBElementType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MBMediaType.html">MBMediaType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MBDecodable.html">MBDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MBElementProtocol.html">MBElementProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MBParameter.html">MBParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MBPluginProtocol.html">MBPluginProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/MBAuth.html">MBAuth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBElementFactory.html">MBElementFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBFilterParameter.html">MBFilterParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBGeneralParameter.html">MBGeneralParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBGeofenceParameter.html">MBGeofenceParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBLegalContract.html">MBLegalContract</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBPaginationParameter.html">MBPaginationParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBProject.html">MBProject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBSortParameter.html">MBSortParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBUser.html">MBUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBUserContractStatus.html">MBUserContractStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBUserPublishedSection.html">MBUserPublishedSection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12MBurgerSwift7MBImagea">MBImage</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MBApiManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">MBApiManager</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is responsible to make all the networking requests to the MBurger Api, MBManager, MBClient and MBAdmin are built above this class.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift12MBApiManagerC7requestyySS_S2SXeXeXeSbXeySDySSypGcys5Error_pctcACmFZ"></a>
+                    <a name="//apple_ref/swift/Method/request(withToken:locale:apiName:method:headers:parameters:development:encoding:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift12MBApiManagerC7requestyySS_S2SXeXeXeSbXeySDySSypGcys5Error_pctcACmFZ">request(withToken:locale:apiName:method:headers:parameters:development:encoding:success:failure:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls the api to the MBurger endpoint with the parameters specified. At the end of the network call it will be called the success block or the failure block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">request</span><span class="p">(</span><span class="n">withToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">locale</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">apiName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">method</span><span class="p">:</span> <span class="kt">HTTPMethod</span><span class="p">,</span>
+                          <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">HTTPHeader</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <span class="nv">development</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                          <span class="nv">encoding</span><span class="p">:</span> <span class="kt">ParameterEncoder</span> <span class="o">=</span> <span class="kt">JSONParameterEncoder</span><span class="o">.</span><span class="k">default</span><span class="p">,</span>
+                          <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">response</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                          <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>token</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The api token used to call the MBurger Api.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The locale passed to the api call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the api to call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>HTTPMethod</code> of the request, <code>.get</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The headers for the request, <code>nil</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The parameters for the request, <code>nil</code> by default, its an alias for <code>[String: Any]</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>development</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If it&rsquo;s in development mode, <code>false</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encoding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object that implements <code>ParameterEncoder</code>, used to encode the parameters</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that will be called when the request ends successfully. This block has no return value and takes one argument.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>[String: Any]</code> representation of the response of the call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error describing the error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift12MBApiManagerC6uploadyySS_S2SXeXeXeSbXetcACmFZ"></a>
+                    <a name="//apple_ref/swift/Method/upload(withToken:locale:apiName:method:headers:multipartParameters:development:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift12MBApiManagerC6uploadyySS_S2SXeXeXeSbXetcACmFZ">upload(withToken:locale:apiName:method:headers:multipartParameters:development:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls the api to the MBurger endpoint with the parameters specified. At the end of the network call it will be called the success block or the failure block. This is used to upload elements to MBurger.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">upload</span><span class="p">(</span><span class="n">withToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">locale</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">apiName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">method</span><span class="p">:</span> <span class="kt">HTTPMethod</span><span class="p">,</span>
+                         <span class="nv">headers</span><span class="p">:</span> <span class="p">[</span><span class="kt">HTTPHeader</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                         <span class="nv">multipartParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">MBMultipartForm</span><span class="p">],</span>
+                         <span class="nv">development</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                         <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span><span class="p">(</span><span class="kt">MBMultipartResponse</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>token</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The api token used to call the MBurger Api.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The locale passed to the api call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the api to call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>HTTPMethod</code> of the request, <code>.get</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The headers for the request, <code>nil</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>multipartParameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of <code>MBMultipartForm</code> passed as form data with the request.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>development</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If it&rsquo;s in development mode, <code>false</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that will be called when the request finishes, successfully or with error, the block will have a parameter (the <code>MBMultipartResponse</code>) and will return no value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/Mumble-SRL/MBurgerSwift" target="_blank" rel="external">Alessandro Viviani</a>. All rights reserved. (Last updated: 2019-10-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

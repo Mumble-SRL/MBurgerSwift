@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MBDecoder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MBDecoder" class="dashAnchor"></a>
+    <a title="MBDecoder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MBurgerSwift Docs</a> (83% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MBurgerSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MBDecoder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MBAddressElement.html">MBAddressElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBApiManager.html">MBApiManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBAuthContractAcceptanceParameter.html">MBAuthContractAcceptanceParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBBlock.html">MBBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBCheckboxElement.html">MBCheckboxElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBClient.html">MBClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDateElement.html">MBDateElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDecoder.html">MBDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDecoder/MBDecodingErrors.html">– MBDecodingErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDropdownElement.html">MBDropdownElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBElement.html">MBElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBFile.html">MBFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBGeneralElement.html">MBGeneralElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBImagesElement.html">MBImagesElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBManager.html">MBManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBMarkdownElement.html">MBMarkdownElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBMediaElement.html">MBMediaElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBPollElement.html">MBPollElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBRelationElement.html">MBRelationElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBSection.html">MBSection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MBTextElement.html">MBTextElement</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MBAuthSocialTokenType.html">MBAuthSocialTokenType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MBElementType.html">MBElementType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MBMediaType.html">MBMediaType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MBDecodable.html">MBDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MBElementProtocol.html">MBElementProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MBParameter.html">MBParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MBPluginProtocol.html">MBPluginProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/MBAuth.html">MBAuth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBElementFactory.html">MBElementFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBFilterParameter.html">MBFilterParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBGeneralParameter.html">MBGeneralParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBGeofenceParameter.html">MBGeofenceParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBLegalContract.html">MBLegalContract</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBPaginationParameter.html">MBPaginationParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBProject.html">MBProject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBSortParameter.html">MBSortParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBUser.html">MBUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBUserContractStatus.html">MBUserContractStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MBUserPublishedSection.html">MBUserPublishedSection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12MBurgerSwift7MBImagea">MBImage</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MBDecoder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBDecoder</span></code></pre>
+
+                </div>
+              </div>
+            <p>A type that can decode itself from an external representation.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift9MBDecoderC8elementsACSDySSAA9MBElementCG_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(elements:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift9MBDecoderC8elementsACSDySSAA9MBElementCG_tcfc">init(elements:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new instance of MBDecoder.</p>
+
+<ul>
+<li>elements: The elements of the MBSection.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">elements</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt"><a href="../Classes/MBElement.html">MBElement</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift9MBDecoderC6decode_8elementsxxm_SDySSAA9MBElementCGtKAA11MBDecodableRzlFZ"></a>
+                    <a name="//apple_ref/swift/Method/decode(_:elements:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift9MBDecoderC6decode_8elementsxxm_SDySSAA9MBElementCGtKAA11MBDecodableRzlFZ">decode(_:elements:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for creating a decoder and decoding a value.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Classes/MBDecoder/MBDecodingErrors.html">MBDecodingErrors</a></code> if the decoding process detects an error.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">decode</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">elements</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt"><a href="../Classes/MBElement.html">MBElement</a></span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/MBDecodable.html">MBDecodable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The .Type of the entity.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The elements of the MBSection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The entity.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s7DecoderP10codingPathSays9CodingKey_pGvp"></a>
+                    <a name="//apple_ref/swift/Property/codingPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s7DecoderP10codingPathSays9CodingKey_pGvp">codingPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">codingPath</span><span class="p">:</span> <span class="p">[</span><span class="kt">CodingKey</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s7DecoderP8userInfoSDys010CodingUserC3KeyVypGvp"></a>
+                    <a name="//apple_ref/swift/Property/userInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s7DecoderP8userInfoSDys010CodingUserC3KeyVypGvp">userInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">CodingUserInfoKey</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s7DecoderP9container7keyedBys22KeyedDecodingContainerVyqd__Gqd__m_tKs9CodingKeyRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/container(keyedBy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s7DecoderP9container7keyedBys22KeyedDecodingContainerVyqd__Gqd__m_tKs9CodingKeyRd__lF">container(keyedBy:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">container</span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span><span class="p">(</span><span class="n">keyedBy</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Key</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">KeyedDecodingContainer</span><span class="o">&lt;</span><span class="kt">Key</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">CodingKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MBElementsKeyedContainer"></a>
+                <a name="//apple_ref/swift/Section/MBElementsKeyedContainer" class="dashAnchor"></a>
+                <a href="#/MBElementsKeyedContainer">
+                  <h3 class="section-name">MBElementsKeyedContainer</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s7DecoderP16unkeyedContainers015UnkeyedDecodingC0_pyKF"></a>
+                    <a name="//apple_ref/swift/Method/unkeyedContainer()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s7DecoderP16unkeyedContainers015UnkeyedDecodingC0_pyKF">unkeyedContainer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unkeyedContainer</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">UnkeyedDecodingContainer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s7DecoderP20singleValueContainers06Singlec8DecodingD0_pyKF"></a>
+                    <a name="//apple_ref/swift/Method/singleValueContainer()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s7DecoderP20singleValueContainers06Singlec8DecodingD0_pyKF">singleValueContainer()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">singleValueContainer</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">SingleValueDecodingContainer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift9MBDecoderC16MBDecodingErrorsO"></a>
+                    <a name="//apple_ref/swift/Enum/MBDecodingErrors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift9MBDecoderC16MBDecodingErrorsO">MBDecodingErrors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All errors which <code><a href="../Classes/MBDecoder.html">MBDecoder</a></code> itself can throw.</p>
+
+                        <a href="../Classes/MBDecoder/MBDecodingErrors.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">MBDecodingErrors</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/Mumble-SRL/MBurgerSwift" target="_blank" rel="external">Alessandro Viviani</a>. All rights reserved. (Last updated: 2019-10-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
