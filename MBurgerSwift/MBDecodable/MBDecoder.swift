@@ -9,15 +9,26 @@
 import Foundation
 import UIKit
 
+/// A type that can decode itself from an external representation.
 public class MBDecoder {
     private let elements: [String : MBElement]
     
+    /// Creates a new instance of MBDecoder.
+    /// 
+    /// - Parameters:
+    /// - elements: The elements of the MBSection.
     public init(elements: [String : MBElement]) {
         self.elements = elements
     }
 }
 
 public extension MBDecoder {
+    /// A convenience method for creating a decoder and decoding a value.
+    /// - parameter type: The .Type of the entity.
+    /// - parameter elements: The elements of the MBSection.
+    ///
+    /// - Returns: The entity.
+    /// - throws: `MBDecodingErrors` if the decoding process detects an error.
     static func decode<T: MBDecodable>(_ type: T.Type, elements: [String: MBElement]) throws -> T {
         return try MBDecoder(elements: elements).decode(T.self)
     }
@@ -57,6 +68,7 @@ extension MBDecoder: Decoder {
             return element
         }
         
+        /// Decodes a value of the given type for the given key, if present.
         func decodeIfPresent<T>(_ type: T.Type, forKey key: Key) throws -> T? where T : Decodable {
             guard let entry = decoder.elements[key.stringValue] else {
                 throw MBDecodingErrors.keyNotFoundInElements
@@ -161,7 +173,7 @@ extension MBDecoder: Decoder {
         return relation
     }
     
-    func find<T : Decodable>(_ value: [String: MBElement], as type: T.Type) throws -> T? {
+    private func find<T : Decodable>(_ value: [String: MBElement], as type: T.Type) throws -> T? {
         var result = [String: Any]()
         
         for (dictKey, dictValue) in value {
@@ -171,11 +183,14 @@ extension MBDecoder: Decoder {
         return result as? T
     }
     
-    func find<T : Decodable>(_ value: MBElement, as type: T.Type) throws -> T? {
+    private func find<T : Decodable>(_ value: MBElement, as type: T.Type) throws -> T? {
         return try find_(value, as: type) as? T
     }
     
-    func find_(_ value: MBElement, as type: Decodable.Type) throws -> Any {
+    /// Find a value of the given type for the given key, if present.
+    /// - Returns: the corresponding element, if present.
+    /// - throws: `MBDecodingErrors.typeNotConformingToMBDecodable` if the encountered a type that cannot be decoded.
+    private func find_(_ value: MBElement, as type: Decodable.Type) throws -> Any {
         switch type {
         case is String.Type:
             return try self.decode(value: value, ofType: String.self)
@@ -198,9 +213,12 @@ extension MBDecoder: Decoder {
         }
     }
     
-    func decode<T: Decodable>(_ type: T.Type) throws -> T {
+    /// Find a value of the given type for the given key, if present.
+    /// - Returns: the corresponding element, if present.
+    /// - throws: `MBDecodingErrors.typeNotConformingToMBDecodable` if the encountered a type that cannot be decoded.
+    private func decode<T: Decodable>(_ type: T.Type) throws -> T {
         if let decodableType = type as? MBDecodable.Type {
-            return try decodableType.init(fromBinary: self) as! T
+            return try decodableType.init(from: self) as! T
         }
         throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
     }
