@@ -86,10 +86,9 @@ MBClient.getProject(success: { project in
 
 # Blocks
 
-You can retrieve the blocks of the project with the function `getBlocks(withParameters:Success:Failure` like this:
+You can retrieve the blocks of the project with the function `getBlocks(Success:Failure` like this:
 
 ```swift
-
 MBClient.getBlocks(success: { (blocks, paginationInfos) in
 
 }, failure: { (error) in
@@ -108,8 +107,6 @@ If you want to pass another type of parameter you can use the `MBGeneralParamete
 
 So if you want to include a pagination parameter you can do like this:
 
-**Swift**:
-
 ```swift
 let paginationParam = MBPaginationParameter(skip: 0, take: 10)
 MBClient.getBlocks(withParameters: [paginationParam], success: { (blocks, paginationInfos) in
@@ -123,8 +120,6 @@ There is another version of the `getBlocksWithParameters:Success:Failure`,  that
 
 So you could retrieve the informations of all the blocks, all the sections of the blocks and all the elements of the sections with this call:
 
-**Swift**:
-
 ```swift
 MBClient.getBlocks(withParameters: [paginationParam], includingSections: true, includeElements: true, success: { (blocks, paginationInfos) in
 
@@ -135,95 +130,93 @@ MBClient.getBlocks(withParameters: [paginationParam], includingSections: true, i
 
 # Sections
 
-You can retrieve all the sections with a block with the given id with the function `getBlocksWithParameters:Success:Failure` like this:
-
-**Objective-C**:
-
-```objective-c
-[MBClient getSectionsWithBlockId:THE_BLOCK_ID Parameters:nil Success:^(NSArray<MBSection *> *sections, MBPaginationInfo *pagintaionInfo) {
-        
-} Failure:^(NSError *error) {
-        
-}];
-```
-
-**Swift**:
+You can retrieve all the sections with a block with the given id with the function `getSectionsOfBlock:Parameters:Success:Failure` like this:
 
 ```swift
-MBClient.getSectionsWithBlockId(THE_BLOCK_ID, parameters: nil, success: { (sections, paginationInfos) in
+MBClient.getSections(ofBlock: THE_BLOCK_ID, parameters: nil, success: { (sections, paginationInfos) in
 
 }, failure: { (error) in
 
 })
 ```
 
-Like for the blocks there's a version of this function that takes a bool `includeElements` that indicate to include or not the elements of the section se if you want to retrieve all the sections of a block and their elements you can call:
-
-**Objective-C**:
-
-```objective-c
-[MBClient getSectionsWithBlockId:THE_BLOCK_ID IncludeElement:TRUE Parameters:nil Success:^(NSArray<MBSection *> *sections, MBPaginationInfo *pagintaionInfo) {
-        
-} Failure:^(NSError *error) {
-        
-}];
-```
-
-**Swift**:
+Like for the blocks there's a version of this function that takes a bool `elements` that indicate to include or not the elements of the section se if you want to retrieve all the sections of a block and their elements you can call:
 
 ```swift
-MBClient.getSectionsWithBlockId(THE_BLOCK_ID, parameters: nil, includeElements: true, success: { (sections, paginationInfos) in
+MBClient.getSections(ofBlock: THE_BLOCK_ID, parameters: nil, elements: true, success: { (sections, paginationInfos) in
 
 }, failure: { (error) in
 
 })
 ```
 
-# Object mapping
+# Type Decoding
 
-The `MBSection` class has a commodity function that can be used to map the elements of the section to a custom object created by you. For Exaple if you have a `News` object like this
+`MBurgerSwift` has a built in system that can be used to init your custom constructs. You have only to make your construct conform to `MBDecodable` protocol.
 
-```objective-c
-#import <Foundation/Foundation.h>
+For example a `News` that's reflecting a newsfeed block in MBurger: 
 
-@interface News : NSObject
-
-@property NSString *title;
-@property NSString *content;
-@property NSURL *imageUrl;
-@property NSString *link;
-
-@end
-```
-
-And a block in MBurger that represent a newsfeed you could create and populate an array of news object like this:
-
-```objective-c
-NSInteger newsBlockId = 12;
-NSDictionary *mappingDictionary = @{@"title" : @"title",
-                                    @"content" : @"content",
-                                    @"image.firstImage.url" : @"imageUrl",
-                                    @"link" : @"link"};
-NSMutableArray *newsArray = [[NSMutableArray alloc] init];
-[MBClient getBlockWithBlockId:newsBlockId Parameters:nil IncludingSections:YES AndElements:YES Success:^(MBBlock *block) {
-   NSMutableArray *newsArray = [[NSMutableArray alloc] init];
-   for (MBSection *section in block.sections){
-        News *n = [[News alloc] init];
-        [section mapElementsToObject:n withMapping:mappingDictionary];
-        [newsArray addObject:n];
+```swift
+class News: MBDecodable {
+    let text: String
+    let images: [MBImage]
+    let link: String
+    let date: Date
+    
+    enum DecoderCodingKeys: String, CodingKey {
+        case text
+        case images
+        case link
+        case date
     }
- } Failure:^(NSError *error) {
-    [self showError:error];
- }];
+    
+    required init(from decoder: MBDecoder) throws {
+        let container = try decoder.container(keyedBy: DecoderCodingKeys.self)
+        
+        text = try container.decode(String.self, forKey: .text)
+        images = try container.decode([MBImage].self, forKey: .images)
+        link = try container.decode(String.self, forKey: .link)
+        date = try container.decode(Date.self, forKey: . date)
+    }
+}
+
 ```
 
-As you can see in the example you can point to the property of the object using the dot notation. If it's not defined any property the SDK will use the value of the element object (calling the value function).
+And call the `decode` function of `MBDecoder` to create and populate an array of news like this:
+
+```swift
+MBClient.getSections(ofBlock: THE_BLOCK_ID, parameters: nil, elements: true, success: { (sections, _) in
+    sections.forEach { section in
+         do {
+             if let elements = section.elements {
+                 let news = try MBDecoder.decode(News.self, elements: elements)
+                 newsArray.append(news)
+             }
+         } catch let error {
+              self.showError(error)
+         }
+     }
+}, failure: { error in
+      self.showError(error)
+})       
+```
+
+**Note** that the DecoderCodingKey needs to match to the *name* of the element in the MBurger block(e.g. if the element on the dashboard is called *Title* the decoder key needs to be *Title*):
+
+```swift
+enum DecoderCodingKeys: String, CodingKey {
+        case text = "Title"
+        case images
+        case link
+        case date
+ }
+```
 
 You can find a complete example in the Example project.
 
 # Serialization
 
-All the object models implement the `Codable` protocol so you can serialize and deserialize them without having to implement it. Below the list of objects that implement those protocols
+All the object models implement the `Codable` protocol so you can serialize and deserialize them without having to implement it. Below the list of objects that implement this protocol.
 
 * `MBProject`
 * `MBBlock`
@@ -245,19 +238,16 @@ All the object models implement the `Codable` protocol so you can serialize and 
 
 # Equality
 
-All the model objects are conform to the `Equatable` protcol based on the corresponding id. So, for example an MBSection will result equal to another MBSection object if they have the same `sectionId`.
+All the model objects are conform to the `Equatable` protcol based on the corresponding id (e.g. an MBSection will result equal to another MBSection object if they have the same `sectionId`)
 
 # Admin
 
-Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurger-iOS/tree/master/MBurger/MBAdmin).
+Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurger/MBAdmin).
 
 # Authentication
 
-Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurger-iOS/tree/master/MBurger/MBAuth).
+Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurger/MBAuth).
 
-# Push notifications
-
-Read the full push notifications documentation apis [here](https://github.com/Mumble-SRL/MBurger-iOS/tree/master/MBurger/MBPush).
 
 # Plugins
 You can add more to MBurger with plugins, classes that conforms to the `MBPluginProtocol` that can extend the functionalities of MBurger. An example of a plugin is [MPPayments](https://github.com/Mumble-SRL/MBPayments-iOS.git) a plugin that you to charge the users with single payments or sbscription.
