@@ -246,7 +246,7 @@ Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBur
 
 # Authentication
 
-Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurger/MBAuth).
+Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth).
 
 
 # Plugins
