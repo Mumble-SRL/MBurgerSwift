@@ -20,7 +20,7 @@ public class MBTextElement: MBElement {
     ///   - elementName: The `name` of the element.
     ///   - order: The `id order` of the element.
     ///   - text: The `text` of the element.
-    init(elementId: Int, elementName: String, order: Int, text: String) {
+    public init(elementId: Int, elementName: String, order: Int, text: String) {
         self.text = text
         super.init(elementId: elementId, elementName: elementName, type: .text, order: order)
     }

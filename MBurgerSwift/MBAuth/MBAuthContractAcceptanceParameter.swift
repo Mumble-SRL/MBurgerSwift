@@ -9,12 +9,13 @@
 import Foundation
 import MBNetworkingSwift
 
-/// A parameter that can be passed to the APIs that indicates if a legal contract has been accepted or not
+/// A parameter that can be passed to the APIs that indicates if a legal contract has been accepted or not.
 public class MBAuthContractAcceptanceParameter: MBParameter {
-    /// The id of the contract
+    
+    /// The id of the contract.
     public let contractId: Int
     
-    /// If the contract has been accepted or not
+    /// If the contract has been accepted or not.
     public let accepted: Bool
     
     /// Initializes the object with the contract id and the acceptance flag.
@@ -26,7 +27,7 @@ public class MBAuthContractAcceptanceParameter: MBParameter {
         self.accepted = accepted
     }
     
-    /// returns the `Parameters` rapresentation of the object.
+    /// Returns the `Parameters` rapresentation of the object.
     public func parameterRepresentation() -> Parameters {
         return ["id": contractId, "accepted": accepted]
     }

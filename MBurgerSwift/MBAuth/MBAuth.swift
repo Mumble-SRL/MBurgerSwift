@@ -30,6 +30,7 @@ public struct MBAuth {
         }
     }
     
+    /// The access token that represents the user, if an user has been authenticated correctly.
     public static var authToken: String? {
         if userIsLoggedInUserDefaults {
             guard let token = mbAuthToken else {

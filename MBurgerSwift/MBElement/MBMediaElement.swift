@@ -10,9 +10,17 @@ import Foundation
 
 /// The type of the media.
 public enum MBMediaType: Int, Codable {
+    
+    /// A general file.
     case file = 0
+    
+    /// An audio.
     case audio = 1
+    
+    /// A video.
     case video = 2
+    
+    /// A document(e.g. PDF).
     case document = 3
     
     init(string: String) {

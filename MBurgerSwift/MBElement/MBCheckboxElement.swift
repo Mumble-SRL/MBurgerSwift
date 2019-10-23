@@ -10,6 +10,7 @@ import Foundation
 
 /// This class represents a MBurger checkbox element.
 public class MBCheckboxElement: MBElement {
+    
     /// If the checkbox element is checked or not.
     public let checked: Bool
     

@@ -8,8 +8,8 @@
 
 import Foundation
 
+/// A convenience name for MBImages.
 public typealias MBImage = MBFile
-
 
 /// This class represents a MBurger images element.
 public class MBImagesElement: MBElement {
@@ -27,7 +27,7 @@ public class MBImagesElement: MBElement {
     ///   - elementName: The `name` of the element.
     ///   - generalValue: The `value` representing the element.
     ///   - type: The `type` of the element retuned by the api.
-    init(elementId: Int, elementName: String, order: Int, images: [MBImage]) {
+    public init(elementId: Int, elementName: String, order: Int, images: [MBImage]) {
         self.images = images
         super.init(elementId: elementId, elementName: elementName, type: .images, order: order)
     }
