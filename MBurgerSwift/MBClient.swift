@@ -14,6 +14,7 @@ import MBNetworkingSwift
 /// When the return of the api is an array it's returned also a `MBPaginationInfo` object with the information about the pagination (total number of elements and the range of the elements returned)
 
 public final class MBClient {
+    
     /// Retrieve the informations about the project.
     /// - Parameters:
     ///   - includingContracts: If `true` contracts are included in the project, `false` by default.
@@ -21,7 +22,6 @@ public final class MBClient {
     ///   - project: the `MBProject` returned by the api.
     ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
     ///   - error: The error describing the error that occurred.
-    
     public static func getProject(withContracts includingContracts: Bool = false,
                                   success: @escaping (_ project: MBProject) -> Void,
                                   failure: @escaping (_ error: Error) -> Void) {

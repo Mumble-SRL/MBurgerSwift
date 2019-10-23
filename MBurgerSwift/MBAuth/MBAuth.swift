@@ -30,7 +30,7 @@ public struct MBAuth {
         }
     }
     
-    static var authToken: String? {
+    public static var authToken: String? {
         if userIsLoggedInUserDefaults {
             guard let token = mbAuthToken else {
                 let tokenFromKeychain = SAMKeychain.password(forService: "com.mumble.mburger.service", account: "com.mumble.mburger.account")

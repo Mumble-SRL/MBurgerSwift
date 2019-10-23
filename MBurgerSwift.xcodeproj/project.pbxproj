@@ -137,6 +137,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D24E2E742360971300DB56A1 /* MBSection */ = {
+			isa = PBXGroup;
+			children = (
+				D2C70650233CCEA2002A70F4 /* MBSection.swift */,
+			);
+			path = MBSection;
+			sourceTree = "<group>";
+		};
+		D24E2E752360971A00DB56A1 /* MBBlock */ = {
+			isa = PBXGroup;
+			children = (
+				D2C70652233CCEAB002A70F4 /* MBBlock.swift */,
+			);
+			path = MBBlock;
+			sourceTree = "<group>";
+		};
 		D251EAD8233CA8A7002CD197 = {
 			isa = PBXGroup;
 			children = (
@@ -163,16 +179,16 @@
 				D251EAF0233CAF48002CD197 /* MBClient.swift */,
 				D251EAF2233CAF7A002CD197 /* MBApiManager.swift */,
 				D251EAFA233CC071002CD197 /* MBManager.swift */,
-				D259E49B2344982E00337A56 /* MBUpload */,
+				D259E49B2344982E00337A56 /* MBAdmin */,
+				D2C70684233D02AA002A70F4 /* MBAuth */,
+				D24E2E752360971A00DB56A1 /* MBBlock */,
 				D2FEE360235F415B005A9BB8 /* MBDecodable */,
 				D2C70666233CEA69002A70F4 /* MBElement */,
 				D2C70654233CE604002A70F4 /* MBParameter */,
 				D2C7064D233CCE20002A70F4 /* MBPagination */,
 				D251EAF8233CBFAA002CD197 /* MBProject */,
 				D2C70685233D02B1002A70F4 /* MBPlugin */,
-				D2C70684233D02AA002A70F4 /* MBAuth */,
-				D2C70650233CCEA2002A70F4 /* MBSection.swift */,
-				D2C70652233CCEAB002A70F4 /* MBBlock.swift */,
+				D24E2E742360971300DB56A1 /* MBSection */,
 			);
 			path = MBurgerSwift;
 			sourceTree = "<group>";
@@ -186,9 +202,10 @@
 			path = MBProject;
 			sourceTree = "<group>";
 		};
-		D259E49B2344982E00337A56 /* MBUpload */ = {
+		D259E49B2344982E00337A56 /* MBAdmin */ = {
 			isa = PBXGroup;
 			children = (
+				D20EFEF22344D80B0057A1B0 /* MBAdmin.swift */,
 				D259E49E23449A9300337A56 /* MBUploadableElementsFactory.swift */,
 				D20EFEE82344A1340057A1B0 /* MBUplodableElementProtocol.swift */,
 				D20EFEEA2344A17A0057A1B0 /* MBUploadableTextElement.swift */,
@@ -196,7 +213,7 @@
 				D20EFEEE2344B6810057A1B0 /* MBUploadableFilesElement.swift */,
 				D20EFEF02344B7AE0057A1B0 /* MBUploadableCheckboxElement.swift */,
 			);
-			path = MBUpload;
+			path = MBAdmin;
 			sourceTree = "<group>";
 		};
 		D2C7064D233CCE20002A70F4 /* MBPagination */ = {
@@ -250,7 +267,6 @@
 				D2F24C83233E3CDF000F1274 /* MBUser.swift */,
 				D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */,
 				D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */,
-				D20EFEF22344D80B0057A1B0 /* MBAdmin.swift */,
 			);
 			path = MBAuth;
 			sourceTree = "<group>";

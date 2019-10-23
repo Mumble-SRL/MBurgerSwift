@@ -86,7 +86,7 @@ MBClient.getProject(success: { project in
 
 # Blocks
 
-You can retrieve the blocks of the project with the function `getBlocks(Success:Failure` like this:
+You can retrieve the blocks of the project with the function `getBlocks(Success:Failure)` like this:
 
 ```swift
 MBClient.getBlocks(success: { (blocks, paginationInfos) in
@@ -116,7 +116,7 @@ MBClient.getBlocks(withParameters: [paginationParam], success: { (blocks, pagina
 })
 ```
 
-There is another version of the `getBlocksWithParameters:Success:Failure`,  that takes two adiitional parameter `includingSections` (a boolean that indicate whether or not include, for each block, the sections), and `includeElements` (a boolean value that do the same thing but for the elements of the sections).
+There is another version of the `getBlocksWithParameters:Success:Failure`,  that takes two aditional parameter `includingSections` (a boolean that indicate whether or not include, for each block, the sections), and `includeElements` (a boolean value that do the same thing but for the elements of the sections).
 
 So you could retrieve the informations of all the blocks, all the sections of the blocks and all the elements of the sections with this call:
 
