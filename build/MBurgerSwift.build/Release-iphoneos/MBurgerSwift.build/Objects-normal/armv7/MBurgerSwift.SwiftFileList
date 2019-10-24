@@ -27,9 +27,9 @@
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBMarkdownElement.swift
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBCheckboxElement.swift
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBElement.swift
-/Users/alessandro/MBurgerSwift/MBurgerSwift/MBManager.swift
+/Users/alessandro/MBurgerSwift/MBurgerSwift/MBManager/MBManager.swift
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBDropdownElement.swift
-/Users/alessandro/MBurgerSwift/MBurgerSwift/MBApiManager.swift
+/Users/alessandro/MBurgerSwift/MBurgerSwift/MBManager/MBApiManager.swift
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBSection/MBSection.swift
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBPagination/MBPaginationInfo.swift
 /Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBDateElement.swift

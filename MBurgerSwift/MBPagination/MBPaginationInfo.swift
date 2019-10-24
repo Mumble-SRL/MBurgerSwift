@@ -10,6 +10,7 @@ import Foundation
 
 /// This class contains meta information abaut the pagination, it's usually returned when an array is requested by the api.
 public struct MBPaginationInfo {
+    
     /// The starting index.
     let from: Int
     

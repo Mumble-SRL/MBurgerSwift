@@ -163,12 +163,11 @@
 				D251EAE5233CA8A7002CD197 /* MBurgerSwift.h */,
 				D251EAE6233CA8A7002CD197 /* Info.plist */,
 				D251EAF0233CAF48002CD197 /* MBClient.swift */,
-				D251EAF2233CAF7A002CD197 /* MBApiManager.swift */,
-				D251EAFA233CC071002CD197 /* MBManager.swift */,
 				D2C70684233D02AA002A70F4 /* MBAuth */,
 				D24E2E752360971A00DB56A1 /* MBBlock */,
 				D2FEE360235F415B005A9BB8 /* MBDecodable */,
 				D2C70666233CEA69002A70F4 /* MBElement */,
+				D2EEDFD5236187840032E0A6 /* MBManager */,
 				D2C70654233CE604002A70F4 /* MBParameter */,
 				D2C7064D233CCE20002A70F4 /* MBPagination */,
 				D251EAF8233CBFAA002CD197 /* MBProject */,
@@ -248,6 +247,15 @@
 				D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */,
 			);
 			path = MBPlugin;
+			sourceTree = "<group>";
+		};
+		D2EEDFD5236187840032E0A6 /* MBManager */ = {
+			isa = PBXGroup;
+			children = (
+				D251EAF2233CAF7A002CD197 /* MBApiManager.swift */,
+				D251EAFA233CC071002CD197 /* MBManager.swift */,
+			);
+			path = MBManager;
 			sourceTree = "<group>";
 		};
 		D2FEE360235F415B005A9BB8 /* MBDecodable */ = {

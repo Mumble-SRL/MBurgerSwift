@@ -1,41 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBAuth/MBAuth.swift",
-      "line": 33,
-      "symbol": "MBAuth.authToken",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBDecodable/MBDecoder.swift",
-      "line": 267,
-      "symbol": "MBDecoder.MBDecodingErrors.keyNotFoundInElements",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBDecodable/MBDecoder.swift",
-      "line": 269,
-      "symbol": "MBDecoder.MBDecodingErrors.wrongedType(expecting:reality:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBDecodable/MBDecoder.swift",
-      "line": 271,
-      "symbol": "MBDecoder.MBDecodingErrors.wrongType(expecting:reality:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBDecodable/MBDecoder.swift",
-      "line": 273,
-      "symbol": "MBDecoder.MBDecodingErrors.typeNotConformingToMBDecodable(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBAddressElement.swift",
       "line": 88,
       "symbol": "MBAddressElement.encode(to:)",
@@ -44,7 +9,7 @@
     },
     {
       "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBCheckboxElement.swift",
-      "line": 46,
+      "line": 47,
       "symbol": "MBCheckboxElement.encode(to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -114,13 +79,6 @@
     },
     {
       "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBImagesElement.swift",
-      "line": 11,
-      "symbol": "MBImage",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBImagesElement.swift",
       "line": 60,
       "symbol": "MBImagesElement.encode(to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -135,35 +93,7 @@
     },
     {
       "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBMediaElement.swift",
-      "line": 13,
-      "symbol": "MBMediaType.file",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBMediaElement.swift",
-      "line": 14,
-      "symbol": "MBMediaType.audio",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBMediaElement.swift",
-      "line": 15,
-      "symbol": "MBMediaType.video",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBMediaElement.swift",
-      "line": 16,
-      "symbol": "MBMediaType.document",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBElement/MBMediaElement.swift",
-      "line": 85,
+      "line": 93,
       "symbol": "MBMediaElement.encode(to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -211,13 +141,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBParameter/MBGeneralParameter.swift",
-      "line": 27,
-      "symbol": "MBGeneralParameter.parameterRepresentation()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBParameter/MBGeofenceParameter.swift",
       "line": 41,
       "symbol": "MBGeofenceParameter.parameterRepresentation()",
@@ -235,27 +158,6 @@
       "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBParameter/MBSortParameter.swift",
       "line": 28,
       "symbol": "MBSortParameter.parameterRepresentation()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBPlugin/MBPluginProtocol.swift",
-      "line": 11,
-      "symbol": "MBPluginProtocol",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBPlugin/MBPluginProtocol.swift",
-      "line": 12,
-      "symbol": "MBPluginProtocol.userKey",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/alessandro/MBurgerSwift/MBurgerSwift/MBPlugin/MBPluginProtocol.swift",
-      "line": 14,
-      "symbol": "MBPluginProtocol.object(forUserResponse:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

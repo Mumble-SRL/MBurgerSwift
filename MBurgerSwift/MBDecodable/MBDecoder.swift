@@ -113,7 +113,7 @@ extension MBDecoder: Decoder {
         if let markdownElement = value as? MBMarkdownElement {
             return markdownElement.text
         }
-        throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+        throw MBDecodingErrors.wrongType(expecting: type, reality: value)
     }
     
     func decode(value: MBElement, ofType type: [MBFile].Type) throws -> [MBFile] {
@@ -124,7 +124,7 @@ extension MBDecoder: Decoder {
         if let mediaElement = value as? MBMediaElement {
             return mediaElement.medias
         }
-        throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+        throw MBDecodingErrors.wrongType(expecting: type, reality: value)
     }
     
     func decode(value: MBElement, ofType type: MBFile.Type) throws -> MBFile? {
@@ -135,40 +135,40 @@ extension MBDecoder: Decoder {
         if let mediaElement = value as? MBMediaElement {
             return mediaElement.firstMedia
         }
-        throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+        throw MBDecodingErrors.wrongType(expecting: type, reality: value)
     }
     
     func decode(value: MBElement, ofType type: Date.Type) throws -> Date {
         guard let dateElement = value as? MBDateElement else {
-            throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+            throw MBDecodingErrors.wrongType(expecting: type, reality: value)
         }
         return dateElement.date
     }
     
     func decode(value: MBElement, ofType type: Bool.Type) throws -> Bool {
         guard let checkboxElement = value as? MBCheckboxElement else {
-            throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+            throw MBDecodingErrors.wrongType(expecting: type, reality: value)
         }
         return checkboxElement.checked
     }
     
     func decode(value: MBElement, ofType type: MBPollElement.Type) throws -> MBPollElement {
         guard let poll = value as? MBPollElement else {
-            throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+            throw MBDecodingErrors.wrongType(expecting: type, reality: value)
         }
         return poll
     }
     
     func decode(value: MBElement, ofType type: MBAddressElement.Type) throws -> MBAddressElement {
         guard let address = value as? MBAddressElement else {
-            throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+            throw MBDecodingErrors.wrongType(expecting: type, reality: value)
         }
         return address
     }
     
     func decode(value: MBElement, ofType type: MBRelationElement.Type) throws -> MBRelationElement {
         guard let relation = value as? MBRelationElement else {
-            throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
+            throw MBDecodingErrors.wrongType(expecting: type, reality: value)
         }
         return relation
     }
@@ -257,19 +257,21 @@ extension MBDecoder: Decoder {
     }
 }
 
-/// The error type.
-public extension MBDecoder {
+extension MBDecoder {
+    
     /// All errors which `MBDecoder` itself can throw.
     enum MBDecodingErrors: Swift.Error {
+        
         /// Attempted to decode a type which is not `Decodable`.
         case entryNotConformingToDecodable(MBElement)
     
+        /// The given Key wasn't found in the elements.
         case keyNotFoundInElements
         
-        case wrongedType(expecting: Decodable.Type, reality: MBElement)
+        /// The type found isn't not reflecting the especting type
+        case wrongType(expecting: Decodable.Type, reality: MBElement)
         
-        case wrongType(expecting: MBElement.Type, reality: MBElement)
-        
+        /// The current type is not conform to Decodable
         case typeNotConformingToMBDecodable(Decodable.Type)
     }
 }

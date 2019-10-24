@@ -10,6 +10,7 @@ import Foundation
 
 /// An object representing the user informations.
 public struct MBUser: Codable, Equatable {
+    
     ///The id of the user.
     public let userId: Int
     

@@ -9,12 +9,13 @@
 import Foundation
 
 
-/// A struct indicating if a legal contract has been accepted by the user
+/// A struct indicating if a legal contract has been accepted by the user.
 public struct MBUserContractStatus: Codable {
-    /// The id of the contract
+    
+    /// The id of the contract.
     public let contractId: Int
     
-    /// If the contract has been accepted or not
+    /// If the contract has been accepted or not.
     public let accepted: Bool
     
     /// Initializes the parameter with the contract id and the acceptance flag.

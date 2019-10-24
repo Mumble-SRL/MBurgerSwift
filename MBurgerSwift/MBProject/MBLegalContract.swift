@@ -10,25 +10,26 @@ import Foundation
 
 /// Represents a Legal contract in MBurger.
 public struct MBLegalContract: Codable, Equatable {
-    /// The id of the contract
+    
+    /// The id of the contract.
     let contractId: Int
 
-    /// The name of the contract
+    /// The name of the contract.
     let contractName: String
     
-    /// The link of the contract, if setted
+    /// The link of the contract, if setted.
     var link: String?
     
-    /// The text of the contract
+    /// The text of the contract.
     var text: String?
     
-    /// If the contract is active or not
+    /// If the contract is active or not.
     let isActive: Bool
     
-    /// The creation date of the contract
+    /// The creation date of the contract.
     let creationDate: Date
     
-    /// The update date of the contract
+    /// The update date of the contract.
     let updateDate: Date
     
     /// Initializes a project with a projectId and the name.
@@ -52,7 +53,7 @@ public struct MBLegalContract: Codable, Equatable {
     
     /// Initializes a contract with the dictionary returned by the api.
     /// - Parameters:
-    ///   - dictionary: The `Dictionary` returned from the APIs reponse
+    ///   - dictionary: The `Dictionary` returned from the APIs reponse.
     init(dictionary: [String: Any]) {
         let contractId = dictionary["id"] as? Int ?? -1
         let contractName = dictionary["name"] as? String ?? ""

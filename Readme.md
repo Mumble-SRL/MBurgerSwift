@@ -116,7 +116,7 @@ MBClient.getBlocks(withParameters: [paginationParam], success: { (blocks, pagina
 })
 ```
 
-There is another version of the `getBlocksWithParameters:Success:Failure`,  that takes two aditional parameter `includingSections` (a boolean that indicate whether or not include, for each block, the sections), and `includeElements` (a boolean value that do the same thing but for the elements of the sections).
+There is another version of the `getBlocks(withParameters:success:failure:)`,  that takes two aditional parameter `includingSections` (a boolean that indicate whether or not include, for each block, the sections), and `includeElements` (a boolean value that do the same thing but for the elements of the sections).
 
 So you could retrieve the informations of all the blocks, all the sections of the blocks and all the elements of the sections with this call:
 
@@ -130,7 +130,7 @@ MBClient.getBlocks(withParameters: [paginationParam], includingSections: true, i
 
 # Sections
 
-You can retrieve all the sections with a block with the given id with the function `getSectionsOfBlock:Parameters:Success:Failure` like this:
+You can retrieve all the sections with a block with the given id with the function `getSections(ofBlock:parameters:success:failure:)` like this:
 
 ```swift
 MBClient.getSections(ofBlock: THE_BLOCK_ID, parameters: nil, success: { (sections, paginationInfos) in

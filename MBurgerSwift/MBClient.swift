@@ -105,7 +105,7 @@ public final class MBClient {
     ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
     ///   - error: The error describing the error that occurred.
     
-    public static func getBlocks(withId blockId: Int,
+    public static func getBlock(withId blockId: Int,
                                  parameters: [MBParameter]? = nil,
                                  includeSections sections: Bool = false,
                                  includeElements elements: Bool = false,
@@ -197,7 +197,7 @@ public final class MBClient {
     ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
     ///   - error: The error describing the error that occurred.
     
-    public static func getSections(withId sectionId: Int,
+    public static func getSection(withId sectionId: Int,
                                    elements: Bool = false,
                                    success: @escaping (_ section: MBSection) -> Void,
                                    failure: @escaping (_ error: Error) -> Void) {

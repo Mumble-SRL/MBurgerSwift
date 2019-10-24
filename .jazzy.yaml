@@ -1,0 +1,75 @@
+author: Mumble
+author_url: https://mumbleideas.it/
+github_url: https://github.com/Mumble-SRL/MBurgerSwift
+
+theme: fullwidth
+
+custom_categories:
+
+  - name: MBBlock
+    children:
+    - MBBlock
+  - name: MBSection
+    children:
+    - MBSection
+  - name: MBClient
+    children:
+    - MBClient
+  - name: MBManager
+    children:
+    - MBManager
+    - MBApiManager
+  - name: MBElement
+    children:
+    - MBElementProtocol
+    - MBElement
+    - MBElementFactory
+    - MBTextElement
+    - MBDropdownElement
+    - MBPollElement
+    - MBMarkdownElement
+    - MBGeneralElement
+    - MBAddressElement
+    - MBDateElement
+    - MBImagesElement
+    - MBFile
+    - MBImage
+    - MBMediaElement
+    - MBCheckboxElement
+    - MBRelationElement
+    - MBElementType
+    - MBMediaType
+    - MBDropdownElementOption
+  - name: MBParameter
+    children:
+    - MBParameter
+    - MBFilterParameter
+    - MBGeneralParameter
+    - MBGeofenceParameter
+    - MBPaginationParameter
+    - MBSortParameter
+  - name: MBDecodable
+    children:
+    - MBDecoder
+    - MBDecodable
+  - name: MBAuth
+    children:
+    - MBAuth
+    - MBAuthContractAcceptanceParameter
+    - MBUser
+    - MBUserContractStatus
+    - MBUserPublishedSection
+    - MBAuthSocialTokenType
+  - name: MBPagination
+    children:
+    - MBPaginationInfo
+  - name: MBProject
+    children:
+    - MBProject
+    - MBLegalContract
+  - name: MBPlugin
+    children:
+    - MBPluginProtocol
+  - name: Public Extension
+    children:
+    - Collection
