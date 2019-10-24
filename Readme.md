@@ -1,5 +1,5 @@
 <p align="center" >
-<img src="https://raw.githubusercontent.com/Mumble-SRL/MBurger-iOS/master/Images/logo.png" alt="MBurger Logo" title="MBurger Logo">
+<img src="https://raw.githubusercontent.com/Mumble-SRL/MBurgerSwift/master/Images/logo.png" alt="MBurger Logo" title="MBurger Logo">
 </p>
 
 ![Test Status](https://img.shields.io/badge/documentation-100%25-brightgreen.svg)
@@ -51,7 +51,7 @@ Note that `MBurgerSwift` has `MBNetworking (1.0.4)` and `SAMKeychain (1.5)` as d
 
 To initialize the SDK you have to create a token through the [dashboard](https://mburger.cloud/). Click on the settings icon on the top-right and create a API Key specifiyng the permissions.
 
-![Dashboard image](https://raw.githubusercontent.com/Mumble-SRL/MBurger-iOS/master/Images/api_token.png)
+![Dashboard image](https://raw.githubusercontent.com/Mumble-SRL/MBurgerSwift/master/Images/api_token.png)
 
 Then in your `AppDelegate` `application:didFinishLaunchingWithOptions:` initialize the `MBManager` of the SDK setting a token like this:
 

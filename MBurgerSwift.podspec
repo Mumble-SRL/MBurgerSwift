@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.5" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -99,8 +99,8 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  # spec.framework  = "CoreLocation"
+    spec.frameworks = "CoreLocation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"

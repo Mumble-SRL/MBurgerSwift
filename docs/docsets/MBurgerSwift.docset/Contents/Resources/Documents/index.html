@@ -243,7 +243,7 @@
           <div class="section-content">
             
             <p align="center" >
-<img src="https://raw.githubusercontent.com/Mumble-SRL/MBurger-iOS/master/Images/logo.png" alt="MBurger Logo" title="MBurger Logo">
+<img src="https://raw.githubusercontent.com/Mumble-SRL/MBurgerSwift/master/Images/logo.png" alt="MBurger Logo" title="MBurger Logo">
 </p>
 
 <p><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Test Status">
@@ -283,7 +283,7 @@
 
 <p>To initialize the SDK you have to create a token through the <a href="https://mburger.cloud/">dashboard</a>. Click on the settings icon on the top-right and create a API Key specifiyng the permissions.</p>
 
-<p><img src="https://raw.githubusercontent.com/Mumble-SRL/MBurger-iOS/master/Images/api_token.png" alt="Dashboard image"></p>
+<p><img src="https://raw.githubusercontent.com/Mumble-SRL/MBurgerSwift/master/Images/api_token.png" alt="Dashboard image"></p>
 
 <p>Then in your <code>AppDelegate</code> <code>application:didFinishLaunchingWithOptions:</code> initialize the <code><a href="Classes/MBManager.html">MBManager</a></code> of the SDK setting a token like this:</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">MBurgerSwift</span>
@@ -339,7 +339,7 @@
 <span class="p">})</span>
 </code></pre>
 
-<p>There is another version of the <code>getBlocksWithParameters:Success:Failure</code>,  that takes two aditional parameter <code>includingSections</code> (a boolean that indicate whether or not include, for each block, the sections), and <code>includeElements</code> (a boolean value that do the same thing but for the elements of the sections).</p>
+<p>There is another version of the <code>getBlocks(withParameters:success:failure:)</code>,  that takes two aditional parameter <code>includingSections</code> (a boolean that indicate whether or not include, for each block, the sections), and <code>includeElements</code> (a boolean value that do the same thing but for the elements of the sections).</p>
 
 <p>So you could retrieve the informations of all the blocks, all the sections of the blocks and all the elements of the sections with this call:</p>
 <pre class="highlight swift"><code><span class="kt">MBClient</span><span class="o">.</span><span class="nf">getBlocks</span><span class="p">(</span><span class="nv">withParameters</span><span class="p">:</span> <span class="p">[</span><span class="n">paginationParam</span><span class="p">],</span> <span class="nv">includingSections</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">includeElements</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">blocks</span><span class="p">,</span> <span class="n">paginationInfos</span><span class="p">)</span> <span class="k">in</span>
@@ -350,7 +350,7 @@
 </code></pre>
 <h1 id='sections' class='heading'>Sections</h1>
 
-<p>You can retrieve all the sections with a block with the given id with the function <code>getSectionsOfBlock:Parameters:Success:Failure</code> like this:</p>
+<p>You can retrieve all the sections with a block with the given id with the function <code>getSections(ofBlock:parameters:success:failure:)</code> like this:</p>
 <pre class="highlight swift"><code><span class="kt">MBClient</span><span class="o">.</span><span class="nf">getSections</span><span class="p">(</span><span class="nv">ofBlock</span><span class="p">:</span> <span class="kt">THE_BLOCK_ID</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">sections</span><span class="p">,</span> <span class="n">paginationInfos</span><span class="p">)</span> <span class="k">in</span>
 
 <span class="p">},</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="k">in</span>

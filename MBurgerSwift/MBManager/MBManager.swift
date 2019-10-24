@@ -13,7 +13,7 @@ public final class MBManager {
     private init() {}
     
     /// Creates and returns a singleton `MBManager`.
-    /// Don't allocate an instance of MBManager yourself.
+    /// - Warning: Don't allocate an instance of MBManager yourself.
     public static let shared = MBManager()
     
     /// The API token used to make all the requests to the api.
