@@ -138,6 +138,13 @@ extension MBDecoder: Decoder {
         throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
     }
     
+    func decode(value: MBElement, ofType type: MBDropdownElement.Type) throws -> MBDropdownElement? {
+        if let dropdown = value as? MBDropdownElement {
+            return dropdown
+        }
+        throw MBDecodingErrors.wrongType(expecting: type, reality: value)
+    }
+
     func decode(value: MBElement, ofType type: Date.Type) throws -> Date {
         guard let dateElement = value as? MBDateElement else {
             throw MBDecodingErrors.wrongedType(expecting: type, reality: value)
@@ -208,6 +215,8 @@ extension MBDecoder: Decoder {
             return try self.decode(value: value, ofType: MBRelationElement.self)
         case is MBFile.Type:
             return try self.decode(value: value, ofType: MBFile.self) as Any
+        case is MBDropdownElement.Type:
+            return try self.decode(value: value, ofType: MBDropdownElement.self) as Any
         default:
             throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
         }
