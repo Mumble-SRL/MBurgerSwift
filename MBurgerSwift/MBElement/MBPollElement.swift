@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// This class represents a MBurger poll element, the property ansers contains the answers the user can give to a the poll.
 public class MBPollElement: MBElement {
     /// The possible answers for the poll.
@@ -55,7 +54,7 @@ public class MBPollElement: MBElement {
     /// Initializes a poll element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         let valueDictionary = dictionary["value"] as? [String: Any] ?? [:]
         
         let answersFromApi = valueDictionary["answers"] as? [String] ?? [String]()

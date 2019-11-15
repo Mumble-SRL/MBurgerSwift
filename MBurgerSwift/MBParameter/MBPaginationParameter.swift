@@ -25,7 +25,7 @@ public struct MBPaginationParameter: MBParameter {
         self.take = take
     }
     
-    public func parameterRepresentation() -> [String : Any] {
+    public func parameterRepresentation() -> [String: Any] {
         return [
             "skip": skip,
             "take": take

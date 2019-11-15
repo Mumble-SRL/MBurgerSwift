@@ -18,7 +18,6 @@ public enum MBAuthSocialTokenType: Int {
     case google = 1
 }
 
-
 /// Manages the authentication of the user.
 public struct MBAuth {
     static var userIsLoggedInUserDefaults: Bool {
@@ -108,7 +107,7 @@ public struct MBAuth {
                              method: .post,
                              parameters: apiParameters,
                              development: MBManager.shared.development,
-                             success: { response in
+                             success: { _ in
                                 success()
         }, failure: { error in
             failure(error)
@@ -195,7 +194,7 @@ public struct MBAuth {
                              apiName: "logout",
                              method: .post,
                              development: MBManager.shared.development,
-                             success: { response in
+                             success: { _ in
                                 logoutCurrentUser()
                                 success()
         }, failure: { error in
@@ -221,7 +220,7 @@ public struct MBAuth {
                              method: .post,
                              parameters: parameters,
                              development: MBManager.shared.development,
-                             success: { response in
+                             success: { _ in
                                 success()
         }, failure: { error in
             failure(error)
@@ -244,7 +243,7 @@ public struct MBAuth {
                              method: .post,
                              parameters: parameters,
                              development: MBManager.shared.development,
-                             success: { response in
+                             success: { _ in
                                 success()
         }, failure: { error in
             failure(error)
@@ -340,7 +339,7 @@ public struct MBAuth {
                              apiName: "profile/delete",
                              method: .delete,
                              development: MBManager.shared.development,
-                             success: { response in
+                             success: { _ in
                                 logoutCurrentUser()
                                 success()
         }, failure: { error in

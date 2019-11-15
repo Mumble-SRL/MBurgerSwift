@@ -108,8 +108,8 @@ public final class MBApiManager {
     }
     
     class private func parse(response: MBResponse<Any>,
-                       success: @escaping (_ response: [String: Any]) -> Void,
-                       failure: @escaping (_ error: Error) -> Void) {
+                             success: @escaping (_ response: [String: Any]) -> Void,
+                             failure: @escaping (_ error: Error) -> Void) {
         guard response.error == nil else {
             failure(MBError.customError(reason: response.error?.localizedDescription ?? ""))
             return
@@ -117,7 +117,7 @@ public final class MBApiManager {
         
         switch response.result {
         case .success(let json):
-            guard let unwrappedJson = json as? [String : Any] else {
+            guard let unwrappedJson = json as? [String: Any] else {
                 failure(MBError.customError(reason: "couldn't unwrap"))
                 return
             }

@@ -63,7 +63,7 @@ public class MBMediaElement: MBElement {
     /// Initializes an image element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         let stringType = dictionary["type"] as? String ?? ""
         self.mediaType = MBMediaType(string: stringType)
         
@@ -97,4 +97,3 @@ public class MBMediaElement: MBElement {
         try container.encode(mediaType, forKey: .mediaType)
     }
 }
-

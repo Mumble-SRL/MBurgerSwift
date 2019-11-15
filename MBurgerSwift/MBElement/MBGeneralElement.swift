@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// This class represents a general MBurger element.
 public class MBGeneralElement: MBElement {
     /// The value of the element.

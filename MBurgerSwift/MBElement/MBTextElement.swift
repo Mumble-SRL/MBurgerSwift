@@ -28,7 +28,7 @@ public class MBTextElement: MBElement {
     /// Initializes a text element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         text = dictionary["value"] as? String ?? ""
         super.init(dictionary: dictionary)
     }

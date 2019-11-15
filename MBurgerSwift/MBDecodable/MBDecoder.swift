@@ -11,13 +11,13 @@ import UIKit
 
 /// A type that can decode itself from an external representation.
 public class MBDecoder {
-    private let elements: [String : MBElement]
+    private let elements: [String: MBElement]
     
     /// Creates a new instance of MBDecoder.
     /// 
     /// - Parameters:
     /// - elements: The elements of the MBSection.
-    public init(elements: [String : MBElement]) {
+    public init(elements: [String: MBElement]) {
         self.elements = elements
     }
 }
@@ -37,7 +37,7 @@ public extension MBDecoder {
 extension MBDecoder: Decoder {
     public var codingPath: [CodingKey] { return [] }
     
-    public var userInfo: [CodingUserInfoKey : Any] { return [:] }
+    public var userInfo: [CodingUserInfoKey: Any] { return [:] }
     
     public func container<Key>(keyedBy type: Key.Type) throws -> KeyedDecodingContainer<Key> {
         let container = MBElementsKeyedContainer<Key>(decoder: self)
@@ -58,7 +58,7 @@ extension MBDecoder: Decoder {
             return true
         }
         
-        func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T : Decodable {
+        func decode<T>(_ type: T.Type, forKey key: Key) throws -> T where T: Decodable {
             guard let entry = decoder.elements[key.stringValue] else {
                 throw MBDecodingErrors.keyNotFoundInElements
             }
@@ -69,7 +69,7 @@ extension MBDecoder: Decoder {
         }
         
         /// Decodes a value of the given type for the given key, if present.
-        func decodeIfPresent<T>(_ type: T.Type, forKey key: Key) throws -> T? where T : Decodable {
+        func decodeIfPresent<T>(_ type: T.Type, forKey key: Key) throws -> T? where T: Decodable {
             guard let entry = decoder.elements[key.stringValue] else {
                 throw MBDecodingErrors.keyNotFoundInElements
             }
@@ -80,7 +80,7 @@ extension MBDecoder: Decoder {
             return true
         }
         
-        func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type, forKey key: Key) throws -> KeyedDecodingContainer<NestedKey> where NestedKey : CodingKey {
+        func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type, forKey key: Key) throws -> KeyedDecodingContainer<NestedKey> where NestedKey: CodingKey {
             return try decoder.container(keyedBy: type)
         }
         
@@ -180,7 +180,7 @@ extension MBDecoder: Decoder {
         return relation
     }
     
-    private func find<T : Decodable>(_ value: [String: MBElement], as type: T.Type) throws -> T? {
+    private func find<T: Decodable>(_ value: [String: MBElement], as type: T.Type) throws -> T? {
         var result = [String: Any]()
         
         for (dictKey, dictValue) in value {
@@ -190,7 +190,7 @@ extension MBDecoder: Decoder {
         return result as? T
     }
     
-    private func find<T : Decodable>(_ value: MBElement, as type: T.Type) throws -> T? {
+    private func find<T: Decodable>(_ value: MBElement, as type: T.Type) throws -> T? {
         return try find_(value, as: type) as? T
     }
     
@@ -227,7 +227,11 @@ extension MBDecoder: Decoder {
     /// - throws: `MBDecodingErrors.typeNotConformingToMBDecodable` if the encountered a type that cannot be decoded.
     private func decode<T: Decodable>(_ type: T.Type) throws -> T {
         if let decodableType = type as? MBDecodable.Type {
-            return try decodableType.init(from: self) as! T
+            if let decoded = try decodableType.init(from: self) as? T {
+                return decoded
+            } else {
+                throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
+            }
         }
         throw MBDecodingErrors.typeNotConformingToMBDecodable(type)
     }
@@ -244,7 +248,7 @@ extension MBDecoder: Decoder {
 
         var isAtEnd: Bool { return false }
         
-        func decode<T>(_ type: T.Type) throws -> T where T : Decodable {
+        func decode<T>(_ type: T.Type) throws -> T where T: Decodable {
             return try decoder.decode(T.self)
         }
         
@@ -252,7 +256,7 @@ extension MBDecoder: Decoder {
             return true
         }
         
-        func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type) throws -> KeyedDecodingContainer<NestedKey> where NestedKey : CodingKey {
+        func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type) throws -> KeyedDecodingContainer<NestedKey> where NestedKey: CodingKey {
             return try decoder.container(keyedBy: type)
         }
         
