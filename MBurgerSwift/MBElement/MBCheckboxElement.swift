@@ -28,7 +28,7 @@ public class MBCheckboxElement: MBElement {
     /// Initializes a checkbox element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         self.checked = dictionary["value"] as? Bool ?? false
         super.init(dictionary: dictionary)
     }

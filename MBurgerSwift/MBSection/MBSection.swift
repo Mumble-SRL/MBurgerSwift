@@ -54,7 +54,7 @@ public class MBSection: Codable, Equatable {
         var dictionaryElements: [String: MBElement]?
         if let elements = dictionary["elements"] as? [String: Any] {
             dictionaryElements = [:]
-            for (key,value) in elements {
+            for (key, value) in elements {
                 if let element = value as? [String: Any] {
                     dictionaryElements?[key] = MBElementFactory.element(forDictionary: element)
                 }

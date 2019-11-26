@@ -35,10 +35,10 @@ public class MBImagesElement: MBElement {
     /// Initializes an image element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         var dictionaryImages: [MBImage] = []
         if let values = dictionary["value"] as? [[String: Any]] {
-            dictionaryImages = values.map{ MBImage(dictionary: $0) }
+            dictionaryImages = values.map { MBImage(dictionary: $0) }
         }
         images = dictionaryImages
         

@@ -27,7 +27,7 @@ public class MBMarkdownElement: MBElement {
     /// Initializes a markdown element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         self.text = dictionary["value"] as? String ?? ""
         super.init(dictionary: dictionary)
     }

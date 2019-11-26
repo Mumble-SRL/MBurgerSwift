@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// A struct indicating if a legal contract has been accepted by the user.
 public struct MBUserContractStatus: Codable {
     
@@ -27,7 +26,6 @@ public struct MBUserContractStatus: Codable {
         accepted = isAccepted
     }
     
-  
     /// Initializes the parameter with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse

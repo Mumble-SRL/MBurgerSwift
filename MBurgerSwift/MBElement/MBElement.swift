@@ -38,7 +38,7 @@ public class MBElement: MBElementProtocol {
     /// Initializes an element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required public init(dictionary: [String : Any]) {
+    required public init(dictionary: [String: Any]) {
         order = dictionary["order"] as? Int ?? -1
         name = dictionary["name"] as? String ?? ""
         id = dictionary["id"] as? Int ?? -1
@@ -79,9 +79,9 @@ public class MBElement: MBElementProtocol {
 
 extension Array where Element: MBElement {
     func toDict() -> [String: Any] {
-        let t = reduce(into: [String: Any]()) { (dictionary, element) in
+        let dictionary = reduce(into: [String: Any]()) { (_, _) in
             
         }
-        return t
+        return dictionary
     }
 }

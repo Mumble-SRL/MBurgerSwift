@@ -57,7 +57,7 @@ public class MBAddressElement: MBElement {
     /// Initializes an address element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         let addressDictionary = dictionary["value"] as? [String: Any] ?? nil
         self.address = addressDictionary?["address"] as? String ?? ""
         

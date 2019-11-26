@@ -24,7 +24,7 @@ public struct MBGeneralParameter: MBParameter {
         self.value = value
     }
     
-    public func parameterRepresentation() -> [String : Any] {
+    public func parameterRepresentation() -> [String: Any] {
         return [key: value]
     }
 }

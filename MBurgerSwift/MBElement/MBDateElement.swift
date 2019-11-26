@@ -28,7 +28,7 @@ public class MBDateElement: MBElement {
     /// Initializes a date element with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    required init(dictionary: [String : Any]) {
+    required init(dictionary: [String: Any]) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
         let dateString = dictionary["value"] as? String ?? ""

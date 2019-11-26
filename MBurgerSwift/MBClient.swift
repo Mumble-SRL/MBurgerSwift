@@ -106,11 +106,11 @@ public final class MBClient {
     ///   - error: The error describing the error that occurred.
     
     public static func getBlock(withId blockId: Int,
-                                 parameters: [MBParameter]? = nil,
-                                 includeSections sections: Bool = false,
-                                 includeElements elements: Bool = false,
-                                 success: @escaping (_ block: MBBlock) -> Void,
-                                 failure: @escaping (_ error: Error) -> Void) {
+                                parameters: [MBParameter]? = nil,
+                                includeSections sections: Bool = false,
+                                includeElements elements: Bool = false,
+                                success: @escaping (_ block: MBBlock) -> Void,
+                                failure: @escaping (_ error: Error) -> Void) {
         var apiParameters: Parameters = [:]
         
         if sections {
@@ -123,7 +123,7 @@ public final class MBClient {
             }
         }
         
-        let apiName = String(format:"blocks/%d", blockId)
+        let apiName = String(format: "blocks/%d", blockId)
         MBApiManager.request(withToken: MBManager.shared.apiToken,
                              locale: MBManager.shared.localeString,
                              apiName: apiName,
@@ -198,9 +198,9 @@ public final class MBClient {
     ///   - error: The error describing the error that occurred.
     
     public static func getSection(withId sectionId: Int,
-                                   elements: Bool = false,
-                                   success: @escaping (_ section: MBSection) -> Void,
-                                   failure: @escaping (_ error: Error) -> Void) {
+                                  elements: Bool = false,
+                                  success: @escaping (_ section: MBSection) -> Void,
+                                  failure: @escaping (_ error: Error) -> Void) {
         var apiParameters: Parameters = [:]
         
         if elements {

@@ -25,10 +25,10 @@ public struct MBFilterParameter: MBParameter {
         self.value = value
     }
     
-    public func parameterRepresentation() -> [String : Any] {
+    public func parameterRepresentation() -> [String: Any] {
         let key = "filter[\(field)]"
         return [
-            key : value
+            key: value
         ]
     }
 }
