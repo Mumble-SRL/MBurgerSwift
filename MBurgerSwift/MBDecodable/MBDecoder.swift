@@ -54,6 +54,12 @@ extension MBDecoder: Decoder {
             return decoder.elements.keys.compactMap { Key(stringValue: $0) }
         }
         
+        init(decoder: MBDecoder,
+             codingPath: [CodingKey] = []) {
+            self.decoder = decoder
+            self.codingPath = codingPath
+        }
+        
         func contains(_ key: Key) -> Bool {
             return true
         }
