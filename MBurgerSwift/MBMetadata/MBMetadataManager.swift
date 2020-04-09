@@ -12,6 +12,7 @@ import CoreLocation
 
 class MBMetadata: NSObject, MBPluginProtocol {
     override init() {
+        //TODO increment app usage counter
         MBMetadataManager.shared.updateMetadata()
     }
     
@@ -79,23 +80,51 @@ private class MBMetadataManager: NSObject, MBPluginProtocol {
     }
     
     func setTag(key: String, value: String) { // TODO: save it in db or file
-        
+        var newTags = getTags() ?? []
+        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+            let tag = newTags[indexFound]
+            tag.value = value
+            newTags[indexFound] = tag
+        } else {
+            newTags.append(MBTag(key: key, value: value))
+        }
+        saveNewTags(tags: newTags)
     }
     
     func removeTag(key: String) { // TODO: save it in db or file
-        
+        var newTags = getTags() ?? []
+        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+            newTags.remove(at: indexFound)
+        }
+        saveNewTags(tags: newTags)
     }
 
-    func getTags() -> [MBTag]? { // TODO: return saved objects
-        return nil
+    private func saveNewTags(tags: [MBTag]) {
+        let userDefaults = userDefaultsForMetadata()
+        let mappedTags = tags.map({ $0.toDictoinary() })
+        userDefaults.set(mappedTags, forKey: "com.mumble.mburger.tags")
     }
     
-    func setCustomId(_ customId: String?) { // TODO: save it in db or file
-        
+    func getTags() -> [MBTag]? {
+        let userDefaults = userDefaultsForMetadata()
+        guard let tags = userDefaults.object(forKey: "com.mumble.mburger.tags") as? [[String: String]] else {
+            return nil
+        }
+        return tags.map({MBTag(dictionary: $0)})
     }
     
-    func getCustomId() -> String? { // TODO: return saved objects
-        return nil
+    func setCustomId(_ customId: String?) {
+        let userDefaults = userDefaultsForMetadata()
+        if let customId = customId {
+            userDefaults.set(customId, forKey: "com.mumble.mburger.customId")
+        } else {
+            userDefaults.removeObject(forKey: "com.mumble.mburger.customId")
+        }
+    }
+    
+    func getCustomId() -> String? {
+        let userDefaults = userDefaultsForMetadata()
+        return userDefaults.object(forKey: "com.mumble.mburger.customId") as? String
     }
     
     func startLocationUpdates() {
@@ -114,6 +143,10 @@ private class MBMetadataManager: NSObject, MBPluginProtocol {
         if let locationManager = locationManager {
             locationManager.stopMonitoringSignificantLocationChanges()
         }
+    }
+    
+    private func userDefaultsForMetadata() -> UserDefaults {
+        return UserDefaults(suiteName: "com.mumble.mburger.metadata") ?? UserDefaults.standard
     }
 }
 

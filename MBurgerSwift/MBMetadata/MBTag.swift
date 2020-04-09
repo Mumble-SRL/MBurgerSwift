@@ -10,10 +10,21 @@ import UIKit
 
 class MBTag: NSObject {
     @objc let key: String!
-    @objc let value: String!
+    @objc var value: String!
     
     @objc init(key: String, value: String!) {
         self.key = key
         self.value = value
     }
+    
+    convenience init (dictionary: [String: String]) {
+        let key = dictionary["key"] ?? ""
+        let value = dictionary["value"] ?? ""
+        self.init(key: key, value: value)
+    }
+    
+    func toDictoinary() -> [String: String] {
+        return ["key": key, "value": value]
+    }
+    
 }
