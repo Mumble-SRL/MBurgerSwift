@@ -89,6 +89,7 @@ private class MBMetadataManager: NSObject, MBPluginProtocol {
             newTags.append(MBTag(key: key, value: value))
         }
         saveNewTags(tags: newTags)
+        updateMetadata()
     }
     
     func removeTag(key: String) { // TODO: save it in db or file
@@ -97,6 +98,7 @@ private class MBMetadataManager: NSObject, MBPluginProtocol {
             newTags.remove(at: indexFound)
         }
         saveNewTags(tags: newTags)
+        updateMetadata()
     }
 
     private func saveNewTags(tags: [MBTag]) {
@@ -120,6 +122,7 @@ private class MBMetadataManager: NSObject, MBPluginProtocol {
         } else {
             userDefaults.removeObject(forKey: "com.mumble.mburger.customId")
         }
+        updateMetadata()
     }
     
     func getCustomId() -> String? {
