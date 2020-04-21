@@ -46,6 +46,7 @@
 		D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */; };
 		D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE361235F417F005A9BB8 /* MBDecoder.swift */; };
 		D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */; };
+		EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1286A9244EFFCE005A4005 /* MBUtilities.swift */; };
 		EC884DEB243F4B510079940B /* MBMetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC884DEA243F4B510079940B /* MBMetadataManager.swift */; };
 		EC884DED243F4C150079940B /* MBTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC884DEC243F4C150079940B /* MBTag.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginProtocol.swift; sourceTree = "<group>"; };
 		D2FEE361235F417F005A9BB8 /* MBDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDecoder.swift; sourceTree = "<group>"; };
 		D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDecodable.swift; sourceTree = "<group>"; };
+		EC1286A9244EFFCE005A4005 /* MBUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUtilities.swift; sourceTree = "<group>"; };
 		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		EC884DEA243F4B510079940B /* MBMetadataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMetadataManager.swift; sourceTree = "<group>"; };
 		EC884DEC243F4C150079940B /* MBTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTag.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				D251EAF8233CBFAA002CD197 /* MBProject */,
 				D2C70685233D02B1002A70F4 /* MBPlugin */,
 				D24E2E742360971300DB56A1 /* MBSection */,
+				EC1286A8244EFFBD005A4005 /* MBUtilities */,
 				EC884DE9243F4B250079940B /* MBMetadata */,
 			);
 			path = MBurgerSwift;
@@ -270,6 +273,14 @@
 				D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */,
 			);
 			path = MBDecodable;
+			sourceTree = "<group>";
+		};
+		EC1286A8244EFFBD005A4005 /* MBUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC1286A9244EFFCE005A4005 /* MBUtilities.swift */,
+			);
+			path = MBUtilities;
 			sourceTree = "<group>";
 		};
 		EC884DE9243F4B250079940B /* MBMetadata */ = {
@@ -413,6 +424,7 @@
 				D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */,
 				D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */,
 				D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */,
+				EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */,
 				D2C70674233CF7D6002A70F4 /* MBGeneralElement.swift in Sources */,
 				D2C70668233CEADB002A70F4 /* MBElementFactory.swift in Sources */,
 				D2F24C86233E3F94000F1274 /* MBUserContractStatus.swift in Sources */,
