@@ -19,11 +19,15 @@ public protocol MBPluginProtocol {
     func object(forUserResponse response: [String: Any]) -> Any?
 }
 
-extension MBPluginProtocol {
+/// Default values for plugin protocol
+public extension MBPluginProtocol {
+    
+    /// The default value for the user key is nil
     var userKey: String? {
         return nil
     }
     
+    /// The default value for the object in user response is nil
     func object(forUserResponse response: [String: Any]) -> Any? {
         return nil
     }
