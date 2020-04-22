@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          MBurgerSwift Docs
+          MBurgerSwift 1.0.17 Docs
         </a>
-         (89% documented)
+         (91% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -89,7 +89,7 @@
             <a class="nav-group-name-link" href="MBElement.html">MBElement</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="MBElement.html#/s:12MBurgerSwift17MBElementProtocolP">MBElementProtocol</a>
+                <a class="nav-group-task-link" href="Protocols/MBElementProtocol.html">MBElementProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBElement.html">MBElement</a>
@@ -155,6 +155,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/MBFilterParameter.html">MBFilterParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/MBGeneralParameter.html">MBGeneralParameter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/MBGeofenceParameter.html">MBGeofenceParameter</a>
@@ -236,12 +239,20 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="MBUtilities.html">MBUtilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBUtilities.html">MBUtilities</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>MBElement</h1>
             
           </div>
@@ -266,12 +277,433 @@
                       <div class="abstract">
                         <p>A protocol to which all MBElements needs to be conform, it has all the basic data that a MBElement needs.</p>
 
+                        <a href="Protocols/MBElementProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MBElementProtocol</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift9MBElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift9MBElementC">MBElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents the base class for all MBurger elements. All the specialized elements are subclasses of this class.</p>
+
+                        <a href="Classes/MBElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBElement</span> <span class="p">:</span> <span class="kt"><a href="Protocols/MBElementProtocol.html">MBElementProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift16MBElementFactoryV"></a>
+                    <a name="//apple_ref/swift/Struct/MBElementFactory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift16MBElementFactoryV">MBElementFactory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This struct is used to create a <code><a href="Classes/MBElement.html">MBElement</a></code> objects based on the API&rsquo;s response</p>
+
+                        <a href="Structs/MBElementFactory.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MBElementFactory</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift13MBTextElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBTextElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift13MBTextElementC">MBTextElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger text element.
+It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types on the dashboard</p>
+
+                        <a href="Classes/MBTextElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBTextElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift17MBDropdownElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBDropdownElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBDropdownElementC">MBDropdownElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger dropdown element.</p>
+
+                        <a href="Classes/MBDropdownElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBDropdownElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift13MBPollElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBPollElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift13MBPollElementC">MBPollElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger poll element, the property ansers contains the answers the user can give to a the poll.</p>
+
+                        <a href="Classes/MBPollElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBPollElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift17MBMarkdownElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBMarkdownElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBMarkdownElementC">MBMarkdownElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger markdown element.</p>
+
+                        <a href="Classes/MBMarkdownElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBMarkdownElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift16MBGeneralElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBGeneralElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift16MBGeneralElementC">MBGeneralElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a general MBurger element.</p>
+
+                        <a href="Classes/MBGeneralElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBGeneralElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift16MBAddressElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBAddressElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift16MBAddressElementC">MBAddressElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger address element.</p>
+
+                        <a href="Classes/MBAddressElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBAddressElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift13MBDateElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBDateElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift13MBDateElementC">MBDateElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger date element.</p>
+
+                        <a href="Classes/MBDateElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBDateElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift15MBImagesElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBImagesElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift15MBImagesElementC">MBImagesElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger images element.</p>
+
+                        <a href="Classes/MBImagesElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBImagesElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift6MBFileC"></a>
+                    <a name="//apple_ref/swift/Class/MBFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift6MBFileC">MBFile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a file.</p>
+
+                        <a href="Classes/MBFile.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBFile</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift7MBImagea"></a>
+                    <a name="//apple_ref/swift/Alias/MBImage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift7MBImagea">MBImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience name for MBImages.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">MBImage</span> <span class="o">=</span> <span class="kt"><a href="Classes/MBFile.html">MBFile</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift14MBMediaElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBMediaElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift14MBMediaElementC">MBMediaElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger media element.</p>
+
+                        <a href="Classes/MBMediaElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBMediaElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift17MBCheckboxElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBCheckboxElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBCheckboxElementC">MBCheckboxElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger checkbox element.</p>
+
+                        <a href="Classes/MBCheckboxElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBCheckboxElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift17MBRelationElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBRelationElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBRelationElementC">MBRelationElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger relation element.</p>
+
+                        <a href="Classes/MBRelationElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBRelationElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
 
                         </div>
                       </div>
@@ -306,16 +738,12 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBurgerSwift9MBElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift9MBElementC">MBElement</a>
+                    <a name="/s:12MBurgerSwift11MBMediaTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/MBMediaType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift11MBMediaTypeO">MBMediaType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -323,112 +751,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This class represents the base class for all MBurger elements. All the specialized elements are subclasses of this class.</p>
+                        <p>The type of the media.</p>
 
-                        <a href="Classes/MBElement.html" class="slightly-smaller">See more</a>
+                        <a href="Enums/MBMediaType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBElement</span> <span class="p">:</span> <span class="kt"><a href="MBElement.html#/s:12MBurgerSwift17MBElementProtocolP">MBElementProtocol</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift16MBElementFactoryV"></a>
-                    <a name="//apple_ref/swift/Struct/MBElementFactory" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift16MBElementFactoryV">MBElementFactory</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This struct is used to create a <code><a href="Classes/MBElement.html">MBElement</a></code> objects based on the API&rsquo;s response</p>
-
-                        <a href="Structs/MBElementFactory.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MBElementFactory</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift13MBTextElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBTextElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift13MBTextElementC">MBTextElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger text element.
-It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types on the dashboard</p>
-
-                        <a href="Classes/MBTextElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBTextElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift17MBDropdownElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBDropdownElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift17MBDropdownElementC">MBDropdownElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger dropdown element.</p>
-
-                        <a href="Classes/MBDropdownElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBDropdownElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MBMediaType</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -465,389 +796,14 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                 </li>
               </ul>
             </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift13MBPollElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBPollElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift13MBPollElementC">MBPollElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger poll element, the property ansers contains the answers the user can give to a the poll.</p>
-
-                        <a href="Classes/MBPollElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBPollElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift17MBMarkdownElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBMarkdownElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift17MBMarkdownElementC">MBMarkdownElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger markdown element.</p>
-
-                        <a href="Classes/MBMarkdownElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBMarkdownElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift16MBGeneralElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBGeneralElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift16MBGeneralElementC">MBGeneralElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a general MBurger element.</p>
-
-                        <a href="Classes/MBGeneralElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBGeneralElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift16MBAddressElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBAddressElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift16MBAddressElementC">MBAddressElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger address element.</p>
-
-                        <a href="Classes/MBAddressElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBAddressElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift13MBDateElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBDateElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift13MBDateElementC">MBDateElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger date element.</p>
-
-                        <a href="Classes/MBDateElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBDateElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift15MBImagesElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBImagesElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift15MBImagesElementC">MBImagesElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger images element.</p>
-
-                        <a href="Classes/MBImagesElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBImagesElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift7MBImagea"></a>
-                    <a name="//apple_ref/swift/Alias/MBImage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift7MBImagea">MBImage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A convenience name for MBImages.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">MBImage</span> <span class="o">=</span> <span class="kt"><a href="Classes/MBFile.html">MBFile</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift6MBFileC"></a>
-                    <a name="//apple_ref/swift/Class/MBFile" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift6MBFileC">MBFile</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a file.</p>
-
-                        <a href="Classes/MBFile.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBFile</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift14MBMediaElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBMediaElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift14MBMediaElementC">MBMediaElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger media element.</p>
-
-                        <a href="Classes/MBMediaElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBMediaElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift11MBMediaTypeO"></a>
-                    <a name="//apple_ref/swift/Enum/MBMediaType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift11MBMediaTypeO">MBMediaType</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The type of the media.</p>
-
-                        <a href="Enums/MBMediaType.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MBMediaType</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift17MBCheckboxElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBCheckboxElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift17MBCheckboxElementC">MBCheckboxElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger checkbox element.</p>
-
-                        <a href="Classes/MBCheckboxElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBCheckboxElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift17MBRelationElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBRelationElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift17MBRelationElementC">MBRelationElement</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a MBurger relation element.</p>
-
-                        <a href="Classes/MBRelationElement.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBRelationElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-10-24)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-04-21)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

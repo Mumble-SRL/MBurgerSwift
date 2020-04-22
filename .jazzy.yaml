@@ -1,3 +1,10 @@
+clean: true
+objc: false
+readme: Readme.md
+framework_root: MBurgerSwift
+module_version: 1.0.17
+sdk: iphonesimulator
+
 author: Mumble
 author_url: https://mumbleideas.it/
 github_url: https://github.com/Mumble-SRL/MBurgerSwift
@@ -73,3 +80,6 @@ custom_categories:
   - name: Public Extension
     children:
     - Collection
+  - name: MBUtilities
+    children: 
+    - MBUtilities
