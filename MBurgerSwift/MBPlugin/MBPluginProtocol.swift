@@ -25,7 +25,7 @@ public protocol MBPluginProtocol {
     var applicationStartupOrder: Int { get }
     
     /// Application startup block
-    func applicationStartupBlock(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> ApplicationStartupBlock?
+    func applicationStartupBlock() -> ApplicationStartupBlock?
 }
 
 /// Default values for plugin protocol
