@@ -9,7 +9,7 @@
 import Foundation
 
 /// Block executed at startup
-public typealias ApplicationStartupBlock = (_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?, _ completionBlock: () -> Void) -> Void
+public typealias ApplicationStartupBlock = (_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?, _ completionBlock: (() -> Void)?) -> Void
 
 /// A plugin that can be attached to add more functionalities to MBurger.
 public protocol MBPluginProtocol {

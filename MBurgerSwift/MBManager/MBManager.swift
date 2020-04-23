@@ -85,9 +85,9 @@ public final class MBManager {
         let startupBlock = startupBlocks[index]
         startupBlock(launchOptions, {
             if index + 1 < startupBlocks.count {
-                executeStartupBlock(index: index + 1,
-                                    startupBlocks: startupBlocks,
-                                    launchOptions: launchOptions)
+                self.executeStartupBlock(index: index + 1,
+                                         startupBlocks: startupBlocks,
+                                         launchOptions: launchOptions)
             }
         })
     }
