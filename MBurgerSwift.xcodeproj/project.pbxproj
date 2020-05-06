@@ -47,6 +47,7 @@
 		D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE361235F417F005A9BB8 /* MBDecoder.swift */; };
 		D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */; };
 		EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1286A9244EFFCE005A4005 /* MBUtilities.swift */; };
+		EC315ED52463026100050053 /* MBColorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC315ED42463026100050053 /* MBColorElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		D2FEE361235F417F005A9BB8 /* MBDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDecoder.swift; sourceTree = "<group>"; };
 		D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDecodable.swift; sourceTree = "<group>"; };
 		EC1286A9244EFFCE005A4005 /* MBUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUtilities.swift; sourceTree = "<group>"; };
+		EC315ED42463026100050053 /* MBColorElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBColorElement.swift; sourceTree = "<group>"; };
 		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 				D2C7067B233CFC96002A70F4 /* MBFile.swift */,
 				D2C7067D233CFCD4002A70F4 /* MBMediaElement.swift */,
 				D2C7067F233CFF40002A70F4 /* MBCheckboxElement.swift */,
+				EC315ED42463026100050053 /* MBColorElement.swift */,
 				D228B4A4234B8FD200C7D877 /* MBRelationElement.swift */,
 			);
 			path = MBElement;
@@ -409,6 +412,7 @@
 				D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */,
 				D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */,
 				D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */,
+				EC315ED52463026100050053 /* MBColorElement.swift in Sources */,
 				EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */,
 				D2C70674233CF7D6002A70F4 /* MBGeneralElement.swift in Sources */,
 				D2C70668233CEADB002A70F4 /* MBElementFactory.swift in Sources */,
