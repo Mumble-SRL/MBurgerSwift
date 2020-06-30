@@ -43,11 +43,12 @@
 		D2F24C84233E3CDF000F1274 /* MBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C83233E3CDF000F1274 /* MBUser.swift */; };
 		D2F24C86233E3F94000F1274 /* MBUserContractStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */; };
 		D2F24C88233E3FFD000F1274 /* MBUserPublishedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */; };
-		D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */; };
+		D2F24C8A233E41AA000F1274 /* MBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C89233E41AA000F1274 /* MBPlugin.swift */; };
 		D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE361235F417F005A9BB8 /* MBDecoder.swift */; };
 		D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */; };
 		EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1286A9244EFFCE005A4005 /* MBUtilities.swift */; };
 		EC315ED52463026100050053 /* MBColorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC315ED42463026100050053 /* MBColorElement.swift */; };
+		EC83B0B524AB2BA400F4AC2D /* MBPluginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83B0B424AB2BA400F4AC2D /* MBPluginManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,12 +91,13 @@
 		D2F24C83233E3CDF000F1274 /* MBUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUser.swift; sourceTree = "<group>"; };
 		D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUserContractStatus.swift; sourceTree = "<group>"; };
 		D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUserPublishedSection.swift; sourceTree = "<group>"; };
-		D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginProtocol.swift; sourceTree = "<group>"; };
+		D2F24C89233E41AA000F1274 /* MBPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPlugin.swift; sourceTree = "<group>"; };
 		D2FEE361235F417F005A9BB8 /* MBDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDecoder.swift; sourceTree = "<group>"; };
 		D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDecodable.swift; sourceTree = "<group>"; };
 		EC1286A9244EFFCE005A4005 /* MBUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUtilities.swift; sourceTree = "<group>"; };
 		EC315ED42463026100050053 /* MBColorElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBColorElement.swift; sourceTree = "<group>"; };
 		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EC83B0B424AB2BA400F4AC2D /* MBPluginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +252,8 @@
 		D2C70685233D02B1002A70F4 /* MBPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				D2F24C89233E41AA000F1274 /* MBPluginProtocol.swift */,
+				D2F24C89233E41AA000F1274 /* MBPlugin.swift */,
+				EC83B0B424AB2BA400F4AC2D /* MBPluginManager.swift */,
 			);
 			path = MBPlugin;
 			sourceTree = "<group>";
@@ -410,7 +413,7 @@
 				D2C7065A233CE67A002A70F4 /* MBPaginationParameter.swift in Sources */,
 				D2C70656233CE617002A70F4 /* MBParameter.swift in Sources */,
 				D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */,
-				D2F24C8A233E41AA000F1274 /* MBPluginProtocol.swift in Sources */,
+				D2F24C8A233E41AA000F1274 /* MBPlugin.swift in Sources */,
 				D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */,
 				EC315ED52463026100050053 /* MBColorElement.swift in Sources */,
 				EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */,
@@ -431,6 +434,7 @@
 				D251EAEE233CA8E0002CD197 /* MBElementProtocol.swift in Sources */,
 				D2C70653233CCEAB002A70F4 /* MBBlock.swift in Sources */,
 				D2C7067E233CFCD4002A70F4 /* MBMediaElement.swift in Sources */,
+				EC83B0B524AB2BA400F4AC2D /* MBPluginManager.swift in Sources */,
 				D251EAF1233CAF48002CD197 /* MBClient.swift in Sources */,
 				D251EAF7233CBF8E002CD197 /* MBLegalContract.swift in Sources */,
 				D2F24C84233E3CDF000F1274 /* MBUser.swift in Sources */,
