@@ -1,5 +1,5 @@
 //
-//  MBPluginManager.swift
+//  MBPluginsManager.swift
 //  MBurgerSwift
 //
 //  Created by Lorenzo Oliveto on 30/06/2020.
