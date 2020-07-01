@@ -26,6 +26,9 @@ public protocol MBPlugin {
     
     /// Application startup block
     func applicationStartupBlock() -> ApplicationStartupBlock?
+    
+    /// Function called by MBurger when new location data is available, used to synchronize audience location with automated messages
+    func locationDataUpdated(latitude: Double, longitude: Double)
 }
 
 /// Default values for plugin protocol
@@ -50,4 +53,7 @@ public extension MBPlugin {
     func applicationStartupBlock() -> ApplicationStartupBlock? {
         return nil
     }
+    
+    /// Default implementation for locationDataUpdated is empty, no action needed
+    func locationDataUpdated(latitude: Double, longitude: Double) { }
 }
