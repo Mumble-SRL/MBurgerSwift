@@ -60,15 +60,6 @@ public final class MBManager {
         MBPluginsManager.handlePluginStartup(plugins: plugins,
                                              launchOptions: launchOptions)        
     }
-    
-    /// Tells to MBurger that the location data has been updated, this function is used by audience plugin to tell other plugins that new data is available.
-    /// It can also be called by the app to inform of new location data but this will not trigger the update in the audience plugin; to do this call explicitally MBAudience function
-    /// - Parameters:
-    ///   - latitude: The new latitude.
-    ///   - longitude: The new longitude.
-    public func updateLocationData(latitude: Double, longitude: Double) {
-        MBPluginsManager.locationDataUpdated(latitude: latitude, longitude: longitude)
-    }
 }
 
 extension Locale {
