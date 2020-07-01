@@ -56,7 +56,7 @@ public class MBPluginsManager {
     /// - Parameters:
     ///   - latitude: The new latitude.
     ///   - longitude: The new longitude.
-    static func locationDataUpdated(latitude: Double, longitude: Double) {
+    public static func locationDataUpdated(latitude: Double, longitude: Double) {
         for plugin in MBManager.shared.plugins {
             plugin.locationDataUpdated(latitude: latitude, longitude: longitude)
         }
