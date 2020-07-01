@@ -61,4 +61,13 @@ public class MBPluginsManager {
             plugin.locationDataUpdated(latitude: latitude, longitude: longitude)
         }
     }
+    
+    /// Used to pass campaigns from MBMessages & MBAutomation in order to display automation campaigns based on the triggers
+    /// - Parameters:
+    ///   - campaigns: The campaigns fetched, tipically `MBCampaign` objects
+    public static func campaignsReceived(campaigns: [Any]) {
+        for plugin in MBManager.shared.plugins {
+            plugin.campaignsReceived(campaings: campaigns)
+        }
+    }
 }
