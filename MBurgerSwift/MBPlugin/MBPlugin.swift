@@ -37,7 +37,7 @@ public protocol MBPlugin {
     /// Function called by MBurger when campaigns are received, used to sync MBMessages with MBAutomation
     /// - Parameters:
     ///   - campaigns: Campaigns received.
-    func campaignsReceived(campaings: [Any])
+    func campaignsReceived(campaigns: [Any])
 }
 
 /// Default values for plugin protocol
@@ -67,5 +67,5 @@ public extension MBPlugin {
     func locationDataUpdated(latitude: Double, longitude: Double) { }
     
     /// Default implementation for campaigns retreival: empty, no action needed
-    func campaignsReceived(campaings: [Any]) { }
+    func campaignsReceived(campaigns: [Any]) { }
 }
