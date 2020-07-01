@@ -67,7 +67,7 @@ public class MBPluginsManager {
     ///   - campaigns: The campaigns fetched, tipically `MBCampaign` objects
     public static func campaignsReceived(campaigns: [Any]) {
         for plugin in MBManager.shared.plugins {
-            plugin.campaignsReceived(campaings: campaigns)
+            plugin.campaignsReceived(campaigns: campaigns)
         }
     }
 }
