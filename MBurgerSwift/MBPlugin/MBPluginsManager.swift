@@ -62,12 +62,12 @@ public class MBPluginsManager {
         }
     }
     
-    /// Used to pass campaigns from MBMessages & MBAutomation in order to display automation campaigns based on the triggers
+    /// Used to pass messages from MBMessages & MBAutomation in order to display automation messages based on the triggers
     /// - Parameters:
-    ///   - campaigns: The campaigns fetched, tipically `MBCampaign` objects
-    public static func campaignsReceived(campaigns: [Any]) {
+    ///   - messages: The messages fetched, tipically `MBMessage` objects
+    public static func messagesReceived(messages: inout [AnyObject], fromStartup: Bool) {
         for plugin in MBManager.shared.plugins {
-            plugin.campaignsReceived(campaigns: campaigns)
+            plugin.messagesReceived(messages: &messages, fromStartup: fromStartup)
         }
     }
 }

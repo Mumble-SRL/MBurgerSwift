@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// This class represents a MBurger poll element, the property ansers contains the answers the user can give to a the poll.
+/// This class represents a MBurger poll element, the property answers contains the answers the user can give to a the poll.
 public class MBPollElement: MBElement {
     /// The possible answers for the poll.
     public let answers: [String]

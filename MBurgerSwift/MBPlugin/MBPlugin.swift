@@ -34,10 +34,11 @@ public protocol MBPlugin {
     ///   - longitude: The new longitude.
     func locationDataUpdated(latitude: Double, longitude: Double)
     
-    /// Function called by MBurger when campaigns are received, used to sync MBMessages with MBAutomation
+    /// Function called by MBurger when messages are received, used to sync MBMessages with MBAutomation
     /// - Parameters:
-    ///   - campaigns: Campaigns received.
-    func campaignsReceived(campaigns: [Any])
+    ///   - messages: Messages received.
+    ///   - fromStartup: If the messages are being retrieved at startup.
+    func messagesReceived(messages: inout [AnyObject], fromStartup: Bool)
 }
 
 /// Default values for plugin protocol
@@ -66,6 +67,6 @@ public extension MBPlugin {
     /// Default implementation for locationDataUpdated: empty, no action needed
     func locationDataUpdated(latitude: Double, longitude: Double) { }
     
-    /// Default implementation for campaigns retreival: empty, no action needed
-    func campaignsReceived(campaigns: [Any]) { }
+    /// Default implementation for messages retreival: empty, no action needed
+    func messagesReceived(messages: inout [AnyObject], fromStartup: Bool) { }
 }
