@@ -52,6 +52,16 @@ public class MBPluginsManager {
         })
     }
 
+    /// Syncronize tag data coming from the plugins, this function is used by audience plugin to tell other plugins that a ttag has changed.
+    /// - Parameters:
+    ///   - tag: The tag that changed.
+    ///   - value: The new value for the tag, if the tag is removed the value is `nil`.
+    public static func tagChanged(tag: String, value: String?) {
+        for plugin in MBManager.shared.plugins {
+            plugin.tagChanged(tag: tag, value: value)
+        }
+    }
+
     /// Syncronize location data coming from the plugins, this function is used by audience plugin to tell other plugins that new data is available.
     /// - Parameters:
     ///   - latitude: The new latitude.

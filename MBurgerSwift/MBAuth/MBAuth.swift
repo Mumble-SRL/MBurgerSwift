@@ -16,6 +16,8 @@ public enum MBAuthSocialTokenType: Int {
     case facebook = 0
     /// A Google token
     case google = 1
+    /// A Apple sign in token
+    case apple = 2
 }
 
 /// Manages the authentication of the user.
@@ -134,14 +136,19 @@ public struct MBAuth {
     
     /// Authenticates a user using the social token
     /// - Parameters:
-    ///   - email: The `emailString` of the user
-    ///   - password: The `passwordString` of the user
+    ///   - token: The `token` to authenticate the user
+    ///   - tokenType: The `tokenType` (.facebook, .google, .apple)
+    ///   - name: The `nameString` of the user
+    ///   - surname: The `surnameString` of the user
+    ///   - contracts: The `[MBAuthContractAcceptanceParameter]` accepted by the user, `nil` by default
     ///   - success: A block that will be called when the request ends successfully. This block has no return value and takes one argument.
     ///   - accessToken: The access token will be saved in the Keychain and will be used in all the subsequent calls to the MBurger apis.
     ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
     ///   - error: The error describing the error that occurred.
     public static func authenticateUser(withSocialToken token: String,
                                         tokenType: MBAuthSocialTokenType,
+                                        name: String? = nil,
+                                        surname: String? = nil,
                                         contracts: [MBAuthContractAcceptanceParameter]?,
                                         success: @escaping (_ accessToken: String) -> Void,
                                         failure: @escaping (_ error: Error) -> Void) {
@@ -154,10 +161,21 @@ public struct MBAuth {
         if tokenType == .facebook {
             apiParameters["mode"] = "facebook"
             apiParameters["facebook_token"] = token
-        } else {
+        } else if tokenType == .google {
             apiParameters["mode"] = "google"
             apiParameters["google_token"] = token
+        } else if tokenType == .apple {
+            apiParameters["mode"] = "apple"
+            apiParameters["apple_token"] = token
         }
+        
+        if let name = name {
+            apiParameters["name"] = name
+        }
+        if let surname = surname {
+            apiParameters["surname"] = surname
+        }
+
         authenticateUser(withParameters: apiParameters, success: success, failure: failure)
     }
     

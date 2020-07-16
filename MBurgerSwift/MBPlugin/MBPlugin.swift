@@ -34,6 +34,12 @@ public protocol MBPlugin {
     ///   - longitude: The new longitude.
     func locationDataUpdated(latitude: Double, longitude: Double)
     
+    /// Function called by MBAudience when a tatg changes, used to synchronize audience with automated messages
+    /// - Parameters:
+    ///   - tag: The tag that changed.
+    ///   - value: The value that changed.
+    func tagChanged(tag: String, value: String?)
+
     /// Function called by MBurger when messages are received, used to sync MBMessages with MBAutomation
     /// - Parameters:
     ///   - messages: Messages received.
@@ -64,6 +70,9 @@ public extension MBPlugin {
         return nil
     }
     
+    /// Default implementation for tag change: empty, no action needed
+    func tagChanged(tag: String, value: String?) {}
+
     /// Default implementation for locationDataUpdated: empty, no action needed
     func locationDataUpdated(latitude: Double, longitude: Double) { }
     
