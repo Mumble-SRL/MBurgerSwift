@@ -243,8 +243,11 @@ All the model objects are conform to the `Equatable` protcol based on the corres
 
 # Authentication
 
-Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth).
+Read the full documentation for authentication apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth).
 
+# Admin
+
+If you need to create blocks and sections in your MBurger project you can use the [MBAdmin SDK](https://github.com/Mumble-SRL/MBAdmin)
 
 # Plugins
 You can add more to MBurger with plugins, classes that conforms to the `MBPluginProtocol` that can extend the functionalities of MBurger. An example of a plugin is [MPPayments](https://github.com/Mumble-SRL/MBPayments-iOS.git) a plugin that you to charge the users with single payments or sbscription.
