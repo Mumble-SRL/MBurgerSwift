@@ -104,6 +104,9 @@
                 <a class="nav-group-task-link" href="../Classes/MBDropdownElement.html">MBDropdownElement</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MBPollElement.html">MBPollElement</a>
               </li>
               <li class="nav-group-task">
@@ -143,7 +146,10 @@
                 <a class="nav-group-task-link" href="../Enums/MBMediaType.html">MBMediaType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+                <a class="nav-group-task-link" href="../Classes/MBColorElement.html">MBColorElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBMultipleElement.html">MBMultipleElement</a>
               </li>
             </ul>
           </li>
@@ -208,7 +214,7 @@
             <a class="nav-group-name-link" href="../MBPagination.html">MBPagination</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a>
+                <a class="nav-group-task-link" href="../Structs/MBPaginationInfo.html">MBPaginationInfo</a>
               </li>
             </ul>
           </li>
@@ -227,7 +233,7 @@
             <a class="nav-group-name-link" href="../MBPlugin.html">MBPlugin</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/MBPluginProtocol.html">MBPluginProtocol</a>
+                <a class="nav-group-task-link" href="../Protocols/MBPlugin.html">MBPlugin</a>
               </li>
             </ul>
           </li>
@@ -247,6 +253,28 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBMultipleElementOption.html">MBMultipleElementOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBPluginsManager.html">MBPluginsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBRelation.html">MBRelation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Typealiases.html#/s:12MBurgerSwift23ApplicationStartupBlocka">ApplicationStartupBlock</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -262,7 +290,7 @@
               </div>
             <p>The main client of the SDK, this is your entry point for all the calls you do with MBurger.
 All the api calls have two blocks as parameters called when the api completes, one (Success) for the succes case and one for the failure (Failure). These blocks are pushed in the main thread by the SDK.
-When the return of the api is an array it&rsquo;s returned also a <code><a href="../MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a></code> object with the information about the pagination (total number of elements and the range of the elements returned)</p>
+When the return of the api is an array it&rsquo;s returned also a <code><a href="../Structs/MBPaginationInfo.html">MBPaginationInfo</a></code> object with the information about the pagination (total number of elements and the range of the elements returned)</p>
 
           </div>
         </section>
@@ -390,7 +418,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getBlocks</span><span class="p">(</span><span class="n">withParameters</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/MBParameter.html">MBParameter</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                              <span class="n">includingSections</span> <span class="nv">sections</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
                              <span class="n">includeElements</span> <span class="nv">elements</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-                             <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">blocks</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MBBlock.html">MBBlock</a></span><span class="p">],</span> <span class="n">_</span> <span class="nv">paginationInfo</span><span class="p">:</span> <span class="kt"><a href="../MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                             <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">blocks</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MBBlock.html">MBBlock</a></span><span class="p">],</span> <span class="n">_</span> <span class="nv">paginationInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/MBPaginationInfo.html">MBPaginationInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
                              <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -659,7 +687,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getSections</span><span class="p">(</span><span class="n">ofBlock</span> <span class="nv">blockId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
                                <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/MBParameter.html">MBParameter</a></span><span class="p">]?,</span>
                                <span class="nv">elements</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-                               <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">sections</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MBSection.html">MBSection</a></span><span class="p">],</span> <span class="n">_</span> <span class="nv">paginationInfo</span><span class="p">:</span> <span class="kt"><a href="../MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                               <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">sections</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MBSection.html">MBSection</a></span><span class="p">],</span> <span class="n">_</span> <span class="nv">paginationInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/MBPaginationInfo.html">MBPaginationInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
                                <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -983,7 +1011,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-04-21)</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

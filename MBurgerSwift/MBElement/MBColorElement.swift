@@ -9,7 +9,7 @@
 import UIKit
 
 /// This class represents a MBurger color element.
-class MBColorElement: MBElement {
+public class MBColorElement: MBElement {
     /// The value of the element.
     public let colorHex: String
     

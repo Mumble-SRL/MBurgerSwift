@@ -1,0 +1,12 @@
+{
+    "status_code": 0,
+    "body": {
+        "id": 101,
+        "order": 1,
+        "all_locales": true,
+        "visible": true,
+        "in_evidence": true,
+        "available_at": 1586526060,
+        "updated_at": 1586526096
+    }
+}

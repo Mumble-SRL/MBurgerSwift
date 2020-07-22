@@ -1,5 +1,5 @@
 //
-//  MBPluginProtocol.swift
+//  MBPlugin.swift
 //  MBurgerSwift
 //
 //  Created by Alessandro Viviani on 27/09/2019.

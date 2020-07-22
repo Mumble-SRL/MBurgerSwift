@@ -15,6 +15,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBColorElement.swift",
+      "line": 52,
+      "symbol": "MBColorElement.encode(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBDateElement.swift",
       "line": 43,
       "symbol": "MBDateElement.init(from:)",
@@ -99,6 +106,27 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBMultipleElement.swift",
+      "line": 11,
+      "symbol": "MBMultipleElement",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBMultipleElement.swift",
+      "line": 12,
+      "symbol": "MBMultipleElement.options",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBMultipleElement.swift",
+      "line": 62,
+      "symbol": "MBMultipleElement.encode(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBPollElement.swift",
       "line": 99,
       "symbol": "MBPollElement.encode(to:)",
@@ -107,7 +135,7 @@
     },
     {
       "file": "/Users/lorenzooliveto/iOS/MBurger/MBurgerSwift/MBurgerSwift/MBElement/MBRelationElement.swift",
-      "line": 61,
+      "line": 52,
       "symbol": "MBRelationElement.encode(to:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

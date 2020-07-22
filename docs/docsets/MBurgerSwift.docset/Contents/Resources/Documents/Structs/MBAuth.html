@@ -104,6 +104,9 @@
                 <a class="nav-group-task-link" href="../Classes/MBDropdownElement.html">MBDropdownElement</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MBPollElement.html">MBPollElement</a>
               </li>
               <li class="nav-group-task">
@@ -143,7 +146,10 @@
                 <a class="nav-group-task-link" href="../Enums/MBMediaType.html">MBMediaType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+                <a class="nav-group-task-link" href="../Classes/MBColorElement.html">MBColorElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBMultipleElement.html">MBMultipleElement</a>
               </li>
             </ul>
           </li>
@@ -208,7 +214,7 @@
             <a class="nav-group-name-link" href="../MBPagination.html">MBPagination</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a>
+                <a class="nav-group-task-link" href="../Structs/MBPaginationInfo.html">MBPaginationInfo</a>
               </li>
             </ul>
           </li>
@@ -227,7 +233,7 @@
             <a class="nav-group-name-link" href="../MBPlugin.html">MBPlugin</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/MBPluginProtocol.html">MBPluginProtocol</a>
+                <a class="nav-group-task-link" href="../Protocols/MBPlugin.html">MBPlugin</a>
               </li>
             </ul>
           </li>
@@ -244,6 +250,28 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MBUtilities.html">MBUtilities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBMultipleElementOption.html">MBMultipleElementOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBPluginsManager.html">MBPluginsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBRelation.html">MBRelation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Typealiases.html#/s:12MBurgerSwift23ApplicationStartupBlocka">ApplicationStartupBlock</a>
               </li>
             </ul>
           </li>
@@ -636,9 +664,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBurgerSwift6MBAuthV16authenticateUser15withSocialToken9tokenType9contracts7success7failureySS_AA0cghJ0OSayAA0C27ContractAcceptanceParameterCGSgySScys5Error_pctFZ"></a>
-                    <a name="//apple_ref/swift/Method/authenticateUser(withSocialToken:tokenType:contracts:success:failure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift6MBAuthV16authenticateUser15withSocialToken9tokenType9contracts7success7failureySS_AA0cghJ0OSayAA0C27ContractAcceptanceParameterCGSgySScys5Error_pctFZ">authenticateUser(withSocialToken:<wbr>tokenType:<wbr>contracts:<wbr>success:<wbr>failure:<wbr>)</a>
+                    <a name="/s:12MBurgerSwift6MBAuthV16authenticateUser15withSocialToken9tokenType4name7surname9contracts7success7failureySS_AA0cghJ0OSSSgANSayAA0C27ContractAcceptanceParameterCGSgySScys5Error_pctFZ"></a>
+                    <a name="//apple_ref/swift/Method/authenticateUser(withSocialToken:tokenType:name:surname:contracts:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift6MBAuthV16authenticateUser15withSocialToken9tokenType4name7surname9contracts7success7failureySS_AA0cghJ0OSSSgANSayAA0C27ContractAcceptanceParameterCGSgySScys5Error_pctFZ">authenticateUser(withSocialToken:<wbr>tokenType:<wbr>name:<wbr>surname:<wbr>contracts:<wbr>success:<wbr>failure:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -655,6 +683,8 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">authenticateUser</span><span class="p">(</span><span class="n">withSocialToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                     <span class="nv">tokenType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MBAuthSocialTokenType.html">MBAuthSocialTokenType</a></span><span class="p">,</span>
+                                    <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                    <span class="nv">surname</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                     <span class="nv">contracts</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MBAuthContractAcceptanceParameter.html">MBAuthContractAcceptanceParameter</a></span><span class="p">]?,</span>
                                     <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">accessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
                                     <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
@@ -668,24 +698,60 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>email</em>
+                                <em>token</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code>emailString</code> of the user</p>
+                                  <p>The <code>token</code> to authenticate the user</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>password</em>
+                                <em>tokenType</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code>passwordString</code> of the user</p>
+                                  <p>The <code>tokenType</code> (.facebook, .google, .apple)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>nameString</code> of the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>surname</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>surnameString</code> of the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contracts</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>[MBAuthContractAcceptanceParameter]</code> accepted by the user, <code>nil</code> by default</p>
                                 </div>
                               </td>
                             </tr>
@@ -1331,7 +1397,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-04-21)</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

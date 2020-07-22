@@ -44,6 +44,8 @@ public enum MBElementType: Int, Codable {
     case relation = 10
     /// A color element.
     case color = 11
+    /// A multiple element.
+    case multiple = 12
 
     init(string: String) {
         switch string.lowercased() {
@@ -57,6 +59,7 @@ public enum MBElementType: Int, Codable {
         case "poll": self = .poll
         case "markdown": self = .markdown
         case "relation": self = .relation
+        case "multiple": self = .multiple
         default: self = .undefined
         }
     }

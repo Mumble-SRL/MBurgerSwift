@@ -12,13 +12,34 @@ import XCTest
 class MBProjectTests: XCTestCase {
 
     func testProject() throws {
-        guard let dictionary = TestUtilities.dictionaryForJson(file: "project") else {
-            fatalError("Can't decode JSON")
-        }
+        let dictionary = TestUtilities.dictionaryForJson(file: "project")
         let project = MBProject(dictionary: dictionary)
         
         XCTAssertEqual(project.projectId, 16)
         XCTAssertEqual(project.projectName, "Mumble")
+    }
+
+    func testProjectWithContracts() throws {
+        let dictionary = TestUtilities.dictionaryForJson(file: "projectContracts")
+        let project = MBProject(dictionary: dictionary)
+        
+        XCTAssertEqual(project.projectId, 16)
+        XCTAssertEqual(project.projectName, "Mumble")
+        XCTAssertNotNil(project.contracts?.first)
+        
+        guard let firstContract = project.contracts?.first else {
+            fatalError("First contract not present")
+        }
+        XCTAssertEqual(firstContract.contractId, 1)
+        XCTAssertEqual(firstContract.contractName, "Test")
+        XCTAssertNotNil(firstContract.link)
+        XCTAssertEqual(firstContract.link, "https://www.mburger.cloud")
+        XCTAssertNotNil(firstContract.text)
+        XCTAssertEqual(firstContract.text, "Lorem ipsum")
+        XCTAssert(firstContract.isActive)
+        let creationUpdateDate = Date(timeIntervalSince1970: 1595426504)
+        XCTAssertEqual(firstContract.creationDate, creationUpdateDate)
+        XCTAssertEqual(firstContract.updateDate, creationUpdateDate)
     }
 
 }

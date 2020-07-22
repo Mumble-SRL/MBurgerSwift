@@ -235,6 +235,7 @@ All the object models implement the `Codable` protocol so you can serialize and 
 * `MBPollElement`
 * `MBTextElement`
 * `MBColorElement`
+* `MBMultipleElement`
 * `MBUser`
 
 # Equality

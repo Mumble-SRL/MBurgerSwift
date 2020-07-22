@@ -103,6 +103,9 @@
                 <a class="nav-group-task-link" href="Classes/MBDropdownElement.html">MBDropdownElement</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBPollElement.html">MBPollElement</a>
               </li>
               <li class="nav-group-task">
@@ -142,7 +145,10 @@
                 <a class="nav-group-task-link" href="Enums/MBMediaType.html">MBMediaType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+                <a class="nav-group-task-link" href="Classes/MBColorElement.html">MBColorElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBMultipleElement.html">MBMultipleElement</a>
               </li>
             </ul>
           </li>
@@ -207,7 +213,7 @@
             <a class="nav-group-name-link" href="MBPagination.html">MBPagination</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a>
+                <a class="nav-group-task-link" href="Structs/MBPaginationInfo.html">MBPaginationInfo</a>
               </li>
             </ul>
           </li>
@@ -226,7 +232,7 @@
             <a class="nav-group-name-link" href="MBPlugin.html">MBPlugin</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/MBPluginProtocol.html">MBPluginProtocol</a>
+                <a class="nav-group-task-link" href="Protocols/MBPlugin.html">MBPlugin</a>
               </li>
             </ul>
           </li>
@@ -243,6 +249,28 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBUtilities.html">MBUtilities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBMultipleElementOption.html">MBMultipleElementOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBPluginsManager.html">MBPluginsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBRelation.html">MBRelation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Typealiases.html#/s:12MBurgerSwift23ApplicationStartupBlocka">ApplicationStartupBlock</a>
               </li>
             </ul>
           </li>
@@ -454,6 +482,8 @@
 <li><code><a href="Classes/MBRelationElement.html">MBRelationElement</a></code></li>
 <li><code><a href="Classes/MBPollElement.html">MBPollElement</a></code></li>
 <li><code><a href="Classes/MBTextElement.html">MBTextElement</a></code></li>
+<li><code><a href="Classes/MBColorElement.html">MBColorElement</a></code></li>
+<li><code><a href="Classes/MBMultipleElement.html">MBMultipleElement</a></code></li>
 <li><code><a href="Structs/MBUser.html">MBUser</a></code></li>
 </ul>
 <h1 id='equality' class='heading'>Equality</h1>
@@ -461,10 +491,13 @@
 <p>All the model objects are conform to the <code>Equatable</code> protcol based on the corresponding id (e.g. an MBSection will result equal to another MBSection object if they have the same <code>sectionId</code>)</p>
 <h1 id='authentication' class='heading'>Authentication</h1>
 
-<p>Read the full admin documentation apis <a href="https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth">here</a>.</p>
+<p>Read the full documentation for authentication apis <a href="https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth">here</a>.</p>
+<h1 id='admin' class='heading'>Admin</h1>
+
+<p>If you need to create blocks and sections in your MBurger project you can use the <a href="https://github.com/Mumble-SRL/MBAdmin">MBAdmin SDK</a></p>
 <h1 id='plugins' class='heading'>Plugins</h1>
 
-<p>You can add more to MBurger with plugins, classes that conforms to the <code><a href="Protocols/MBPluginProtocol.html">MBPluginProtocol</a></code> that can extend the functionalities of MBurger. An example of a plugin is <a href="https://github.com/Mumble-SRL/MBPayments-iOS.git">MPPayments</a> a plugin that you to charge the users with single payments or sbscription.</p>
+<p>You can add more to MBurger with plugins, classes that conforms to the <code>MBPluginProtocol</code> that can extend the functionalities of MBurger. An example of a plugin is <a href="https://github.com/Mumble-SRL/MBPayments-iOS.git">MPPayments</a> a plugin that you to charge the users with single payments or sbscription.</p>
 <h1 id='documentation' class='heading'>Documentation</h1>
 
 <p>For further information, you can check out the full SDK Reference in the <a href="docs">docs</a> folder.</p>
@@ -482,7 +515,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-04-21)</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
