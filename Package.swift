@@ -10,10 +10,10 @@ let package = Package(
         .library(
             name: "MBurgerSwift",
             targets: ["MBurgerSwift"])
+
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/Mumble-SRL/MBNetworkingSwift.git", from: "1.0.0"),
+        .package(url: "https://github.com/Mumble-SRL/MBNetworkingSwift.git", from: "1.0.0")
     ],
     targets: [
         .target(
@@ -23,6 +23,7 @@ let package = Package(
         ),
         .testTarget(
             name: "MBurgerSwiftTests",
-            dependencies: ["MBurgerSwift"])
+            dependencies: ["MBurgerSwift"],
+            path: "MBurgerSwiftTests")
     ]
 )

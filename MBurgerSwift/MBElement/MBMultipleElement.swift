@@ -8,7 +8,9 @@
 
 import UIKit
 
+/// This class represents a MBurger multiple element, users can select multiple values from an array of options.
 public class MBMultipleElement: MBElement {
+    /// The possible options of this element.
     public let options: [MBMultipleElementOption]
     
     /// The selected options of this element.
@@ -59,6 +61,7 @@ public class MBMultipleElement: MBElement {
         try super.init(from: decoder)
     }
     
+    /// Encodes a `MBMultipleElement` to an `Encoder`
     override public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeysElement.self)
         
@@ -92,6 +95,7 @@ public class MBMultipleElementOption: Codable {
         value = dictionary["value"] as? String ?? ""
     }
     
+    // MARK: - Codable protocol
     enum CodingKeys: String, CodingKey {
         case key
         case value

@@ -96,6 +96,7 @@ public class MBPollElement: MBElement {
         try super.init(from: decoder)
     }
     
+    /// Encodes a `MBPollElement` to an `Encoder`
     override public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeysElement.self)
         

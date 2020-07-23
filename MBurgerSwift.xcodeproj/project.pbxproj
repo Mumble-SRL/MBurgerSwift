@@ -47,6 +47,7 @@
 		D2F24C8A233E41AA000F1274 /* MBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C89233E41AA000F1274 /* MBPlugin.swift */; };
 		D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE361235F417F005A9BB8 /* MBDecoder.swift */; };
 		D2FEE364235F41A1005A9BB8 /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */; };
+		EC08843D24C9894200043CF2 /* MBurgerTokenKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08843C24C9894200043CF2 /* MBurgerTokenKeychain.swift */; };
 		EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1286A9244EFFCE005A4005 /* MBUtilities.swift */; };
 		EC2BA83424C87E670017C985 /* projectContracts.json in Resources */ = {isa = PBXBuildFile; fileRef = EC2BA83324C87E670017C985 /* projectContracts.json */; };
 		EC2BA83724C87FC90017C985 /* MBBlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BA83624C87FC90017C985 /* MBBlockTests.swift */; };
@@ -119,6 +120,7 @@
 		D2F24C89233E41AA000F1274 /* MBPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPlugin.swift; sourceTree = "<group>"; };
 		D2FEE361235F417F005A9BB8 /* MBDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDecoder.swift; sourceTree = "<group>"; };
 		D2FEE363235F41A1005A9BB8 /* MBDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDecodable.swift; sourceTree = "<group>"; };
+		EC08843C24C9894200043CF2 /* MBurgerTokenKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBurgerTokenKeychain.swift; sourceTree = "<group>"; };
 		EC1286A9244EFFCE005A4005 /* MBUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUtilities.swift; sourceTree = "<group>"; };
 		EC2BA83324C87E670017C985 /* projectContracts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = projectContracts.json; sourceTree = "<group>"; };
 		EC2BA83624C87FC90017C985 /* MBBlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBlockTests.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				D2F24C83233E3CDF000F1274 /* MBUser.swift */,
 				D2F24C85233E3F94000F1274 /* MBUserContractStatus.swift */,
 				D2F24C87233E3FFD000F1274 /* MBUserPublishedSection.swift */,
+				EC08843C24C9894200043CF2 /* MBurgerTokenKeychain.swift */,
 			);
 			path = MBAuth;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 			files = (
 				D2C7067C233CFC96002A70F4 /* MBFile.swift in Sources */,
 				D2C7065A233CE67A002A70F4 /* MBPaginationParameter.swift in Sources */,
+				EC08843D24C9894200043CF2 /* MBurgerTokenKeychain.swift in Sources */,
 				D2C70656233CE617002A70F4 /* MBParameter.swift in Sources */,
 				D2FEE362235F417F005A9BB8 /* MBDecoder.swift in Sources */,
 				D2F24C8A233E41AA000F1274 /* MBPlugin.swift in Sources */,
@@ -785,7 +789,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MBurgerSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -814,7 +818,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MBurgerSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

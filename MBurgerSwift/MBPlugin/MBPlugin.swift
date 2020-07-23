@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 /// Block executed at startup
-public typealias ApplicationStartupBlock = (_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?, _ completionBlock: (() -> Void)?) -> Void
+public typealias MBApplicationStartupBlock = (_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?, _ completionBlock: (() -> Void)?) -> Void
 
 /// A plugin that can be attached to add more functionalities to MBurger.
 public protocol MBPlugin {
@@ -26,7 +27,7 @@ public protocol MBPlugin {
     var applicationStartupOrder: Int { get }
     
     /// Application startup block
-    func applicationStartupBlock() -> ApplicationStartupBlock?
+    func applicationStartupBlock() -> MBApplicationStartupBlock?
     
     /// Function called by MBurger when new location data is available, used to synchronize audience location with automated messages
     /// - Parameters:
@@ -66,7 +67,7 @@ public extension MBPlugin {
     }
 
     /// Default value for the startup block = nil
-    func applicationStartupBlock() -> ApplicationStartupBlock? {
+    func applicationStartupBlock() -> MBApplicationStartupBlock? {
         return nil
     }
     
