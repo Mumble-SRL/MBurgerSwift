@@ -12,7 +12,7 @@ MBurgerSwift is a client libary, written in Swift, that can be used to interact 
 
 # Installation
 
-# Swift Package Manager
+## Swift Package Manager
 
 With Xcode 11 you can start using [Swift Package Manager](https://swift.org/package-manager/) to add **MBurgerSwift** to your project. Follow those simple steps:
 
@@ -21,7 +21,7 @@ With Xcode 11 you can start using [Swift Package Manager](https://swift.org/pack
 * Specify the version using rule "Up to Next Major" with "1.0.7" as its earliest version and press Next.
 * Xcode will try to resolving the version, after this, you can choose the `MBurgerSwift` library and add it to your app target.
 
-# CocoaPods
+## CocoaPods
 
 CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:
 
@@ -50,20 +50,20 @@ $ pod install
 
 CocoaPods is the preferred methot to install the library.
 
-# Carthage
+## Carthage
 
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBNetworkingSwift into your Xcode project using Carthage, specify it in your Cartfile:
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBurgerSwift into your Xcode project using Carthage, specify it in your Cartfile:
 
-``` ruby
+```
 github "Mumble-SRL/MBurgerSwift"
 ```
 
 
-# Manual installation
+## Manual installation
 
 To install the library manually drag and drop the folder `MBurgerSwift` to your project structure in XCode. 
 
-Note that `MBurgerSwift` has `MBNetworking (1.0.4)` and `SAMKeychain (1.5)` as dependencies, so you have to install also this libraries.
+Note that `MBurgerSwift` has `MBNetworkingSwift (1.0.4)` as dependency, so you have to install also this library.
 
 # Initialization
 
