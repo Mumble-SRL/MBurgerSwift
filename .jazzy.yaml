@@ -51,10 +51,12 @@ custom_categories:
     - MBMediaElement
     - MBCheckboxElement
     - MBRelationElement
+    - MBRelation
     - MBElementType
     - MBMediaType
     - MBColorElement
     - MBMultipleElement  
+    - MBMultipleElementOption
   - name: MBParameter
     children:
     - MBParameter
@@ -85,6 +87,8 @@ custom_categories:
   - name: MBPlugin
     children:
     - MBPlugin
+    - MBPluginsManager
+    - MBApplicationStartupBlock
   - name: Public Extension
     children:
     - Collection

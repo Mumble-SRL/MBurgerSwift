@@ -20,7 +20,7 @@ public class MBPluginsManager {
         let sortedPlugins = plugins.sorted(by: { (p1, p2) -> Bool in
             return p1.applicationStartupOrder > p2.applicationStartupOrder
         })
-        var startupBlocks = [ApplicationStartupBlock]()
+        var startupBlocks = [MBApplicationStartupBlock]()
         for plugin in sortedPlugins {
             if let startupBlock = plugin.applicationStartupBlock() {
                 startupBlocks.append(startupBlock)
@@ -37,7 +37,7 @@ public class MBPluginsManager {
     }
     
     private static func executeStartupBlock(index: Int,
-                                            startupBlocks: [ApplicationStartupBlock],
+                                            startupBlocks: [MBApplicationStartupBlock],
                                             launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         guard index < startupBlocks.count else {
             return

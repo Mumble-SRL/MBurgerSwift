@@ -10,11 +10,16 @@ import Foundation
 
 /// A protocol to which all MBElements needs to be conform, it has all the basic data that a MBElement needs.
 public protocol MBElementProtocol: Codable, Equatable {
+    /// The order of the element
     var order: Int { get }
+    /// The id of the element
     var id: Int { get }
+    /// The type of the element
     var type: MBElementType { get }
+    /// The name of the element
     var name: String { get set }
     
+    /// Initializes a element from the dicttionary returned by APIs
     init(dictionary: [String: Any])
 }
 

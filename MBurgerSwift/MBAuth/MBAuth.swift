@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SAMKeychain
 import MBNetworkingSwift
 
 /// The type of social tokens supported by MBurger
@@ -35,7 +34,7 @@ public struct MBAuth {
     public static var authToken: String? {
         if userIsLoggedInUserDefaults {
             guard let token = mbAuthToken else {
-                let tokenFromKeychain = SAMKeychain.password(forService: "com.mumble.mburger.service", account: "com.mumble.mburger.account")
+                let tokenFromKeychain = MBurgerTokenKeychain.token()
                 mbAuthToken = tokenFromKeychain
                 return tokenFromKeychain
             }
@@ -55,7 +54,7 @@ public struct MBAuth {
     static func save(accessToken token: String) {
         if !token.isEmpty && userIsLoggedInUserDefaults {
             self.mbAuthToken = token
-            SAMKeychain.setPassword(token, forService: "com.mumble.mburger.service", account: "com.mumble.mburger.account")
+            MBurgerTokenKeychain.saveToken(token)
         }
     }
     
@@ -367,7 +366,7 @@ public struct MBAuth {
     static func logoutCurrentUser() {
         mbAuthToken = nil
         userIsLoggedInUserDefaults = false
-        SAMKeychain.deletePassword(forService: "com.mumble.mburger.service", account: "com.mumble.mburger.account")
+        MBurgerTokenKeychain.removeToken()
     }
     
     static func saveNewTokenIfPresent(inResponse response: HTTPURLResponse?) {

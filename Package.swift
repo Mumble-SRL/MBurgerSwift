@@ -9,12 +9,12 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "MBurgerSwift",
-            targets: ["MBurgerSwift"]),
+            targets: ["MBurgerSwift"])
 
     ],
     dependencies: [
         .package(url: "https://github.com/Mumble-SRL/MBNetworkingSwift.git", from: "1.0.0"),
-        .package(url: "https://github.com/soffes/SAMKeychain.git", from: "1.5.0"),
+        .package(url: "https://github.com/soffes/SAMKeychain.git", from: "1.5.0")
     ],
     targets: [
         .target(

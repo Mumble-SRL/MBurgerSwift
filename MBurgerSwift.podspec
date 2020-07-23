@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MBurgerSwift"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "A Swift version of MBurger SDK"
   spec.description  = "MBurger is a client libary, written in Swift, that can be used to interact with the MBurger API."
   spec.homepage     = "https://github.com/Mumble-SRL/MBurgerSwift"
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Alessandro Viviani" => "alessandro.viviani@mumbleideas.it" }
+  spec.authors             = { "Alessandro Viviani" => "alessandro.viviani@mumbleideas.it", "Lorenzo Oliveto" => "lorenzo.oliveto@mumbleideas.it" }
   # Or just: spec.author    = "Alessandro Viviani"
   # spec.authors            = { "Alessandro Viviani" => "alessandro.viviani@mumbleideas.it" }
   # spec.social_media_url   = "https://twitter.com/Alessandro Viviani"
@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.6" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.7" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -98,7 +98,7 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-  # spec.library   = "iconv"
+  spec.frameworks   = "Security"
   # spec.libraries = "iconv", "xml2"
 
 
@@ -111,7 +111,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency 'SAMKeychain'
   spec.dependency 'MBNetworkingSwift'
 
   spec.swift_version = "5"

@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
           MBurgerSwift 1.0.17 Docs
         </a>
-         (91% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -139,6 +139,9 @@
                 <a class="nav-group-task-link" href="Classes/MBRelationElement.html">MBRelationElement</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBRelation.html">MBRelation</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/MBElementType.html">MBElementType</a>
               </li>
               <li class="nav-group-task">
@@ -149,6 +152,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBMultipleElement.html">MBMultipleElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBMultipleElementOption.html">MBMultipleElementOption</a>
               </li>
             </ul>
           </li>
@@ -234,6 +240,12 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/MBPlugin.html">MBPlugin</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBPluginsManager.html">MBPluginsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="MBPlugin.html#/s:12MBurgerSwift25MBApplicationStartupBlocka">MBApplicationStartupBlock</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -249,28 +261,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBUtilities.html">MBUtilities</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other%20Classes.html">Other Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBMultipleElementOption.html">MBMultipleElementOption</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBPluginsManager.html">MBPluginsManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBRelation.html">MBRelation</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other%20Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other%20Typealiases.html#/s:12MBurgerSwift23ApplicationStartupBlocka">ApplicationStartupBlock</a>
               </li>
             </ul>
           </li>
@@ -292,7 +282,17 @@
 
 <p>MBurgerSwift is a client libary, written in Swift, that can be used to interact with the <a href="https://mburger.cloud/login">MBurger</a> API. The minimum deployment target for the library is iOS 10.0.</p>
 <h1 id='installation' class='heading'>Installation</h1>
-<h1 id='installation-with-cocoapods' class='heading'>Installation with CocoaPods</h1>
+<h1 id='swift-package-manager' class='heading'>Swift Package Manager</h1>
+
+<p>With Xcode 11 you can start using <a href="https://swift.org/package-manager/">Swift Package Manager</a> to add <strong>MBurgerSwift</strong> to your project. Follow those simple steps:</p>
+
+<ul>
+<li>In Xcode go to File &gt; Swift Packages &gt; Add Package Dependency.</li>
+<li>Enter <code>https://github.com/Mumble-SRL/MBurgerSwift.git</code> in the &ldquo;Choose Package Repository&rdquo; dialog and press Next.</li>
+<li>Specify the version using rule &ldquo;Up to Next Major&rdquo; with &ldquo;1.0.0&rdquo; as its earliest version and press Next.</li>
+<li>Xcode will try to resolving the version, after this, you can choose the <code>MBurgerSwift</code> library and add it to your app target.</li>
+</ul>
+<h1 id='cocoapods' class='heading'>CocoaPods</h1>
 
 <p>CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:</p>
 <pre class="highlight ruby"><code><span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">cocoapods</span>
@@ -515,8 +515,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-23)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
