@@ -18,7 +18,7 @@ With Xcode 11 you can start using [Swift Package Manager](https://swift.org/pack
 
 * In Xcode go to File > Swift Packages > Add Package Dependency.
 * Enter `https://github.com/Mumble-SRL/MBurgerSwift.git` in the "Choose Package Repository" dialog and press Next.
-* Specify the version using rule "Up to Next Major" with "1.0.0" as its earliest version and press Next.
+* Specify the version using rule "Up to Next Major" with "1.0.7" as its earliest version and press Next.
 * Xcode will try to resolving the version, after this, you can choose the `MBurgerSwift` library and add it to your app target.
 
 # CocoaPods
@@ -49,6 +49,15 @@ $ pod install
 ```
 
 CocoaPods is the preferred methot to install the library.
+
+# Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBNetworkingSwift into your Xcode project using Carthage, specify it in your Cartfile:
+
+``` ruby
+github "Mumble-SRL/MBurgerSwift"
+```
+
 
 # Manual installation
 
