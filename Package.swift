@@ -13,17 +13,17 @@ let package = Package(
 
     ],
     dependencies: [
-        .package(url: "https://github.com/Mumble-SRL/MBNetworkingSwift.git", from: "1.0.0"),
-        .package(url: "https://github.com/soffes/SAMKeychain.git", from: "1.5.0")
+        .package(url: "https://github.com/Mumble-SRL/MBNetworkingSwift.git", from: "1.0.0")
     ],
     targets: [
         .target(
             name: "MBurgerSwift",
-            dependencies: [],
+            dependencies: ["MBNetworkingSwift"],
             path: "MBurgerSwift"
         ),
         .testTarget(
             name: "MBurgerSwiftTests",
-            dependencies: ["MBurgerSwift"])
+            dependencies: ["MBurgerSwift"],
+            path: "MBurgerSwiftTests")
     ]
 )
