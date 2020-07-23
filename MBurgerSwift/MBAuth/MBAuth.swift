@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import MBNetworkingSwift
 
 /// The type of social tokens supported by MBurger

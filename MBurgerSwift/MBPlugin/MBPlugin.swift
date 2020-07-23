@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Block executed at startup
 public typealias MBApplicationStartupBlock = (_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?, _ completionBlock: (() -> Void)?) -> Void
