@@ -1,0 +1,30 @@
+{
+    "status_code": 0,
+    "body": {
+        "id": 16,
+        "name": "Mumble",
+        "has_analytics": false,
+        "has_beacons": false,
+        "has_users": true,
+        "has_multilanguage": true,
+        "has_live_messages": false,
+        "has_push": true,
+        "has_subscriptions": false,
+        "has_payments": false,
+        "has_shopify": true,
+        "tz": "Europe/Rome",
+        "locales": {
+            "it": "Italiano",
+            "en": "English"
+        },
+        "evidence_id": 1,
+        "evidence_block_id": 45,
+        "evidence_section_id": 149,
+        "evidence_title": "uyftghuj",
+        "evidence_image": "https://dev.mburger.cloud/storage/420/conversions/img2-medium.jpg",
+        "mobile_events": null,
+        "mobile_views": null,
+        "created_at": 1543242455,
+        "updated_at": 1592386643
+    }
+}

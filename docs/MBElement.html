@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          MBurgerSwift Docs
+          MBurgerSwift 1.0.17 Docs
         </a>
-         (89% documented)
+         (91% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -89,7 +89,7 @@
             <a class="nav-group-name-link" href="MBElement.html">MBElement</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="MBElement.html#/s:12MBurgerSwift17MBElementProtocolP">MBElementProtocol</a>
+                <a class="nav-group-task-link" href="Protocols/MBElementProtocol.html">MBElementProtocol</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBElement.html">MBElement</a>
@@ -102,6 +102,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBDropdownElement.html">MBDropdownElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBPollElement.html">MBPollElement</a>
@@ -143,7 +146,10 @@
                 <a class="nav-group-task-link" href="Enums/MBMediaType.html">MBMediaType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBDropdownElementOption.html">MBDropdownElementOption</a>
+                <a class="nav-group-task-link" href="Classes/MBColorElement.html">MBColorElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBMultipleElement.html">MBMultipleElement</a>
               </li>
             </ul>
           </li>
@@ -155,6 +161,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/MBFilterParameter.html">MBFilterParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/MBGeneralParameter.html">MBGeneralParameter</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/MBGeofenceParameter.html">MBGeofenceParameter</a>
@@ -205,7 +214,7 @@
             <a class="nav-group-name-link" href="MBPagination.html">MBPagination</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="MBPagination.html#/s:12MBurgerSwift16MBPaginationInfoV">MBPaginationInfo</a>
+                <a class="nav-group-task-link" href="Structs/MBPaginationInfo.html">MBPaginationInfo</a>
               </li>
             </ul>
           </li>
@@ -224,7 +233,7 @@
             <a class="nav-group-name-link" href="MBPlugin.html">MBPlugin</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/MBPluginProtocol.html">MBPluginProtocol</a>
+                <a class="nav-group-task-link" href="Protocols/MBPlugin.html">MBPlugin</a>
               </li>
             </ul>
           </li>
@@ -236,12 +245,42 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="MBUtilities.html">MBUtilities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBUtilities.html">MBUtilities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBMultipleElementOption.html">MBMultipleElementOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBPluginsManager.html">MBPluginsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBRelation.html">MBRelation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other%20Typealiases.html#/s:12MBurgerSwift23ApplicationStartupBlocka">ApplicationStartupBlock</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>MBElement</h1>
             
           </div>
@@ -266,6 +305,7 @@
                       <div class="abstract">
                         <p>A protocol to which all MBElements needs to be conform, it has all the basic data that a MBElement needs.</p>
 
+                        <a href="Protocols/MBElementProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -278,38 +318,6 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift13MBElementTypeO"></a>
-                    <a name="//apple_ref/swift/Enum/MBElementType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift13MBElementTypeO">MBElementType</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The type of elements.</p>
-
-                        <a href="Enums/MBElementType.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MBElementType</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -331,17 +339,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBElement</span> <span class="p">:</span> <span class="kt"><a href="MBElement.html#/s:12MBurgerSwift17MBElementProtocolP">MBElementProtocol</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBElement</span> <span class="p">:</span> <span class="kt"><a href="Protocols/MBElementProtocol.html">MBElementProtocol</a></span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -370,10 +374,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -403,10 +403,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -463,10 +459,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -480,7 +472,7 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This class represents a MBurger poll element, the property ansers contains the answers the user can give to a the poll.</p>
+                        <p>This class represents a MBurger poll element, the property answers contains the answers the user can give to a the poll.</p>
 
                         <a href="Classes/MBPollElement.html" class="slightly-smaller">See more</a>
                       </div>
@@ -495,10 +487,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -527,10 +515,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -559,10 +543,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -591,10 +571,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -623,10 +599,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -649,6 +621,34 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBImagesElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift6MBFileC"></a>
+                    <a name="//apple_ref/swift/Class/MBFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift6MBFileC">MBFile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a file.</p>
+
+                        <a href="Classes/MBFile.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBFile</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -682,42 +682,6 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:12MBurgerSwift6MBFileC"></a>
-                    <a name="//apple_ref/swift/Class/MBFile" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift6MBFileC">MBFile</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This class represents a file.</p>
-
-                        <a href="Classes/MBFile.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBFile</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -740,6 +704,90 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBMediaElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift17MBCheckboxElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBCheckboxElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBCheckboxElementC">MBCheckboxElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger checkbox element.</p>
+
+                        <a href="Classes/MBCheckboxElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBCheckboxElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift17MBRelationElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBRelationElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBRelationElementC">MBRelationElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class represents a MBurger relation element.</p>
+
+                        <a href="Classes/MBRelationElement.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBRelationElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift13MBElementTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/MBElementType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift13MBElementTypeO">MBElementType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of elements.</p>
+
+                        <a href="Enums/MBElementType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MBElementType</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -774,16 +822,12 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBurgerSwift17MBCheckboxElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBCheckboxElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift17MBCheckboxElementC">MBCheckboxElement</a>
+                    <a name="/s:12MBurgerSwift14MBColorElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBColorElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift14MBColorElementC">MBColorElement</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -791,31 +835,27 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This class represents a MBurger checkbox element.</p>
+                        <p>This class represents a MBurger color element.</p>
 
-                        <a href="Classes/MBCheckboxElement.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/MBColorElement.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBCheckboxElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBColorElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBurgerSwift17MBRelationElementC"></a>
-                    <a name="//apple_ref/swift/Class/MBRelationElement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift17MBRelationElementC">MBRelationElement</a>
+                    <a name="/s:12MBurgerSwift17MBMultipleElementC"></a>
+                    <a name="//apple_ref/swift/Class/MBMultipleElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift17MBMultipleElementC">MBMultipleElement</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +863,15 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This class represents a MBurger relation element.</p>
+                        <p>Undocumented</p>
 
-                        <a href="Classes/MBRelationElement.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/MBMultipleElement.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBRelationElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBMultipleElement</span> <span class="p">:</span> <span class="kt"><a href="Classes/MBElement.html">MBElement</a></span></code></pre>
 
                         </div>
                       </div>
@@ -846,8 +886,8 @@ It is the counterpart of the &lsquo;text&rsquo; and &lsquo;textarea&rsquo; types
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2019-10-24)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

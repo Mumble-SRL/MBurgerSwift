@@ -1,0 +1,24 @@
+{
+    "status_code": 0,
+    "body": {
+        "id": 100,
+        "order": 1,
+        "title": "Block title",
+        "subtitle": "Block subtitle",
+        "url_title": "block-title",
+        "is_single": false,
+        "has_push": false,
+        "has_beacons": false,
+        "sections": [
+            {
+                "id": 101,
+                "order": 1,
+                "all_locales": true,
+                "visible": true,
+                "in_evidence": true,
+                "available_at": 1586526060,
+                "updated_at": 1586526096
+            }
+        ]
+    }
+}

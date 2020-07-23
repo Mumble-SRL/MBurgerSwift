@@ -1,6 +1,19 @@
+clean: true
+objc: false
+readme: Readme.md
+framework_root: MBurgerSwift
+module_version: 1.0.17
+sdk: iphonesimulator
+
 author: Mumble
 author_url: https://mumbleideas.it/
 github_url: https://github.com/Mumble-SRL/MBurgerSwift
+
+xcodebuild_arguments:
+    - "-workspace"
+    - "MBurgerSwift.xcworkspace"
+    - "-scheme"
+    - "MBurgerSwift"
 
 theme: fullwidth
 
@@ -26,6 +39,7 @@ custom_categories:
     - MBElementFactory
     - MBTextElement
     - MBDropdownElement
+    - MBDropdownElementOption
     - MBPollElement
     - MBMarkdownElement
     - MBGeneralElement
@@ -39,7 +53,8 @@ custom_categories:
     - MBRelationElement
     - MBElementType
     - MBMediaType
-    - MBDropdownElementOption
+    - MBColorElement
+    - MBMultipleElement  
   - name: MBParameter
     children:
     - MBParameter
@@ -69,7 +84,10 @@ custom_categories:
     - MBLegalContract
   - name: MBPlugin
     children:
-    - MBPluginProtocol
+    - MBPlugin
   - name: Public Extension
     children:
     - Collection
+  - name: MBUtilities
+    children: 
+    - MBUtilities

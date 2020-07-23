@@ -1,5 +1,5 @@
 PODS:
-  - MBNetworkingSwift (1.0.5)
+  - MBNetworkingSwift (1.0.10)
   - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SAMKeychain
 
 SPEC CHECKSUMS:
-  MBNetworkingSwift: 98597079391834bbe57394eb94e7206707bdaa44
+  MBNetworkingSwift: 293afd6c2a20e9d242204ad3a868f44fa7d8e23f
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: 1b76a2552c0ba3dd1c86bd45fd473e277dfbac56
+PODFILE CHECKSUM: 71ea182d7d78cf1ff5bd568c864faa244d49da43
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

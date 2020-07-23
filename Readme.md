@@ -12,7 +12,16 @@ MBurgerSwift is a client libary, written in Swift, that can be used to interact 
 
 # Installation
 
-# Installation with CocoaPods
+# Swift Package Manager
+
+With Xcode 11 you can start using [Swift Package Manager](https://swift.org/package-manager/) to add **MBurgerSwift** to your project. Follow those simple steps:
+
+* In Xcode go to File > Swift Packages > Add Package Dependency.
+* Enter `https://github.com/Mumble-SRL/MBurgerSwift.git` in the "Choose Package Repository" dialog and press Next.
+* Specify the version using rule "Up to Next Major" with "1.0.0" as its earliest version and press Next.
+* Xcode will try to resolving the version, after this, you can choose the `MBurgerSwift` library and add it to your app target.
+
+# CocoaPods
 
 CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:
 
@@ -234,6 +243,8 @@ All the object models implement the `Codable` protocol so you can serialize and 
 * `MBRelationElement`
 * `MBPollElement`
 * `MBTextElement`
+* `MBColorElement`
+* `MBMultipleElement`
 * `MBUser`
 
 # Equality
@@ -242,8 +253,11 @@ All the model objects are conform to the `Equatable` protcol based on the corres
 
 # Authentication
 
-Read the full admin documentation apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth).
+Read the full documentation for authentication apis [here](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/MBurgerSwift/MBAuth).
 
+# Admin
+
+If you need to create blocks and sections in your MBurger project you can use the [MBAdmin SDK](https://github.com/Mumble-SRL/MBAdmin)
 
 # Plugins
 You can add more to MBurger with plugins, classes that conforms to the `MBPluginProtocol` that can extend the functionalities of MBurger. An example of a plugin is [MPPayments](https://github.com/Mumble-SRL/MBPayments-iOS.git) a plugin that you to charge the users with single payments or sbscription.

@@ -37,6 +37,10 @@ public struct MBElementFactory {
             return MBDateElement(dictionary: dictionary)
         case "relation":
             return MBRelationElement(dictionary: dictionary)
+        case "color":
+            return MBColorElement(dictionary: dictionary)
+        case "multiple":
+            return MBMultipleElement(dictionary: dictionary)
         default:
             return MBGeneralElement(dictionary: dictionary)
         }

@@ -1,0 +1,201 @@
+{
+    "status_code": 0,
+    "body": {
+        "id": 100,
+        "order": 1,
+        "title": "Block title",
+        "subtitle": "Block subtitle",
+        "url_title": "block-title",
+        "is_single": false,
+        "has_push": false,
+        "has_beacons": false,
+        "sections": [
+            {
+                "id": 101,
+                "order": 1,
+                "all_locales": true,
+                "visible": true,
+                "in_evidence": true,
+                "available_at": 1586526060,
+                "updated_at": 1586526096,
+                "elements": {
+                    "title": {
+                        "id": 1069,
+                        "name": "title",
+                        "type": "text",
+                        "order": 1,
+                        "options": [
+                            {
+                                "key": "",
+                                "value": ""
+                            }
+                        ],
+                        "locale": "it",
+                        "value": "Ciao"
+                    },
+                    "image": {
+                        "id": 1070,
+                        "name": "image",
+                        "type": "image",
+                        "order": 2,
+                        "options": [
+                            {
+                                "key": "",
+                                "value": ""
+                            }
+                        ],
+                        "locale": "it",
+                        "value": [
+                            {
+                                "id": 385,
+                                "url": "https://dev.mburger.cloud/storage/385/conversions/JaC9O-ym-medium.jpg",
+                                "size": 12302,
+                                "file_name": "JaC9O-ym.jpg",
+                                "mime_type": "image/jpeg"
+                            }
+                        ]
+                    },
+                    "checkbox": {
+                        "id": 1223,
+                        "name": "checkbox",
+                        "type": "checkbox",
+                        "order": 3,
+                        "options": [],
+                        "locale": "it",
+                        "value": false
+                    },
+                    "slug": {
+                        "id": 1225,
+                        "name": "slug",
+                        "type": "slug",
+                        "order": 1000,
+                        "options": [],
+                        "locale": "it",
+                        "value": "ciao",
+                        "translations": {
+                            "it": "ciao"
+                        }
+                    },
+                    "seo": {
+                        "id": 1227,
+                        "name": "seo",
+                        "type": "seo",
+                        "order": 999,
+                        "options": [],
+                        "locale": "it",
+                        "value": {
+                            "title": "",
+                            "description": "",
+                            "keywords": []
+                        }
+                    },
+                    "mul": {
+                        "id": 1292,
+                        "name": "mul",
+                        "type": "multiple",
+                        "order": 4,
+                        "options": [
+                            {
+                                "key": "aa",
+                                "value": "Aa"
+                            },
+                            {
+                                "key": "bb",
+                                "value": "Bb"
+                            },
+                            {
+                                "key": "cc",
+                                "value": "Cc"
+                            }
+                        ],
+                        "locale": "it",
+                        "value": [
+                            "aa",
+                            "cc"
+                        ]
+                    },
+                    "poll": {
+                        "id": 1299,
+                        "name": "poll",
+                        "type": "poll",
+                        "order": 6,
+                        "options": [],
+                        "locale": "it",
+                        "value": {
+                            "answers": [
+                                "a",
+                                "b",
+                                "c",
+                                "d",
+                                null,
+                                null
+                            ],
+                            "ends_at": 1580812500,
+                            "results": [
+                                0,
+                                2,
+                                1,
+                                4,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "image-1": {
+                        "id": 1309,
+                        "name": "image-1",
+                        "type": "image",
+                        "order": 5,
+                        "options": [],
+                        "locale": "it",
+                        "value": [
+                            {
+                                "id": 416,
+                                "url": "https://dev.mburger.cloud/storage/416/conversions/img4-medium.jpg",
+                                "size": 9459,
+                                "file_name": "img4.jpeg",
+                                "mime_type": "image/jpeg"
+                            },
+                            {
+                                "id": 417,
+                                "url": "https://dev.mburger.cloud/storage/417/conversions/img2-medium.jpg",
+                                "size": 71146,
+                                "file_name": "img2.jpg",
+                                "mime_type": "image/jpeg"
+                            },
+                            {
+                                "id": 418,
+                                "url": "https://dev.mburger.cloud/storage/418/conversions/img3-medium.jpg",
+                                "size": 45166,
+                                "file_name": "img3.jpg",
+                                "mime_type": "image/jpeg"
+                            }
+                        ]
+                    },
+                    "evidence": {
+                        "id": 1311,
+                        "name": "evidence",
+                        "type": "evidence",
+                        "order": 999,
+                        "options": [],
+                        "locale": "it",
+                        "value": 1
+                    },
+                    "relation": {
+                        "id": 1313,
+                        "name": "relation",
+                        "type": "relation",
+                        "order": 1000,
+                        "options": [],
+                        "locale": "it",
+                        "value": {
+                            "block_id": 54,
+                            "section_id": 175,
+                            "text": "Block ID: 175"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
