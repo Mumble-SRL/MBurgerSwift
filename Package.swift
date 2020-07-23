@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "MBurgerSwift",
-            dependencies: ["MBNetworkingSwift"],
+            dependencies: [],
             path: "MBurgerSwift"
         ),
         .testTarget(
