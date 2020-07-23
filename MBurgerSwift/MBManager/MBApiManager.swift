@@ -3,7 +3,7 @@
 //  MBurgerSwift
 //
 //  Created by Alessandro Viviani on 26/09/2019.
-//  Copyright © 2019 Mumble S.r.l (https://mumbleideas.it/). All rights reserved.
+//  Copyright © 2019 Mumbble S.r.l (https://mumbleideas.it/). All rights reserved.
 //
 
 import Foundation
