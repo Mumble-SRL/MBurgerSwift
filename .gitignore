@@ -35,6 +35,7 @@ playground.xcworkspace
 
 .build/
 
+Carthage/
 Carthage/Build/
 
 # Accio dependency management
