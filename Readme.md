@@ -2,12 +2,12 @@
 <img src="https://raw.githubusercontent.com/Mumble-SRL/MBurgerSwift/master/Images/mburger-icon.png" alt="MBurger Logo" title="MBurger Logo">
 </p>
 
-[![Documentation](https://img.shields.io/badge/documentation-100%25-brightgreen.svg)](https://github.com/Mumble-SRL/MBNetworkingSwift/tree/master/docs)
+[![Documentation](https://img.shields.io/badge/documentation-100%25-brightgreen.svg)](https://github.com/Mumble-SRL/MBurgerSwift/tree/master/docs)
 [![](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
 ![CocoaPods](https://img.shields.io/badge/pod-v1.0.8-blue.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Liense](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)]
-(LICENSE)
+[![Lciense](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)]
+(https://github.com/Mumble-SRL/MBurgerSwift/blob/mastetr/LICENSE)
 
 # MBurgerSwift
 
