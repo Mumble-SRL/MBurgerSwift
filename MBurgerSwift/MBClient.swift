@@ -151,7 +151,7 @@ public final class MBClient {
     ///   - error: The error describing the error that occurred.
     
     public static func getSections(ofBlock blockId: Int,
-                                   parameters: [MBParameter]?,
+                                   parameters: [MBParameter]? = nil,
                                    elements: Bool = false,
                                    success: @escaping (_ sections: [MBSection], _ paginationInfo: MBPaginationInfo) -> Void,
                                    failure: @escaping (_ error: Error) -> Void) {
@@ -199,7 +199,7 @@ public final class MBClient {
     
     public static func getSection(withId sectionId: Int,
                                   elements: Bool = false,
-                                  parameters: [MBParameter]?,
+                                  parameters: [MBParameter]? = nil,
                                   success: @escaping (_ section: MBSection) -> Void,
                                   failure: @escaping (_ error: Error) -> Void) {
         var apiParameters: Parameters = [:]
