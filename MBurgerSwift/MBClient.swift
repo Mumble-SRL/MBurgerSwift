@@ -198,8 +198,8 @@ public final class MBClient {
     ///   - error: The error describing the error that occurred.
     
     public static func getSection(withId sectionId: Int,
-                                  elements: Bool = false,
                                   parameters: [MBParameter]? = nil,
+                                  elements: Bool = false,
                                   success: @escaping (_ section: MBSection) -> Void,
                                   failure: @escaping (_ error: Error) -> Void) {
         var apiParameters: Parameters = [:]
