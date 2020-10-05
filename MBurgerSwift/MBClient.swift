@@ -199,6 +199,7 @@ public final class MBClient {
     
     public static func getSection(withId sectionId: Int,
                                   elements: Bool = false,
+                                  parameters: [MBParameter]?,
                                   success: @escaping (_ section: MBSection) -> Void,
                                   failure: @escaping (_ error: Error) -> Void) {
         var apiParameters: Parameters = [:]
@@ -207,6 +208,12 @@ public final class MBClient {
             apiParameters["include"] = "elements"
         }
         
+        if let parameters = parameters {
+            for parameter in parameters {
+                apiParameters.merge(parameter.parameterRepresentation(), uniquingKeysWith: {$1})
+            }
+        }
+
         let apiName = String(format: "sections/%d", sectionId)
         MBApiManager.request(withToken: MBManager.shared.apiToken,
                              locale: MBManager.shared.localeString,

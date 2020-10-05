@@ -22,7 +22,7 @@ MBAuth.registerUser(withName: "name",
 # Authenticate a user
 
 ### Email and password
-After registeering the user you can authenticate it with its email and password. All the communication with the server are made in https so all the data are encrypted. If the authentication is correct the api will return the access token. This token will be put in the `Authorization` header for all the subsequent call to all the MBurger apis.
+After registering the user you can authenticate it with its email and password. All the communication with the server are made in https so all the data are encrypted. If the authentication is correct the api will return the access token. This token will be put in the `Authorization` header for all the subsequent call to all the MBurger apis.
 
 ```swift
 MBAuth.authenticateUser(withEmail: "email", password: "password", success: { (accessToken) in
@@ -39,6 +39,7 @@ Socials currently supported:
 
 * Google
 * Facebook
+* Apple
 
 ```swift
 MBAuth.authenticateUser(withSocialToken: "socialToken", 
@@ -48,9 +49,6 @@ MBAuth.authenticateUser(withSocialToken: "socialToken",
 })
 ```     
 
-### Apple ID
-
-> @TODO: 
 
 You can see if a user is currently authenticated with `MBAuth.userIsLoggedIn`.
 
