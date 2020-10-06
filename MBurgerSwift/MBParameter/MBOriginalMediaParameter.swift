@@ -10,6 +10,8 @@ import UIKit
 
 /// A parameter to request original version of the images
 public struct MBOriginalMediaParameter: MBParameter {
+    /// Initializes an original media parameter
+    public init() {}
     /// Returns the `Parameters` rapresentation of the object.
     public func parameterRepresentation() -> [String: Any] {
         return ["original_media": "true"]
