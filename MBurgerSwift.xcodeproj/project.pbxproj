@@ -60,6 +60,9 @@
 		EC315ED52463026100050053 /* MBColorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC315ED42463026100050053 /* MBColorElement.swift */; };
 		EC83B0B524AB2BA400F4AC2D /* MBPluginsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83B0B424AB2BA400F4AC2D /* MBPluginsManager.swift */; };
 		EC8533FF24C5DDB40038F2D4 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8533FE24C5DDB40038F2D4 /* TestUtilities.swift */; };
+		EC8668C3252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8668C2252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift */; };
+		EC8668CB252C4EC900C5BFD2 /* MBOriginalMediaParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8668CA252C4EC900C5BFD2 /* MBOriginalMediaParameter.swift */; };
+		EC8668CF252C4F0200C5BFD2 /* MBImageFormatParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8668CE252C4F0200C5BFD2 /* MBImageFormatParameter.swift */; };
 		ECB838FD24C5DAAA004E174D /* MBurgerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D251EAE2233CA8A7002CD197 /* MBurgerSwift.framework */; };
 		ECB8390724C5DBA3004E174D /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = ECB8390624C5DBA3004E174D /* project.json */; };
 		ECB8390924C5DC39004E174D /* MBProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8390824C5DC39004E174D /* MBProjectTests.swift */; };
@@ -134,6 +137,9 @@
 		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		EC83B0B424AB2BA400F4AC2D /* MBPluginsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginsManager.swift; sourceTree = "<group>"; };
 		EC8533FE24C5DDB40038F2D4 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
+		EC8668C2252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBForceLocaleFallbackParameter.swift; sourceTree = "<group>"; };
+		EC8668CA252C4EC900C5BFD2 /* MBOriginalMediaParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBOriginalMediaParameter.swift; sourceTree = "<group>"; };
+		EC8668CE252C4F0200C5BFD2 /* MBImageFormatParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBImageFormatParameter.swift; sourceTree = "<group>"; };
 		ECB838F824C5DAAA004E174D /* MBurgerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBurgerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB838FC24C5DAAA004E174D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECB8390624C5DBA3004E174D /* project.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = project.json; sourceTree = "<group>"; };
@@ -265,6 +271,9 @@
 				D2C7065F233CE761002A70F4 /* MBGeofenceParameter.swift */,
 				D2C70659233CE67A002A70F4 /* MBPaginationParameter.swift */,
 				D2C70657233CE631002A70F4 /* MBSortParameter.swift */,
+				EC8668C2252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift */,
+				EC8668CA252C4EC900C5BFD2 /* MBOriginalMediaParameter.swift */,
+				EC8668CE252C4F0200C5BFD2 /* MBImageFormatParameter.swift */,
 			);
 			path = MBParameter;
 			sourceTree = "<group>";
@@ -594,11 +603,13 @@
 				D2F24C8A233E41AA000F1274 /* MBPlugin.swift in Sources */,
 				D228B4A5234B8FD200C7D877 /* MBRelationElement.swift in Sources */,
 				EC315ED52463026100050053 /* MBColorElement.swift in Sources */,
+				EC8668C3252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift in Sources */,
 				EC1286AA244EFFCE005A4005 /* MBUtilities.swift in Sources */,
 				D2C70674233CF7D6002A70F4 /* MBGeneralElement.swift in Sources */,
 				D2C70668233CEADB002A70F4 /* MBElementFactory.swift in Sources */,
 				D2F24C86233E3F94000F1274 /* MBUserContractStatus.swift in Sources */,
 				D2C70658233CE631002A70F4 /* MBSortParameter.swift in Sources */,
+				EC8668CB252C4EC900C5BFD2 /* MBOriginalMediaParameter.swift in Sources */,
 				D2F24C88233E3FFD000F1274 /* MBUserPublishedSection.swift in Sources */,
 				D251EAF5233CBF6E002CD197 /* MBProject.swift in Sources */,
 				D2C70660233CE761002A70F4 /* MBGeofenceParameter.swift in Sources */,
@@ -623,6 +634,7 @@
 				D251EAFB233CC071002CD197 /* MBManager.swift in Sources */,
 				D2C7066E233CF0A5002A70F4 /* MBDropdownElement.swift in Sources */,
 				D251EAF3233CAF7A002CD197 /* MBApiManager.swift in Sources */,
+				EC8668CF252C4F0200C5BFD2 /* MBImageFormatParameter.swift in Sources */,
 				D2C70651233CCEA2002A70F4 /* MBSection.swift in Sources */,
 				D2C7064F233CCE38002A70F4 /* MBPaginationInfo.swift in Sources */,
 				D2C70678233CFB7F002A70F4 /* MBDateElement.swift in Sources */,
@@ -799,6 +811,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -829,6 +842,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -850,6 +864,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mumble.MBurgerSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -872,6 +888,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mumble.MBurgerSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
