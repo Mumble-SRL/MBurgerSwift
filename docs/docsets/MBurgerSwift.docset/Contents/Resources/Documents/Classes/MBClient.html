@@ -265,6 +265,28 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBImageFormat.html">MBImageFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MBForceLocaleFallbackParameter.html">MBForceLocaleFallbackParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MBImageFormatParameter.html">MBImageFormatParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/MBOriginalMediaParameter.html">MBOriginalMediaParameter</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -676,7 +698,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getSections</span><span class="p">(</span><span class="n">ofBlock</span> <span class="nv">blockId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-                               <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/MBParameter.html">MBParameter</a></span><span class="p">]?,</span>
+                               <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/MBParameter.html">MBParameter</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                <span class="nv">elements</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
                                <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">sections</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MBSection.html">MBSection</a></span><span class="p">],</span> <span class="n">_</span> <span class="nv">paginationInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/MBPaginationInfo.html">MBPaginationInfo</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
                                <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
@@ -792,9 +814,9 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12MBurgerSwift8MBClientC10getSection6withId8elements7success7failureySi_SbyAA9MBSectionCcys5Error_pctFZ"></a>
-                    <a name="//apple_ref/swift/Method/getSection(withId:elements:success:failure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12MBurgerSwift8MBClientC10getSection6withId8elements7success7failureySi_SbyAA9MBSectionCcys5Error_pctFZ">getSection(withId:<wbr>elements:<wbr>success:<wbr>failure:<wbr>)</a>
+                    <a name="/s:12MBurgerSwift8MBClientC10getSection6withId10parameters8elements7success7failureySi_SayAA11MBParameter_pGSgSbyAA9MBSectionCcys5Error_pctFZ"></a>
+                    <a name="//apple_ref/swift/Method/getSection(withId:parameters:elements:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift8MBClientC10getSection6withId10parameters8elements7success7failureySi_SayAA11MBParameter_pGSgSbyAA9MBSectionCcys5Error_pctFZ">getSection(withId:<wbr>parameters:<wbr>elements:<wbr>success:<wbr>failure:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -810,6 +832,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getSection</span><span class="p">(</span><span class="n">withId</span> <span class="nv">sectionId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                              <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/MBParameter.html">MBParameter</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                               <span class="nv">elements</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
                               <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">section</span><span class="p">:</span> <span class="kt"><a href="../Classes/MBSection.html">MBSection</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
                               <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
@@ -1002,7 +1025,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-23)</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-10-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

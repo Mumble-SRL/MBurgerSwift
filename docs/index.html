@@ -264,6 +264,28 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/MBImageFormat.html">MBImageFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/MBForceLocaleFallbackParameter.html">MBForceLocaleFallbackParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/MBImageFormatParameter.html">MBImageFormatParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/MBOriginalMediaParameter.html">MBOriginalMediaParameter</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -275,24 +297,26 @@
 <img src="https://raw.githubusercontent.com/Mumble-SRL/MBurgerSwift/master/Images/mburger-icon.png" alt="MBurger Logo" title="MBurger Logo">
 </p>
 
-<p><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Test Status">
-<img src="https://img.shields.io/badge/pod-v1.0.2-blue.svg" alt="License: MIT">
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="CocoaPods"></a></p>
+<p><a href="https://github.com/Mumble-SRL/MBurgerSwift/tree/master/docs"><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Documentation"></a>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat" alt=""></a>
+<img src="https://img.shields.io/badge/pod-v1.0.8-blue.svg" alt="CocoaPods">
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
+<a href="https://github.com/Mumble-SRL/MBurgerSwift/blob/mastetr/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="License"></a></p>
 <h1 id='mburgerswift' class='heading'>MBurgerSwift</h1>
 
 <p>MBurgerSwift is a client libary, written in Swift, that can be used to interact with the <a href="https://mburger.cloud/login">MBurger</a> API. The minimum deployment target for the library is iOS 10.0.</p>
 <h1 id='installation' class='heading'>Installation</h1>
-<h1 id='swift-package-manager' class='heading'>Swift Package Manager</h1>
+<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
 
 <p>With Xcode 11 you can start using <a href="https://swift.org/package-manager/">Swift Package Manager</a> to add <strong>MBurgerSwift</strong> to your project. Follow those simple steps:</p>
 
 <ul>
 <li>In Xcode go to File &gt; Swift Packages &gt; Add Package Dependency.</li>
 <li>Enter <code>https://github.com/Mumble-SRL/MBurgerSwift.git</code> in the &ldquo;Choose Package Repository&rdquo; dialog and press Next.</li>
-<li>Specify the version using rule &ldquo;Up to Next Major&rdquo; with &ldquo;1.0.0&rdquo; as its earliest version and press Next.</li>
+<li>Specify the version using rule &ldquo;Up to Next Major&rdquo; with &ldquo;1.0.7&rdquo; as its earliest version and press Next.</li>
 <li>Xcode will try to resolving the version, after this, you can choose the <code>MBurgerSwift</code> library and add it to your app target.</li>
 </ul>
-<h1 id='cocoapods' class='heading'>CocoaPods</h1>
+<h2 id='cocoapods' class='heading'>CocoaPods</h2>
 
 <p>CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:</p>
 <pre class="highlight ruby"><code><span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">cocoapods</span>
@@ -313,11 +337,16 @@
 </code></pre>
 
 <p>CocoaPods is the preferred methot to install the library.</p>
-<h1 id='manual-installation' class='heading'>Manual installation</h1>
+<h2 id='carthage' class='heading'>Carthage</h2>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBurgerSwift into your Xcode project using Carthage, specify it in your Cartfile:</p>
+<pre class="highlight plaintext"><code>github "Mumble-SRL/MBurgerSwift"
+</code></pre>
+<h2 id='manual-installation' class='heading'>Manual installation</h2>
 
 <p>To install the library manually drag and drop the folder <code>MBurgerSwift</code> to your project structure in XCode. </p>
 
-<p>Note that <code>MBurgerSwift</code> has <code>MBNetworking (1.0.4)</code> and <code>SAMKeychain (1.5)</code> as dependencies, so you have to install also this libraries.</p>
+<p>Note that <code>MBurgerSwift</code> has <code>MBNetworkingSwift (1.0.4)</code> as dependency, so you have to install also this library.</p>
 <h1 id='initialization' class='heading'>Initialization</h1>
 
 <p>To initialize the SDK you have to create a token through the <a href="https://mburger.cloud/">dashboard</a>. Click on the settings icon on the top-right and create a API Key specifiyng the permissions.</p>
@@ -515,7 +544,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-23)</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-10-06)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
