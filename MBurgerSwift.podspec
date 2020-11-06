@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MBurgerSwift"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "A Swift version of MBurger SDK"
   spec.description  = "MBurger is a client libary, written in Swift, that can be used to interact with the MBurger API."
   spec.homepage     = "https://github.com/Mumble-SRL/MBurgerSwift"
@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.8" }
+  spec.source       = { :git => "https://github.com/Mumble-SRL/MBurgerSwift.git", :tag => "1.0.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
