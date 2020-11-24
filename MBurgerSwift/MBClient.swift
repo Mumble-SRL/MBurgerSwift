@@ -142,7 +142,7 @@ public final class MBClient {
     /// Retrieve the sections of the block with the specified id.
     /// - Parameters:
     ///   - blockId: The `id` of the block.
-    ///   - parameters: An optional array of `MBParameter` used to sort, `nil` by default.
+    ///   - parameters: An optional array of `MBParameter`, `nil` by default.
     ///   - elements: If `true` the informations about the elements in the sections of the blocks are included in the response, `false` by default.
     ///   - success: A block that will be called when the request ends successfully. This block has no return value and takes two arguments.
     ///   - sections: An array of `MBSection` returned by the api.
@@ -191,6 +191,7 @@ public final class MBClient {
     /// Retrieve the section with the specified id.
     /// - Parameters:
     ///   - sectionId: The `id` of the section.
+    ///   - parameters: An optional array of `MBParameter`, `nil` by default.
     ///   - elements: If `true` the informations about the elements in the sections of the blocks are included in the response, `false` by default.
     ///   - success: A block that will be called when the request ends successfully. This block has no return value and takes one argument.
     ///   - section: A `MBSection` returned by the api.
@@ -230,6 +231,50 @@ public final class MBClient {
         })
     }
     
+    /// Retrieve the section with the specified slug.
+    /// - Parameters:
+    ///   - slug: The `slug` of the section.
+    ///   - parameters: An optional array of `MBParameter`, `nil` by default.
+    ///   - elements: If `true` the informations about the elements in the sections of the blocks are included in the response, `false` by default.
+    ///   - success: A block that will be called when the request ends successfully. This block has no return value and takes one argument.
+    ///   - section: A `MBSection` returned by the api.
+    ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
+    ///   - error: The error describing the error that occurred.
+    
+    public static func getSection(withSlug slug: String,
+                                  parameters: [MBParameter]? = nil,
+                                  elements: Bool = false,
+                                  success: @escaping (_ section: MBSection) -> Void,
+                                  failure: @escaping (_ error: Error) -> Void) {
+        var apiParameters: Parameters = [:]
+        
+        apiParameters["use_slug"] = "true"
+        if elements {
+            apiParameters["include"] = "elements"
+        }
+        
+        if let parameters = parameters {
+            for parameter in parameters {
+                apiParameters.merge(parameter.parameterRepresentation(), uniquingKeysWith: {$1})
+            }
+        }
+
+        let apiName = String(format: "sections/%@", slug)
+        MBApiManager.request(withToken: MBManager.shared.apiToken,
+                             locale: MBManager.shared.localeString,
+                             apiName: apiName,
+                             method: .get,
+                             parameters: apiParameters,
+                             development: MBManager.shared.development,
+                             encoding: URLParameterEncoder.queryItems,
+                             success: { response in
+                                let section = MBSection(response)
+                                success(section)
+        }, failure: { error in
+            failure(error)
+        })
+    }
+
     /// Retrieve the elements of the section with the specified id.
     /// - Parameters:
     ///   - sectionId: The `id` of the section.
