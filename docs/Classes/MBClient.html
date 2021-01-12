@@ -729,7 +729,7 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                               </td>
                               <td>
                                 <div>
-                                  <p>An optional array of <code><a href="../Protocols/MBParameter.html">MBParameter</a></code> used to sort, <code>nil</code> by default.</p>
+                                  <p>An optional array of <code><a href="../Protocols/MBParameter.html">MBParameter</a></code>, <code>nil</code> by default.</p>
                                 </div>
                               </td>
                             </tr>
@@ -852,6 +852,140 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
                               <td>
                                 <div>
                                   <p>The <code>id</code> of the section.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional array of <code><a href="../Protocols/MBParameter.html">MBParameter</a></code>, <code>nil</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If <code>true</code> the informations about the elements in the sections of the blocks are included in the response, <code>false</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that will be called when the request ends successfully. This block has no return value and takes one argument.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Classes/MBSection.html">MBSection</a></code> returned by the api.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error describing the error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12MBurgerSwift8MBClientC10getSection8withSlug10parameters8elements7success7failureySS_SayAA11MBParameter_pGSgSbyAA9MBSectionCcys5Error_pctFZ"></a>
+                    <a name="//apple_ref/swift/Method/getSection(withSlug:parameters:elements:success:failure:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12MBurgerSwift8MBClientC10getSection8withSlug10parameters8elements7success7failureySS_SayAA11MBParameter_pGSgSbyAA9MBSectionCcys5Error_pctFZ">getSection(withSlug:<wbr>parameters:<wbr>elements:<wbr>success:<wbr>failure:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve the section with the specified slug.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getSection</span><span class="p">(</span><span class="n">withSlug</span> <span class="nv">slug</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/MBParameter.html">MBParameter</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                              <span class="nv">elements</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                              <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">section</span><span class="p">:</span> <span class="kt"><a href="../Classes/MBSection.html">MBSection</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                              <span class="nv">failure</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>slug</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>slug</code> of the section.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional array of <code><a href="../Protocols/MBParameter.html">MBParameter</a></code>, <code>nil</code> by default.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1025,8 +1159,8 @@ When the return of the api is an array it&rsquo;s returned also a <code><a href=
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-10-06)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2021-01-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
