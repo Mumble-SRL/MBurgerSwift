@@ -327,7 +327,7 @@ public final class MBClient {
     public static func getMedia(withId id: Int,
                                 success: @escaping (_ media: MBMedia) -> Void,
                                 failure: @escaping (_ error: Error) -> Void) {
-        let apiName = String(format: "api/media/%d", id)
+        let apiName = String(format: "media/%d", id)
         MBApiManager.request(withToken: MBManager.shared.apiToken,
                              locale: MBManager.shared.localeString,
                              apiName: apiName,
@@ -335,9 +335,8 @@ public final class MBClient {
                              development: MBManager.shared.development,
                              encoding: URLParameterEncoder.queryItems,
                              success: { response in
-                                print(response)
-                                //TODO: implement
-                                failure(MBurgerError(statusCode: 404, message: "Media not found"))
+                                let media = MBMedia(dictionary: response)
+                                success(media)
         }, failure: { error in
             failure(error)
         })
@@ -351,7 +350,7 @@ public final class MBClient {
     ///   - error: The error describing the error that occurred.
     public static func getAllMedia(success: @escaping (_ media: [MBMedia]) -> Void,
                                    failure: @escaping (_ error: Error) -> Void) {
-        let apiName = "api/media"
+        let apiName = "media"
         MBApiManager.request(withToken: MBManager.shared.apiToken,
                              locale: MBManager.shared.localeString,
                              apiName: apiName,
@@ -359,9 +358,12 @@ public final class MBClient {
                              development: MBManager.shared.development,
                              encoding: URLParameterEncoder.queryItems,
                              success: { response in
-                                print(response)
-                                //TODO: implement
-                                success([])
+                                guard let body = response["body"] as? [[String: Any]] else {
+                                    success([])
+                                    return
+                                }
+                                let media = body.map({ MBMedia(dictionary: $0) })
+                                success(media)
         }, failure: { error in
             failure(error)
         })
