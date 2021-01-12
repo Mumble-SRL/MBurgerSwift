@@ -15,6 +15,8 @@ import MBNetworkingSwift
 
 public final class MBClient {
     
+    // MARK: - Project
+    
     /// Retrieve the informations about the project.
     /// - Parameters:
     ///   - includingContracts: If `true` contracts are included in the project, `false` by default.
@@ -44,6 +46,8 @@ public final class MBClient {
             failure(error)
         })
     }
+    
+    // MARK: - Blocks
     
     /// Retrieve the blocks of the project.
     /// - Parameters:
@@ -139,6 +143,8 @@ public final class MBClient {
         })
     }
     
+    // MARK: - Sections
+
     /// Retrieve the sections of the block with the specified id.
     /// - Parameters:
     ///   - blockId: The `id` of the block.
@@ -275,6 +281,8 @@ public final class MBClient {
         })
     }
 
+    // MARK: - Elements
+
     /// Retrieve the elements of the section with the specified id.
     /// - Parameters:
     ///   - sectionId: The `id` of the section.
@@ -305,5 +313,58 @@ public final class MBClient {
         }, failure: { error in
             failure(error)
         })
+    }
+    
+    // MARK: - Media
+    
+    /// Retrieve the media of the project with the specified id.
+    /// - Parameters:
+    ///   - id: The `id` of the media.
+    ///   - success: A block that will be called when the request ends successfully. This block has no return value and takes one argument.
+    ///   - media: The media requested.
+    ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
+    ///   - error: The error describing the error that occurred.
+    public static func getMedia(withId id: Int,
+                                success: @escaping (_ media: MBMedia) -> Void,
+                                failure: @escaping (_ error: Error) -> Void) {
+        let apiName = String(format: "api/media/%d", id)
+        MBApiManager.request(withToken: MBManager.shared.apiToken,
+                             locale: MBManager.shared.localeString,
+                             apiName: apiName,
+                             method: .get,
+                             development: MBManager.shared.development,
+                             encoding: URLParameterEncoder.queryItems,
+                             success: { response in
+                                print(response)
+                                //TODO: implement
+                                failure(MBurgerError(statusCode: 404, message: "Media not found"))
+        }, failure: { error in
+            failure(error)
+        })
+    }
+    
+    /// Retrieve all the media of the project.
+    /// - Parameters:
+    ///   - success: A block that will be called when the request ends successfully. This block has no return value and takes one argument.
+    ///   - media: All the media that are present in the project.
+    ///   - failure: A block that will be called when the request ends incorrectly. This block has no return value and takes one argument.
+    ///   - error: The error describing the error that occurred.
+    public static func getAllMedia(success: @escaping (_ media: [MBMedia]) -> Void,
+                                   failure: @escaping (_ error: Error) -> Void) {
+        let apiName = "api/media"
+        MBApiManager.request(withToken: MBManager.shared.apiToken,
+                             locale: MBManager.shared.localeString,
+                             apiName: apiName,
+                             method: .get,
+                             development: MBManager.shared.development,
+                             encoding: URLParameterEncoder.queryItems,
+                             success: { response in
+                                print(response)
+                                //TODO: implement
+                                success([])
+        }, failure: { error in
+            failure(error)
+        })
+
     }
 }

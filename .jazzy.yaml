@@ -46,7 +46,7 @@ custom_categories:
     - MBAddressElement
     - MBDateElement
     - MBImagesElement
-    - MBFile
+    - MBMedia
     - MBImage
     - MBMediaElement
     - MBCheckboxElement
