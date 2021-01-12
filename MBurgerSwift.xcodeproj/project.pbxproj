@@ -37,7 +37,6 @@
 		D2C70676233CF88E002A70F4 /* MBAddressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70675233CF88E002A70F4 /* MBAddressElement.swift */; };
 		D2C70678233CFB7F002A70F4 /* MBDateElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70677233CFB7F002A70F4 /* MBDateElement.swift */; };
 		D2C7067A233CFC57002A70F4 /* MBImagesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70679233CFC57002A70F4 /* MBImagesElement.swift */; };
-		D2C7067C233CFC96002A70F4 /* MBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C7067B233CFC96002A70F4 /* MBFile.swift */; };
 		D2C7067E233CFCD4002A70F4 /* MBMediaElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C7067D233CFCD4002A70F4 /* MBMediaElement.swift */; };
 		D2C70680233CFF40002A70F4 /* MBCheckboxElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C7067F233CFF40002A70F4 /* MBCheckboxElement.swift */; };
 		D2F24C82233E34D2000F1274 /* MBAuthContractAcceptanceParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F24C81233E34D2000F1274 /* MBAuthContractAcceptanceParameter.swift */; };
@@ -58,6 +57,7 @@
 		EC2F00CF24C883F800100BD0 /* section.json in Resources */ = {isa = PBXBuildFile; fileRef = EC2F00CE24C883F800100BD0 /* section.json */; };
 		EC2F00D124C8871700100BD0 /* MBMultipleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F00D024C8871700100BD0 /* MBMultipleElement.swift */; };
 		EC315ED52463026100050053 /* MBColorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC315ED42463026100050053 /* MBColorElement.swift */; };
+		EC5BD1C225ADAFB600394DD3 /* MBMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5BD1C125ADAFB600394DD3 /* MBMedia.swift */; };
 		EC83B0B524AB2BA400F4AC2D /* MBPluginsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83B0B424AB2BA400F4AC2D /* MBPluginsManager.swift */; };
 		EC8533FF24C5DDB40038F2D4 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8533FE24C5DDB40038F2D4 /* TestUtilities.swift */; };
 		EC8668C3252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8668C2252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift */; };
@@ -113,7 +113,6 @@
 		D2C70675233CF88E002A70F4 /* MBAddressElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAddressElement.swift; sourceTree = "<group>"; };
 		D2C70677233CFB7F002A70F4 /* MBDateElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDateElement.swift; sourceTree = "<group>"; };
 		D2C70679233CFC57002A70F4 /* MBImagesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBImagesElement.swift; sourceTree = "<group>"; };
-		D2C7067B233CFC96002A70F4 /* MBFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBFile.swift; sourceTree = "<group>"; };
 		D2C7067D233CFCD4002A70F4 /* MBMediaElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMediaElement.swift; sourceTree = "<group>"; };
 		D2C7067F233CFF40002A70F4 /* MBCheckboxElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCheckboxElement.swift; sourceTree = "<group>"; };
 		D2F24C81233E34D2000F1274 /* MBAuthContractAcceptanceParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAuthContractAcceptanceParameter.swift; sourceTree = "<group>"; };
@@ -135,6 +134,7 @@
 		EC2F00D024C8871700100BD0 /* MBMultipleElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMultipleElement.swift; sourceTree = "<group>"; };
 		EC315ED42463026100050053 /* MBColorElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBColorElement.swift; sourceTree = "<group>"; };
 		EC54BA1B16529960B454B187 /* Pods-MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBurgerSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBurgerSwift/Pods-MBurgerSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EC5BD1C125ADAFB600394DD3 /* MBMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBMedia.swift; sourceTree = "<group>"; };
 		EC83B0B424AB2BA400F4AC2D /* MBPluginsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPluginsManager.swift; sourceTree = "<group>"; };
 		EC8533FE24C5DDB40038F2D4 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
 		EC8668C2252C4E4A00C5BFD2 /* MBForceLocaleFallbackParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBForceLocaleFallbackParameter.swift; sourceTree = "<group>"; };
@@ -291,8 +291,8 @@
 				D2C70673233CF7D6002A70F4 /* MBGeneralElement.swift */,
 				D2C70675233CF88E002A70F4 /* MBAddressElement.swift */,
 				D2C70677233CFB7F002A70F4 /* MBDateElement.swift */,
+				EC5BD1C125ADAFB600394DD3 /* MBMedia.swift */,
 				D2C70679233CFC57002A70F4 /* MBImagesElement.swift */,
-				D2C7067B233CFC96002A70F4 /* MBFile.swift */,
 				D2C7067D233CFCD4002A70F4 /* MBMediaElement.swift */,
 				D2C7067F233CFF40002A70F4 /* MBCheckboxElement.swift */,
 				EC315ED42463026100050053 /* MBColorElement.swift */,
@@ -595,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C7067C233CFC96002A70F4 /* MBFile.swift in Sources */,
 				D2C7065A233CE67A002A70F4 /* MBPaginationParameter.swift in Sources */,
 				EC08843D24C9894200043CF2 /* MBurgerTokenKeychain.swift in Sources */,
 				D2C70656233CE617002A70F4 /* MBParameter.swift in Sources */,
@@ -608,6 +607,7 @@
 				D2C70674233CF7D6002A70F4 /* MBGeneralElement.swift in Sources */,
 				D2C70668233CEADB002A70F4 /* MBElementFactory.swift in Sources */,
 				D2F24C86233E3F94000F1274 /* MBUserContractStatus.swift in Sources */,
+				EC5BD1C225ADAFB600394DD3 /* MBMedia.swift in Sources */,
 				D2C70658233CE631002A70F4 /* MBSortParameter.swift in Sources */,
 				EC8668CB252C4EC900C5BFD2 /* MBOriginalMediaParameter.swift in Sources */,
 				D2F24C88233E3FFD000F1274 /* MBUserPublishedSection.swift in Sources */,

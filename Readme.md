@@ -242,7 +242,7 @@ All the object models implement the `Codable` protocol so you can serialize and 
 * `MBBlock`
 * `MBSection`
 * `MBElement`
-* `MBFile`
+* `MBMedia`
 * `MBAddressElement`
 * `MBCheckboxElement`
 * `MBDateElement`
