@@ -434,7 +434,7 @@
 				ECB838F424C5DAAA004E174D /* Sources */,
 				ECB838F524C5DAAA004E174D /* Frameworks */,
 				ECB838F624C5DAAA004E174D /* Resources */,
-				490B8F318CD4A3CE7977F779 /* [CP] Embed Pods Frameworks */,
+				C49DEAC1F5ED247B40789CF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -509,23 +509,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		490B8F318CD4A3CE7977F779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MBurgerSwiftTests/Pods-MBurgerSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MBurgerSwiftTests/Pods-MBurgerSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MBurgerSwiftTests/Pods-MBurgerSwiftTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6CF5B103661DBADB898D9DAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +529,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49DEAC1F5ED247B40789CF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MBurgerSwiftTests/Pods-MBurgerSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MBurgerSwiftTests/Pods-MBurgerSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MBurgerSwiftTests/Pods-MBurgerSwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC6A7849237EE29400795199 /* Swiftlint */ = {

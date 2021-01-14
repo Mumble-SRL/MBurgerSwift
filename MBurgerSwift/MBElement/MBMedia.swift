@@ -53,7 +53,7 @@ public class MBMedia: Codable, Equatable {
     /// Convenience initializer for a media with the dictionary returned by the api.
     /// - Parameters:
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
-    convenience init(dictionary: [String: Any]) {
+    public convenience init(dictionary: [String: Any]) {
         let mediaId = dictionary["id"] as? Int ?? 0
         let uuidString = dictionary["uuid"] as? String ?? MBMedia.invalidUUIDString()
         let uuid = UUID(uuidString: uuidString) ?? UUID()

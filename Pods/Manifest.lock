@@ -1,16 +1,16 @@
 PODS:
-  - MBNetworkingSwift (1.0.14)
+  - MBNetworkingSwift (1.1)
 
 DEPENDENCIES:
-  - MBNetworkingSwift
+  - MBNetworkingSwift (~> 1.1)
 
 SPEC REPOS:
   trunk:
     - MBNetworkingSwift
 
 SPEC CHECKSUMS:
-  MBNetworkingSwift: e24b93be41ce4fb9247fb902bf5db2877e73a446
+  MBNetworkingSwift: 6fb96a4aeda0a2e280413f6bacb07a67bd8224e7
 
-PODFILE CHECKSUM: 2a2669b0da1943d4c03fefbc1973c74673e506e9
+PODFILE CHECKSUM: 0d8cd6373281765a01e651391da79f7a991f9e8c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

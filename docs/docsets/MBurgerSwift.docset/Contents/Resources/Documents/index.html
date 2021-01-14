@@ -433,6 +433,26 @@
 
 <span class="p">})</span>
 </code></pre>
+<h1 id='media' class='heading'>Media</h1>
+
+<p>You can retrieve a media stored on MBurger with its id:</p>
+<pre class="highlight swift"><code><span class="kt">MBClient</span><span class="o">.</span><span class="nf">getMedia</span><span class="p">(</span><span class="nv">withId</span><span class="p">:</span> <span class="kt">MEDIA_ID</span><span class="p">,</span>
+                  <span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="n">media</span> <span class="k">in</span>
+
+                  <span class="p">},</span>
+                  <span class="nv">failure</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+
+                  <span class="p">})</span>
+</code></pre>
+
+<p>To retrieve all the media that are saved in MBurger you can use this function:</p>
+<pre class="highlight swift"><code><span class="kt">MBClient</span><span class="o">.</span><span class="nf">getAllMedia</span><span class="p">(</span><span class="nv">success</span><span class="p">:</span> <span class="p">{</span> <span class="n">media</span> <span class="k">in</span>
+
+<span class="p">},</span>
+<span class="nv">failure</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+
+<span class="p">})</span>
+</code></pre>
 <h1 id='type-decoding' class='heading'>Type Decoding</h1>
 
 <p><code>MBurgerSwift</code> has a built in system that can be used to init your custom constructs. You have only to make your construct conform to <code><a href="Protocols/MBDecodable.html">MBDecodable</a></code> protocol.</p>
