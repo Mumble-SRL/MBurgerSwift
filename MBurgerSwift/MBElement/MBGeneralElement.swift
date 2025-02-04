@@ -13,6 +13,9 @@ public class MBGeneralElement: MBElement {
     /// The value of the element.
     public let generalValue: Data?
     
+    /// The string value of the element.
+    public let generalValueString: String?
+
     /// The type of the element retuned by the api.
     public let stringType: String?
     
@@ -21,9 +24,11 @@ public class MBGeneralElement: MBElement {
     ///   - elementId: The `id` of the element.
     ///   - elementName: The `name` of the element.
     ///   - generalValue: The `value` representing the element.
+    ///   - generalValueString: The `value` representing the element.
     ///   - type: The `type` of the element retuned by the api.
-    init(elementId: Int, elementName: String, order: Int, generalValue: Data?, type: String?) {
+    init(elementId: Int, elementName: String, order: Int, generalValue: Data?, generalValueString: String?, type: String?) {
         self.generalValue = generalValue
+        self.generalValueString = generalValueString
         self.stringType = type
         super.init(elementId: elementId, elementName: elementName, type: .undefined, order: order)
     }
@@ -33,12 +38,14 @@ public class MBGeneralElement: MBElement {
     ///   - dictionary: The `Dictionary` returned from the APIs reponse
     required init(dictionary: [String: Any]) {
         generalValue = dictionary["value"] as? Data
+        generalValueString = dictionary["value"] as? String
         stringType = dictionary["type"] as? String
         super.init(dictionary: dictionary)
     }
     
     enum CodingKeysElement: String, CodingKey {
         case generalValue
+        case generalValueString
         case type
     }
     
@@ -46,6 +53,7 @@ public class MBGeneralElement: MBElement {
         let container = try decoder.container(keyedBy: CodingKeysElement.self)
         
         generalValue = try container.decodeIfPresent(Data.self, forKey: .generalValue)
+        generalValueString = try container.decodeIfPresent(String.self, forKey: .generalValueString)
         stringType = try container.decodeIfPresent(String.self, forKey: .type)
         
         try super.init(from: decoder)
@@ -56,6 +64,7 @@ public class MBGeneralElement: MBElement {
         var container = encoder.container(keyedBy: CodingKeysElement.self)
         
         try container.encodeIfPresent(generalValue, forKey: .generalValue)
+        try container.encodeIfPresent(generalValueString, forKey: .generalValueString)
         try container.encodeIfPresent(stringType, forKey: .type)
     }
 }
